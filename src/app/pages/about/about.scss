@@ -1,0 +1,261 @@
+.page {
+    width: 100%;
+    max-width: 860px;
+    margin: 0 auto;
+    position: relative;
+    padding: 28px 24px 40px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin: 18px 0;
+}
+
+.logo-box {
+    background: #2d3a4a;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 6px 10px;
+    letter-spacing: 2px;
+    border-radius: 2px;
+    flex-shrink: 0;
+}
+
+.header-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+.header-text p {
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: #7a8fa0;
+    margin-top: 3px;
+}
+
+/* World map SVG bg */
+.map-bg {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    opacity: 0.13;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Main layout: left content | spine | right content */
+.timeline-body {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 60px 1fr;
+    gap: 0;
+    margin-top: 10px;
+}
+
+/* Vertical spine */
+.spine-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.spine-line {
+    width: 2px;
+    background: linear-gradient(to bottom, #c0cdd8, #8faabb, #c0cdd8);
+    flex: 1;
+    position: relative;
+}
+
+/* Year badge on spine */
+.year-badge {
+    background: #fff;
+    border: 1.5px solid #b8c8d8;
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #1e2d3d;
+    white-space: nowrap;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.spine-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 1.5px #8faabb;
+    margin: 6px 0;
+    flex-shrink: 0;
+}
+
+/* Left / Right content blocks */
+.left-col,
+.right-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.left-col {
+    align-items: flex-end;
+}
+
+.right-col {
+    align-items: flex-start;
+}
+
+/* Each milestone block */
+.milestone {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 14px 0;
+    width: 100%;
+}
+
+.left-col .milestone {
+    align-items: flex-end;
+    padding-right: 18px;
+}
+
+.right-col .milestone {
+    align-items: flex-start;
+    padding-left: 18px;
+}
+
+/* Connector line from block to spine */
+.left-col .milestone::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 18px;
+    height: 1.5px;
+    background: #b8c8d8;
+    transform: translateY(-50%);
+}
+
+.right-col .milestone::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 18px;
+    height: 1.5px;
+    background: #b8c8d8;
+    transform: translateY(-50%);
+}
+
+/* Origami arrow shapes */
+.arrow-wrap {
+    margin-bottom: 8px;
+}
+
+.arrow-svg {
+    display: block;
+}
+
+.m-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    line-height: 1.2;
+}
+
+.m-body {
+    font-size: 10.5px;
+    color: #fff;
+    line-height: 1.55;
+    max-width: 220px;
+}
+
+.left-col .m-body {
+    text-align: right;
+}
+
+.right-col .m-body {
+    text-align: left;
+}
+
+/* Thumbnail strip */
+.thumbs {
+    display: flex;
+    gap: 4px;
+    margin-top: 8px;
+}
+
+.thumb {
+    width: 36px;
+    height: 28px;
+    border-radius: 2px;
+    background: #b0bec8;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.thumb svg {
+    display: block;
+}
+
+/* Spacer rows to stagger items */
+.spacer {
+    flex: 1;
+    min-height: 40px;
+}
+
+/* Footer note */
+.footer-note {
+    margin-top: 28px;
+    padding-top: 16px;
+    border-top: 1px solid #c8d6e0;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-note h4 {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #7a8fa0;
+    margin-bottom: 6px;
+}
+
+.footer-note p {
+    font-size: 10.5px;
+    color: #fff;
+    line-height: 1.6;
+    max-width: 340px;
+}
+
+@media screen and (max-width: 768px) {
+    .header-text h1 {
+        font-size: 18px;
+    }
+
+    .header-text p {
+        font-size: 8px;
+        letter-spacing: 2px;
+    }
+
+    .page {
+        padding: 28px 0px 40px;
+    }
+}

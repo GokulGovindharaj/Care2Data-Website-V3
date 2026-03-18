@@ -1,10 +1,12 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { Meta, Title } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-about',
-  imports: [MatIconModule],
+  imports: [MatIconModule, RouterModule, CommonModule],
   templateUrl: './about.html',
   styleUrl: './about.scss',
 })
@@ -27,7 +29,7 @@ export class About {
     // Change Meta url
     this.metaService.updateTag({
       name: 'og:url',
-      content: 'https://gokulgovindharaj.github.io/Care2Data-Website/#/product'
+      content: 'https://gokulgovindharaj.github.io/Care2Data-Website/#/kwalify'
     });
 
     // Change Keywords

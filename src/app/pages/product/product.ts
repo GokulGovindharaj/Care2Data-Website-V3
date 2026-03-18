@@ -1,11 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
 import { Meta, Title } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-product',
-  imports: [MatIconModule, MatExpansionModule],
+  imports: [MatIconModule, MatExpansionModule, RouterModule, CommonModule],
   templateUrl: './product.html',
   styleUrl: './product.scss',
 })

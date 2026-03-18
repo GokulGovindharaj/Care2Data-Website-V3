@@ -1,9 +1,9 @@
-<section class="pt-16 bg-gradient-to-b from-[#f6faf6] via-[#f3fbf3] to-[#f3fbf3]">
+<section class="pt-20 pb-5 bg-[#11193e]">
   <div class="max-w-6xl mx-auto px-4 md:px-6">
 
     <!-- Page Title -->
-    <div class="text-center mb-7 text-black">
-      <h1 class="text-3xl md:text-5xl font-bold mb-4">
+    <div class="text-center mb-7 text-white">
+      <h1 class="text-3xl md:text-5xl font-bold mb-4 font-heading">
         Contact Us
       </h1>
       <p class="text-md text-gray-500 mb-6">
@@ -14,13 +14,13 @@
 
     <div class="max-w-3xl mx-auto">
 
-      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="text-black space-y-6">
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="text-white space-y-6">
 
         <!-- Name -->
         <div class="mb-2">
-          <p class="mb-2 font-medium">Name</p>
-          <mat-form-field appearance="outline" class="w-full border rounded-sm">
-            <input matInput formControlName="name" />
+          <p class="mb-2 font-medium text-sm">Name</p>
+          <mat-form-field appearance="outline" class="w-full text-sm">
+            <input matInput formControlName="name" placeholder="Name"/>
           </mat-form-field>
 
           <p class="text-red-500 text-sm mt-1"
@@ -41,9 +41,9 @@
 
         <!-- Email -->
         <div class="mb-2">
-          <p class="mb-2 font-medium">Work Email</p>
-          <mat-form-field appearance="outline" class="w-full border rounded-sm">
-            <input matInput type="email" formControlName="email" />
+          <p class="mb-2 font-medium text-sm">Work Email</p>
+          <mat-form-field appearance="outline" class="w-full text-sm">
+            <input matInput type="email" formControlName="email" placeholder="Work Email"/>
           </mat-form-field>
 
           <p class="text-red-500 text-sm mt-1"
@@ -59,17 +59,17 @@
 
         <!-- Organization -->
         <div class="mb-2">
-          <p class="mb-2 font-medium">Organization</p>
-          <mat-form-field appearance="outline" class="w-full border rounded-sm">
-            <input matInput formControlName="organization" />
+          <p class="mb-2 font-medium text-sm">Organization</p>
+          <mat-form-field appearance="outline" class="w-full text-sm">
+            <input matInput formControlName="organization" placeholder="Organization"/>
           </mat-form-field>
         </div>
 
         <!-- Area of Interest Dropdown -->
         <div>
-          <p class="mb-2 font-medium">Area of Interest</p>
-          <mat-form-field appearance="outline" class="w-full border rounded-sm">
-            <mat-select formControlName="interest">
+          <p class="mb-2 font-medium text-sm">Area of Interest</p>
+          <mat-form-field appearance="outline" class="w-full text-sm">
+            <mat-select formControlName="interest" placeholder="Select an area of interest">
               <mat-option value="About KWALIFY">About KWALIFY</mat-option>
               <mat-option value="Partnerships">Partnerships</mat-option>
               <mat-option value="Request for Demo">Request for Demo</mat-option>
@@ -83,9 +83,9 @@
 
         <!-- Message -->
         <div class="mb-2">
-          <p class="mb-2 font-medium">Message</p>
-          <mat-form-field appearance="outline" class="w-full border rounded-sm">
-            <textarea matInput rows="5" formControlName="message"></textarea>
+          <p class="mb-2 font-medium text-sm">Message</p>
+          <mat-form-field appearance="outline" class="w-full text-sm">
+            <textarea matInput rows="5" formControlName="message" placeholder="Enter your message here..."></textarea>
           </mat-form-field>
 
           <p class="text-red-500 text-sm mt-1"
@@ -100,15 +100,16 @@
         </div>
 
         <!-- Submit Button -->
-        <button
-          class="flex items-center justify-center gap-2 text-xs md:text-sm px-6 py-3 cursor-pointer rounded-sm font-semibold transition duration-700 cursor-pointer border-2 max-w-3xl mx-auto"
-          style="background-color: var(--bg-secondary); color: #000; border-color: var(--bg-secondary);"
-          onmouseover="this.style.backgroundColor='var(--bg-primary)'; this.style.color='white'; this.style.borderColor='var(--bg-primary)';"
-          onmouseout="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='#000'; this.style.borderColor='var(--bg-secondary)';"
-          type="submit" [disabled]="isLoading">
-          <p class="m-0" *ngIf="!isLoading">Send Message</p>
-          <p class="m-0 text-black" *ngIf="isLoading">Sending Message...</p>
-        </button>
+        <div class="my-6">
+          <button type="submit" [disabled]="isLoading" class="flex items-center justify-center gap-2 text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 cursor-pointer mx-auto w-fit hover:bg-primary hover:border-primary
+           disabled:opacity-50 disabled:cursor-not-allowed"
+                style="background-color: var(--btn-primary-color); color: white;"
+                onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
+                onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
+            <p class="m-0" *ngIf="!isLoading">Send Message</p>
+            <p class="m-0 text-white" *ngIf="isLoading">Sending Message...</p>
+          </button>
+        </div>
 
       </form>
 
@@ -117,7 +118,7 @@
     <div class="py-6">
       <div class="max-w-3xl mx-auto px-4 text-center">
 
-        <h2 class="text-xl text-black font-semibold mb-4">
+        <h2 class="text-xl text-white font-semibold mb-4">
           Prefer to email us directly?
         </h2>
 

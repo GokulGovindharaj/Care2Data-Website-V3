@@ -99,11 +99,11 @@ export class Contact {
         'Area of Interest': this.contactForm.value.interest,
         'Message': this.contactForm.value.message,
         _captcha: "false",
-        _subject: "New Contact Form Message - Care2Data"
+        _subject: "Care2Data : New Contact Message"
       };
 
       this.http.post(
-        'https://formsubmit.co/ajax/gokul.govindharaj@care2data.com',
+        'https://formsubmit.co/ajax/admin@care2data.com',
         formData,
         { headers: { 'Content-Type': 'application/json' } }
       ).subscribe({

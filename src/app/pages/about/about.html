@@ -1,144 +1,1218 @@
-<!-- About Page -->
-<section class="py-16 bg-gradient-to-b from-[#f6faf6] via-[#f3fbf3] to-[#f3fbf3]">
-  <div class="max-w-6xl mx-auto px-4 md:px-6">
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center bg-[#11193e] overflow-hidden">
 
-    <!-- Page Title -->
-    <div class="text-center mb-14 text-black">
-      <h1 class="text-3xl md:text-5xl font-bold mb-4">
-        About Us
+  <!-- Right Side Background Image -->
+  <div class="absolute top-10 right-0 h-full w-[60%]">
+    <div class="w-full h-full bg-no-repeat bg-right bg-cover" style="background-image:url('images/about-us.png')"></div>
+    <div class="absolute inset-0 bg-gradient-to-l from-transparent via-[#11193e]/60 to-[#11193e]"></div>
+  </div>
+
+  <!-- Content Container -->
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center w-full">
+
+    <!-- Left Content -->
+    <div class="w-full lg:w-1/2 text-left z-10 space-y-2">
+
+      <span
+        class="inline-block px-3 py-1 text-xs font-semibold tracking-widest text-black uppercase bg-gray-100 rounded">About
+        Care2Data</span>
+      <h1 class="text-5xl lg:text-6xl font-bold text-white leading-tight font-heading">
+        The Intelligence Layer for <span class="text-secondary">Clinical Data</span>
       </h1>
-      <div class="w-20 h-1 bg-blue-600 mx-auto rounded-full"></div>
+      <p class="text-sm text-white leading-relaxed max-w-xl">
+        Clinical research generates vast volumes of complex data across trials, analytics systems, and regulatory
+        submissions. Yet much of this data remains fragmented across platforms and workflows, making it difficult to
+        maintain clarity, traceability, and regulatory confidence. <br>
+        Care2Data was founded to address this challenge. <br>
+        By combining deep life sciences expertise with structured knowledge modeling, Care2Data transforms complex
+        clinical datasets into governed knowledge systems. Through ontology frameworks, semantic modeling, and
+        intelligent validation approaches, we help organizations bring structure, context, and reliability to clinical
+        data workflows in highly regulated environments. <br>
+        Our work focuses on enabling life sciences organizations to move beyond fragmented datasets toward connected,
+        trusted knowledge systems.
+
+      </p>
+
+
+      <!-- CTA -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-start pt-4">
+        <button type="submit" routerLink="/contact-us"
+          class="inline-flex items-center justify-center gap-2 text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 cursor-pointer rounded-md"
+          style="background-color: var(--btn-primary-color); color: white;"
+          onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
+          onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
+          Request a Demo →
+        </button>
+        <button type="submit"
+          class="inline-flex items-center justify-center gap-2 text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 cursor-pointer rounded-md"
+          style="background-color: var(--btn-primary-color); color: white;"
+          onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
+          onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
+          Talk to an Expert →
+        </button>
+      </div>
+
     </div>
 
-    <!-- Content Sections -->
-    <div class="space-y-14 text-gray-400 leading-relaxed text-md">
 
-      <div>
-        <h2 class="text-lg md:text-xl font-semibold text-black mb-3">
-          1. Who We Are
-        </h2>
-        <p>
-          Care2Data combines deep Life Science expertise with structured knowledge modeling
-          to validate and operationalize complex clinical data in highly regulated environments.
+  </div>
+</section>
+
+<!-- Our Purpose -->
+<section class="py-8 md:py-12 bg-[#102c50]">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-8 flex items-center font-heading">
+      <span class="w-12 h-px bg-gray-400 mr-4"></span>
+      Our Purpose
+    </h1>
+    <p class="text-sm md:text-lg text-secondary max-w-3xl mb-4">
+      To bring clarity, trust, and intelligence to clinical data—so life
+      sciences organizations can make confident
+      decisions and deliver better medicines faster.
+    </p>
+    <p class="mt-6 text-sm md:text-lg text-gray-300 font-normal leading-relaxed">
+      Care2Data believes that clinical data quality is not simply a technical requirement but a foundational element of
+      scientific integrity. By structuring and governing data across the clinical research lifecycle, we help
+      organizations transform fragmented information into reliable knowledge that supports regulatory confidence and
+      better healthcare outcomes.
+    </p>
+
+  </div>
+</section>
+
+<!-- Who We Are -->
+<section class="py-8 md:py-12 bg-[#114167]">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-8 flex items-center font-heading">
+      <span class="w-12 h-px bg-gray-400 mr-4"></span>
+      Who We Are
+    </h1>
+
+    <p class="mt-6 text-sm md:text-lg text-gray-300">
+      Care2Data combines deep life sciences expertise with structured knowledge modeling to validate and operationalize
+      complex clinical data in regulated environments. <br> <br>
+      Our team works at the intersection of clinical research, data standards, and knowledge engineering. By integrating
+      domain expertise with semantic technologies, we help organizations ensure that clinical data remains accurate,
+      traceable, and defensible across the research lifecycle. <br> <br>
+      Rather than treating data as isolated technical artifacts, we design systems that capture the meaning,
+      relationships, and context behind clinical datasets—enabling organizations to operate with greater clarity and
+      confidence.
+
+    </p>
+
+  </div>
+</section>
+
+<!-- Our Differentiated Approach -->
+<section class="py-8 md:py-12 bg-[#11193e]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Heading -->
+    <div class="text-left mb-4">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-8 flex items-center font-heading">
+        <span class="w-12 h-px bg-gray-400 mr-4"></span>
+        What Distinguishes Our Approach
+      </h1>
+
+      <p class="text-sm md:text-lg text-white max-w-3xl mb-4">
+        Care2Data follows a <strong class="text-secondary">validation-first philosophy.</strong>
+      </p>
+      <p class="text-sm md:text-lg text-gray-300 max-w-4xl leading-relaxed mb-6">
+        While many data systems prioritize automation alone, our approach begins with governance, traceability, and
+        audit readiness. This philosophy ensures that validation workflows remain structured, explainable, and aligned
+        with regulatory expectations.
+      </p>
+      <p class="text-sm md:text-lg text-gray-300 max-w-4xl leading-relaxed">
+        Our approach emphasizes:
+      </p>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <!-- Card 1 -->
+      <div class="bg-white rounded-xl lg:rounded-2xl p-5 flex flex-col gap-3
+                  border border-[#1a1f2a] shadow-md hover:shadow-lg hover:-translate-y-1
+                  transition-all duration-300">
+        <div class="w-12 h-12 lg:w-14 lg:h-14 flex items-center justify-center rounded-lg flex-shrink-0 mb-2"
+          style="background-color: rgba(65,122,227,0.1);">
+          01
+        </div>
+        <h3 class="text-sm sm:text-base lg:text-lg font-bold text-black">
+          Governance-first design
+        </h3>
+        <p class="text-gray-500 text-sm">
+          Ensuring validation processes support transparency, traceability, and regulatory compliance.
         </p>
       </div>
 
-      <div>
-        <h2 class="text-lg md:text-xl font-semibold text-black mb-3">
-          2. What Distinguishes Our Approach
-        </h2>
-        <p>
-          We follow a validation-first philosophy — prioritizing governance,
-          traceability, and audit readiness over simple automation.
+      <!-- Card 2 -->
+      <div class="bg-white rounded-xl lg:rounded-2xl p-5 flex flex-col gap-3
+                  border border-[#1a1f2a] shadow-md hover:shadow-lg hover:-translate-y-1
+                  transition-all duration-300">
+        <div class="w-12 h-12 lg:w-14 lg:h-14 flex items-center justify-center rounded-lg flex-shrink-0 mb-2"
+          style="background-color: rgba(34,197,94,0.1);">
+          02
+        </div>
+        <h3 class="text-sm sm:text-base lg:text-lg font-bold text-black">
+          Semantic intelligence
+        </h3>
+        <p class="text-gray-500 text-sm">
+          Using ontology frameworks to connect datasets through meaning and relationships rather than isolated rules.
         </p>
       </div>
 
-      <div>
-        <h2 class="text-lg md:text-xl font-semibold text-black mb-3">
-          3. The Challenge: From Data to Knowledge Clarity
-        </h2>
-        <p>
-          Clinical data is often fragmented across systems. Without structure,
-          traceability weakens and regulatory confidence declines.
+      <!-- Card 3 -->
+      <div class="bg-white rounded-xl lg:rounded-2xl p-5 flex flex-col gap-3
+                  border border-[#1a1f2a] shadow-md hover:shadow-lg hover:-translate-y-1
+                  transition-all duration-300">
+        <div class="w-12 h-12 lg:w-14 lg:h-14 flex items-center justify-center rounded-lg flex-shrink-0 mb-2"
+          style="background-color: rgba(168,85,247,0.1);">
+          03
+        </div>
+        <h3 class="text-sm sm:text-base lg:text-lg font-bold text-black">
+          Structured validation frameworks
+        </h3>
+        <p class="text-gray-500 text-sm">
+          Enabling reproducible and explainable validation processes.
         </p>
       </div>
 
-      <div>
-        <h2 class="text-lg md:text-xl font-semibold text-black mb-3">
-          4. Intelligent Validation for Regulatory Confidence
-        </h2>
-        <p>
-          Our ontology-driven validation frameworks ensure accuracy,
-          reproducibility, and submission-ready assurance.
+      <!-- Card 4 -->
+      <div class="bg-white rounded-xl lg:rounded-2xl p-5 flex flex-col gap-3
+                  border border-[#1a1f2a] shadow-md hover:shadow-lg hover:-translate-y-1
+                  transition-all duration-300">
+        <div class="w-12 h-12 lg:w-14 lg:h-14 flex items-center justify-center rounded-lg flex-shrink-0 mb-2"
+          style="background-color: rgba(99,102,241,0.1);">
+          04
+        </div>
+        <h3 class="text-sm sm:text-base lg:text-lg font-bold text-black">
+          Operational integration
+        </h3>
+        <p class="text-gray-500 text-sm">
+          Embedding governed intelligence within existing clinical workflows without replacing established systems.
         </p>
       </div>
 
-      <div>
-        <h2 class="text-lg md:text-xl font-semibold text-black mb-3">
-          5. Turning Data into Connected, Trusted Knowledge
-        </h2>
-        <p>
-          We connect isolated datasets into unified semantic models,
-          improving defensibility and clarity across studies.
+    </div>
+
+  </div>
+</section>
+
+<!-- Turning Data into Connected -->
+<section class="py-8 md:py-12 bg-[#102c50]">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-8 flex items-center font-heading">
+      <span class="w-12 h-px bg-gray-400 mr-4"></span>Turning Data into Connected, Trusted Knowledge
+    </h1>
+
+    <p class="text-gray-300 mb-8">
+      Care2Data connects isolated datasets into unified semantic models. <br><br>
+      Through ontology frameworks and knowledge-driven modeling, we enable organizations to create structured
+      knowledge
+      systems that bring clarity and consistency to complex clinical data environments.
+    </p>
+
+    <ul class="space-y-4 pl-6 text-gray-300">
+
+      <li class="flex items-start gap-4">
+        <mat-icon class="text-blue-400">groups</mat-icon>
+        <span>stronger collaboration across scientific and regulatory teams</span>
+      </li>
+
+      <li class="flex items-start gap-4">
+        <mat-icon class="text-blue-400">timeline</mat-icon>
+        <span>improved traceability across studies and datasets</span>
+      </li>
+
+      <li class="flex items-start gap-4">
+        <mat-icon class="text-blue-400">insights</mat-icon>
+        <span>scalable foundations for analytics and AI initiatives</span>
+      </li>
+
+    </ul>
+
+    <p class="mt-10 text-gray-200 border-l-4 border-blue-500 pl-4">
+      By treating knowledge as a strategic asset, organizations unlock deeper insights from clinical data.
+    </p>
+
+  </div>
+</section>
+
+<!-- Clinical Standards & Compliance -->
+<section class="py-8 md:py-12 bg-[#114167]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Heading -->
+    <div class="max-w-4xl mb-10">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 flex items-center font-heading">
+        <span class="w-12 h-px bg-gray-400 mr-4"></span>Clinical Standards & Compliance
+      </h1>
+
+      <p class="text-lg md:text-xl text-white mb-4">
+        Built for <span class="text-secondary font-semibold">Regulatory-Grade Clinical Data Validation</span>
+      </p>
+
+      <p class="text-gray-300 text-base md:text-lg leading-relaxed">
+        Care2Data frameworks align with globally recognized clinical data standards, regulatory expectations, and data
+        integrity principles.
+        By embedding these standards into validation and knowledge systems, we help organizations ensure clinical
+        datasets remain traceable, defensible, and submission-ready.
+      </p>
+    </div>
+
+    <!-- Standards Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+
+      <!-- CDISC -->
+      <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg hover:-translate-y-1
+                  transition-all duration-300">
+        <h3 class="text-lg font-bold text-black mb-2">
+          CDISC Standards
+        </h3>
+        <p class="text-gray-500 text-sm">
+          Support for validation workflows aligned with CDISC standards such as SDTM, ensuring consistent and structured
+          datasets for regulatory submissions.
         </p>
       </div>
 
-      <div>
-        <h2 class="text-lg md:text-xl font-semibold text-black mb-3">
-          6. From Information Silos to Decision-Ready Systems
-        </h2>
-        <p>
-          We embed governed intelligence into workflows,
-          enabling scalable and decision-ready operations.
+      <!-- FDA -->
+      <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg hover:-translate-y-1
+                  transition-all duration-300">
+        <h3 class="text-lg font-bold text-black mb-2">
+          FDA Regulatory Expectations
+        </h3>
+        <p class="text-gray-500 text-sm">
+          Frameworks designed to help teams verify analysis outputs and ensure submission-ready datasets before
+          regulatory review.
         </p>
       </div>
 
-      <div>
-        <h2 class="text-lg md:text-xl font-semibold text-black mb-3">
-          7. Ontology: The Foundation of Scalable Intelligence
-        </h2>
-        <p>
-          Our ontology framework connects data, rules, and standards
-          into a structured backbone for sustainable intelligence.
+      <!-- ALCOA++ -->
+      <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg hover:-translate-y-1
+                  transition-all duration-300">
+        <h3 class="text-lg font-bold text-black mb-2">
+          ALCOA++ Data Integrity Principles
+        </h3>
+        <p class="text-gray-500 text-sm">
+          Ensuring data remains Attributable, Legible, Contemporaneous, Original, Accurate, along with Complete,
+          Consistent, Enduring, and Available.
         </p>
       </div>
 
-      <div>
-        <h2 class="text-lg md:text-xl font-semibold text-black mb-4">
-          8. Vision & Mission
-        </h2>
+      <!-- GAMP5 -->
+      <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg hover:-translate-y-1
+                  transition-all duration-300">
+        <h3 class="text-lg font-bold text-black mb-2">
+          GAMP5 Principles
+        </h3>
+        <p class="text-gray-500 text-sm">
+          Validation frameworks aligned with GAMP5 guidance for regulated systems, ensuring traceability, governance,
+          and methodological reliability.
+        </p>
+      </div>
 
-        <div class="space-y-3">
-          <p>
-            <span class="font-semibold text-black">Vision:</span>
-            To bring clarity and confidence to clinical decision-making
-            in regulated environments.
-          </p>
+    </div>
 
-          <p>
-            <span class="font-semibold text-black">Mission:</span>
-            To transform clinical validation through governed systems
-            and semantic intelligence — delivering submission-ready assurance at scale.
-          </p>
+    <!-- CTA -->
+    <div class="mt-12">
+      <button
+        class="inline-flex items-center justify-center gap-2 text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 cursor-pointer rounded-md"
+        style="background-color: var(--btn-primary-color); color: white;"
+        onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
+        onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
+        Learn More About Our Validation Approach →
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- Why Knowledge Management Matters -->
+<section class="py-8 md:py-12 bg-[#11193e]">
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+    <!-- Header -->
+    <div class="max-w-3xl">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-8 flex items-center font-heading">
+        <span class="w-12 h-px bg-gray-400 mr-4"></span> From Information Silos to Decision-Ready Systems
+      </h1>
+      <p class="text-secondary text-lg">
+        Why Knowledge Management Matters
+      </p>
+    </div>
+
+    <!-- Description -->
+    <p class="mt-6 text-gray-300 max-w-3xl leading-relaxed">
+      Many life sciences organizations struggle with information scattered across systems,
+      documents, and teams. Care2Data embeds governed intelligence into operational workflows,
+      enabling organizations to transform disconnected information into scalable and
+      decision-ready systems.
+    </p>
+
+    <!-- Features -->
+    <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 text-white">
+
+      <!-- Item -->
+      <div
+        class="group p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md hover:bg-white/10 transition">
+        <mat-icon class="text-blue-400 text-3xl mb-3">search</mat-icon>
+        <h3 class="font-semibold text-lg mb-2">Data Discoverability</h3>
+        <p class="text-sm text-gray-400">
+          Easily locate and access critical clinical data across systems.
+        </p>
+      </div>
+
+      <div
+        class="group p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md hover:bg-white/10 transition">
+        <mat-icon class="text-blue-400 text-3xl mb-3">autorenew</mat-icon>
+        <h3 class="font-semibold text-lg mb-2">Knowledge Reuse</h3>
+        <p class="text-sm text-gray-400">
+          Reuse validated insights across studies and workflows.
+        </p>
+      </div>
+
+      <div
+        class="group p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md hover:bg-white/10 transition">
+        <mat-icon class="text-blue-400 text-3xl mb-3">verified_user</mat-icon>
+        <h3 class="font-semibold text-lg mb-2">Governance & Traceability</h3>
+        <p class="text-sm text-gray-400">
+          Maintain auditability and controlled data processes.
+        </p>
+      </div>
+
+      <div
+        class="group p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md hover:bg-white/10 transition">
+        <mat-icon class="text-blue-400 text-3xl mb-3">fact_check</mat-icon>
+        <h3 class="font-semibold text-lg mb-2">Regulatory Readiness</h3>
+        <p class="text-sm text-gray-400">
+          Stay prepared for submissions and compliance reviews.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Result Highlight -->
+    <div class="mt-6 p-4 rounded-2xl bg-gradient-to-r from-blue-600/20 to-indigo-600/20 border border-blue-500/20">
+      <p class="text-lg text-gray-200">
+        The result is a stronger foundation for confident clinical decision-making.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Why Ontology is Essential -->
+<section class="py-8 md:py-12 bg-[#102c50]">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-8 flex items-center font-heading">
+      <span class="w-12 h-px bg-gray-400 mr-4"></span> Ontology: The Foundation of Scalable Intelligence
+    </h1>
+
+    <p class="text-gray-300 mb-8 max-w-3xl leading-relaxed">
+      Ontology provides the semantic backbone that connects data, rules, and standards.
+      Care2Data designs ontology frameworks that harmonize datasets across clinical research systems.
+    </p>
+
+    <div class="space-y-4 pl-6 text-gray-300">
+
+      <div class="flex items-start gap-4">
+        <mat-icon class="text-blue-400">hub</mat-icon>
+        <span>harmonize data across diverse sources</span>
+      </div>
+
+      <div class="flex items-start gap-4">
+        <mat-icon class="text-blue-400">manage_search</mat-icon>
+        <span>improve semantic search and data discovery</span>
+      </div>
+
+      <div class="flex items-start gap-4">
+        <mat-icon class="text-blue-400">timeline</mat-icon>
+        <span>strengthen data lineage and traceability</span>
+      </div>
+
+      <div class="flex items-start gap-4">
+        <mat-icon class="text-blue-400">psychology</mat-icon>
+        <span>enable advanced analytics and AI initiatives</span>
+      </div>
+
+    </div>
+
+    <p class="mt-10 text-gray-200 border-l-4 border-blue-500 pl-4">
+      Ontology ensures that clinical data is not only connected—but understood.
+    </p>
+
+  </div>
+</section>
+
+<!-- Research & Scientific Foundation -->
+<section class="py-8 md:py-12 bg-[#114167] text-white">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Header -->
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-8 flex items-center font-heading">
+      <span class="w-12 h-px bg-gray-400 mr-4"></span> Research & Scientific Foundation
+    </h1>
+
+    <p class="text-gray-300 mb-10 max-w-3xl leading-relaxed">
+      Care2Data’s work is grounded in continuous research across clinical data standards,
+      knowledge modeling, and intelligent validation systems. Our team combines expertise
+      in life sciences, ontology engineering, and advanced data science.
+    </p>
+
+    <div class="relative">
+
+      <!-- Vertical line -->
+      <div class="absolute left-5 top-0 w-1 bg-blue-600 h-full"></div>
+
+      <ul class="space-y-12">
+
+        <!-- Timeline item -->
+        <li class="flex items-start gap-6 relative">
+          <span
+            class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white text-lg">
+            <mat-icon>account_tree</mat-icon>
+          </span>
+          <div>
+            <h3 class="font-semibold text-lg">Knowledge Graph Validation</h3>
+            <p class="text-gray-400 text-sm mt-1">
+              Validation of clinical datasets using graph-driven methods.
+            </p>
+          </div>
+        </li>
+
+        <li class="flex items-start gap-6 relative">
+          <span
+            class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white text-lg">
+            <mat-icon>sync_alt</mat-icon>
+          </span>
+          <div>
+            <h3 class="font-semibold text-lg">Semantic Interoperability</h3>
+            <p class="text-gray-400 text-sm mt-1">
+              Ensuring cross-system understanding in clinical data ecosystems.
+            </p>
+          </div>
+        </li>
+
+        <li class="flex items-start gap-6 relative">
+          <span
+            class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white text-lg">
+            <mat-icon>visibility</mat-icon>
+          </span>
+          <div>
+            <h3 class="font-semibold text-lg">Explainable AI</h3>
+            <p class="text-gray-400 text-sm mt-1">
+              Providing traceable insights for validation and root cause analysis.
+            </p>
+          </div>
+        </li>
+
+        <li class="flex items-start gap-6 relative">
+          <span
+            class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white text-lg">
+            <mat-icon>device_hub</mat-icon>
+          </span>
+          <div>
+            <h3 class="font-semibold text-lg">Anomaly Detection</h3>
+            <p class="text-gray-400 text-sm mt-1">
+              Detecting irregular patterns using graph-based models.
+            </p>
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <!-- Footer highlight -->
+    <p class="mt-12 text-gray-200 border-l-4 border-blue-500 pl-4">
+      Research-driven systems supporting stronger data quality, traceability, and regulatory confidence.
+    </p>
+
+  </div>
+</section>
+
+<!--  Academic & Research Partnerships -->
+<section class="py-8 md:py-12 bg-[#11193e] text-white">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Header -->
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-8 flex items-center font-heading">
+      <span class="w-12 h-px bg-gray-400 mr-4"></span> Academic & Research Partnerships
+    </h1>
+
+    <p class="text-gray-300 mb-10 max-w-3xl">
+      Care2Data collaborates with leading academic institutions to advance clinical data intelligence,
+      AI-driven analytics, and healthcare research methodologies, ensuring our platforms are built
+      on rigorous scientific and analytical foundations.
+    </p>
+
+    <!-- Partnerships Grid -->
+    <div class="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+      <!-- Partner 1 -->
+      <div class="flex flex-col items-start bg-white/5 p-6 rounded-xl hover:bg-white/10 transition">
+        <div class="w-48 h-48 mb-4 mx-auto overflow-hidden rounded-lg"><img src="images/iiitd_logo.png"
+            alt="IIIT Delhi Logo" class="w-full h-full object-cover"></div>
+        <h3 class="font-semibold text-lg mb-2">Indraprastha Institute of Information Technology Delhi</h3>
+        <p class="text-gray-400 text-sm mb-2">
+          A leading research institute in AI, data science, and computational research, supporting Care2Data
+          in advancing semantic intelligence and scalable clinical data analytics.
+        </p>
+        <a href="https://iiitd.ac.in" target="_blank" class="text-blue-400 text-sm hover:underline">
+          Visit Website
+        </a>
+      </div>
+
+      <!-- Partner 2 -->
+      <div class="flex flex-col items-start bg-white/5 p-6 rounded-xl hover:bg-white/10 transition">
+        <div class="w-48 h-48 mb-4 mx-auto overflow-hidden rounded-lg"><img src="images/iiitb_logo.png"
+            alt="IIIT Bangalore Logo" class="w-full h-full object-cover"></div>
+        <h3 class="font-semibold text-lg mb-2">International Institute of Information Technology Bangalore</h3>
+        <p class="text-gray-400 text-sm mb-2">
+          A premier technology institute known for data science and machine learning research, collaborating with
+          Care2Data
+          on advanced analytics and AI-driven clinical insights.
+        </p>
+        <a href="https://www.iiitb.ac.in" target="_blank" class="text-blue-400 text-sm hover:underline">
+          Visit Website
+        </a>
+      </div>
+
+      <!-- Partner 3 -->
+      <div class="flex flex-col items-start bg-white/5 p-6 rounded-xl hover:bg-white/10 transition">
+        <div class="w-48 h-48 mb-4 mx-auto overflow-hidden rounded-lg"><img src="images/bharathiar_logo.png"
+            alt="Bharathiar University Logo" class="w-full h-full object-cover"></div>
+        <h3 class="font-semibold text-lg mb-2">Bharathiar University</h3>
+        <p class="text-gray-400 text-sm mb-2">
+          A well-regarded public research university with strengths in statistics and applied data science,
+          contributing to statistical modelling and research validation for Care2Data.
+        </p>
+        <a href="https://www.b-u.ac.in" target="_blank" class="text-blue-400 text-sm hover:underline">
+          Visit Website
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Vision & Mission -->
+<section class="py-8 md:py-12 bg-[#102c50] text-white">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Header -->
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-8 flex items-center font-heading">
+      <span class="w-12 h-px bg-gray-400 mr-4"></span> Vision & Mission
+    </h1>
+
+    <div class="grid md:grid-cols-2 gap-10">
+
+      <!-- Vision -->
+      <div class="bg-white/5 p-8 rounded-xl border border-white/10 hover:bg-white/10 transition">
+        <h3 class="text-xl font-semibold mb-4">Vision</h3>
+        <p class="text-gray-300 mb-4">
+          To accelerate drug discovery and enable the delivery of high-quality medicines earlier by becoming the most
+          trusted global clinical research technology partner.
+        </p>
+        <p class="text-gray-400 text-sm">
+          We pursue this vision by enabling fully validated, intelligent systems that strengthen the integrity and
+          reliability of data throughout the clinical research lifecycle.
+        </p>
+      </div>
+
+      <!-- Mission -->
+      <div class="bg-white/5 p-8 rounded-xl border border-white/10 hover:bg-white/10 transition">
+        <h3 class="text-xl font-semibold mb-4">Mission</h3>
+        <p class="text-gray-300 mb-4">
+          To ignite a transformative shift in clinical research by delivering Data Quality as a Service.
+        </p>
+        <p class="text-gray-400 text-sm">
+          Through intelligent validation and verification systems, we improve the efficiency and accuracy of clinical
+          trial data analysis and reporting. Our mission is to help organizations prevent regulatory resubmissions
+          caused by data quality issues while establishing stronger standards of quality, consistency, and accuracy
+          prior to regulatory submission.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Leadership -->
+<section class="py-8 md:py-12 bg-[#114167] text-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <!-- Header -->
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-8 flex items-center font-heading">
+      <span class="w-12 h-px bg-gray-400 mr-4"></span> Our Leadership
+    </h1>
+
+    <!-- Leadership Cards -->
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-10">
+
+      <!-- Leader 1 -->
+      <div
+        class="flex flex-col items-start bg-white/5 p-6 rounded-xl border border-white/10 hover:bg-white/10 transition">
+        <img src="images/leaders/giri.jpg" alt="Giri Balasubramanian" class="w-32 h-32 rounded-full mb-4 object-cover">
+        <h3 class="text-xl font-semibold mb-1">Giri Balasubramanian</h3>
+        <p class="text-blue-400 text-sm mb-2 font-medium">Founder</p>
+        <p class="text-gray-300 text-sm mb-4">
+          Giri Balasubramanian is the Founder of Care2Data and a global leader in clinical data standards, automation,
+          and analytics. With more than two decades of experience in life sciences, he has presented pioneering research
+          at international forums including CDISC and PhUSE across the United States, Europe, and Asia. His expertise
+          spans SDTM standards, regulatory submissions, metadata-driven reporting, automation frameworks, and machine
+          learning applications in clinical research. In addition to his industry contributions, he has delivered a
+          widely recognized TEDx talk, reflecting his ability to combine technical depth with visionary thinking to
+          advance data integrity and innovation across the life sciences ecosystem.
+        </p>
+        <a href="https://www.linkedin.com/in/giri-balasubramanian-21a31013/" target="_blank"
+          class="mt-auto inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-500 transition text-sm">
+          View LinkedIn
+        </a>
+      </div>
+
+      <!-- Leader 2 -->
+      <div
+        class="flex flex-col items-start bg-white/5 p-6 rounded-xl border border-white/10 hover:bg-white/10 transition">
+        <img src="images/leaders/gopinath.jpg" alt="Gopinath Viswanathan"
+          class="w-32 h-32 rounded-full mb-4 object-cover">
+        <h3 class="text-xl font-semibold mb-1">Gopinath Viswanathan</h3>
+        <p class="text-blue-400 text-sm mb-2 font-medium">Promoter & Leadership</p>
+        <p class="text-gray-300 text-sm mb-4">
+          Gopinath Viswanathan brings over two decades of experience across pharmaceutical, CRO, and life sciences
+          organizations, with deep expertise in global randomized clinical trials across Phases I–IV. His background
+          includes clinical operations, data management, biometrics, regulatory submissions, pharmacovigilance, and
+          clinical data standards such as SDTM and ADaM. He has led the development of enterprise platforms leveraging
+          knowledge graphs, semantic integration, and AI-driven validation frameworks to improve data quality and
+          regulatory compliance.
+        </p>
+        <a href="https://www.linkedin.com/in/gopinath-viswanathan-1502607a/" target="_blank"
+          class="mt-auto inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-500 transition text-sm">
+          View LinkedIn
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Leadership -->
+<section class="py-8 md:py-12 bg-[#11193e] text-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="page">
+
+      <!-- Header -->
+      <div class="header">
+        <div class="logo-box">C2D</div>
+        <div class="header-text">
+          <h1>CARE2DATA MILESTONES</h1>
+          <p>COMPANY TIMELINE &nbsp;·&nbsp; INFOGRAPHIC</p>
         </div>
       </div>
+
+      <!-- World map dotted background -->
+      <svg class="map-bg" viewBox="0 0 860 480" xmlns="http://www.w3.org/2000/svg">
+        <!-- Simplified dot-grid world map silhouette -->
+        <g fill="#4a7a9b" opacity="1">
+          <!-- North America rough dots -->
+          <g id="na">
+            <circle cx="120" cy="100" r="4" />
+            <circle cx="140" cy="95" r="4" />
+            <circle cx="160" cy="90" r="4" />
+            <circle cx="180" cy="88" r="4" />
+            <circle cx="200" cy="92" r="4" />
+            <circle cx="220" cy="90" r="4" />
+            <circle cx="100" cy="115" r="4" />
+            <circle cx="120" cy="112" r="4" />
+            <circle cx="140" cy="110" r="4" />
+            <circle cx="160" cy="108" r="4" />
+            <circle cx="180" cy="106" r="4" />
+            <circle cx="200" cy="108" r="4" />
+            <circle cx="220" cy="107" r="4" />
+            <circle cx="240" cy="105" r="4" />
+            <circle cx="90" cy="130" r="4" />
+            <circle cx="110" cy="128" r="4" />
+            <circle cx="130" cy="126" r="4" />
+            <circle cx="150" cy="124" r="4" />
+            <circle cx="170" cy="122" r="4" />
+            <circle cx="190" cy="122" r="4" />
+            <circle cx="210" cy="121" r="4" />
+            <circle cx="230" cy="120" r="4" />
+            <circle cx="250" cy="118" r="4" />
+            <circle cx="100" cy="145" r="4" />
+            <circle cx="120" cy="143" r="4" />
+            <circle cx="140" cy="141" r="4" />
+            <circle cx="160" cy="140" r="4" />
+            <circle cx="180" cy="139" r="4" />
+            <circle cx="200" cy="139" r="4" />
+            <circle cx="220" cy="138" r="4" />
+            <circle cx="240" cy="137" r="4" />
+            <circle cx="130" cy="158" r="4" />
+            <circle cx="150" cy="157" r="4" />
+            <circle cx="170" cy="156" r="4" />
+            <circle cx="190" cy="156" r="4" />
+            <circle cx="210" cy="155" r="4" />
+            <circle cx="230" cy="155" r="4" />
+            <circle cx="150" cy="172" r="4" />
+            <circle cx="170" cy="171" r="4" />
+            <circle cx="190" cy="170" r="4" />
+            <circle cx="165" cy="187" r="4" />
+            <circle cx="182" cy="186" r="4" />
+            <!-- Central America -->
+            <circle cx="175" cy="202" r="3" />
+            <circle cx="188" cy="208" r="3" />
+            <circle cx="196" cy="218" r="3" />
+          </g>
+          <!-- South America -->
+          <g id="sa">
+            <circle cx="210" cy="235" r="4" />
+            <circle cx="228" cy="232" r="4" />
+            <circle cx="246" cy="234" r="4" />
+            <circle cx="212" cy="250" r="4" />
+            <circle cx="230" cy="248" r="4" />
+            <circle cx="248" cy="250" r="4" />
+            <circle cx="262" cy="248" r="4" />
+            <circle cx="215" cy="265" r="4" />
+            <circle cx="233" cy="264" r="4" />
+            <circle cx="251" cy="265" r="4" />
+            <circle cx="265" cy="264" r="4" />
+            <circle cx="220" cy="280" r="4" />
+            <circle cx="238" cy="279" r="4" />
+            <circle cx="255" cy="280" r="4" />
+            <circle cx="222" cy="295" r="4" />
+            <circle cx="240" cy="294" r="4" />
+            <circle cx="256" cy="296" r="4" />
+            <circle cx="225" cy="310" r="4" />
+            <circle cx="242" cy="310" r="4" />
+            <circle cx="230" cy="325" r="4" />
+            <circle cx="244" cy="325" r="4" />
+            <circle cx="233" cy="340" r="3" />
+            <circle cx="244" cy="342" r="3" />
+            <circle cx="237" cy="354" r="3" />
+          </g>
+          <!-- Europe -->
+          <g id="eu">
+            <circle cx="400" cy="80" r="4" />
+            <circle cx="418" cy="78" r="4" />
+            <circle cx="436" cy="80" r="4" />
+            <circle cx="454" cy="78" r="4" />
+            <circle cx="472" cy="80" r="4" />
+            <circle cx="488" cy="83" r="4" />
+            <circle cx="395" cy="95" r="4" />
+            <circle cx="413" cy="93" r="4" />
+            <circle cx="431" cy="92" r="4" />
+            <circle cx="449" cy="92" r="4" />
+            <circle cx="467" cy="93" r="4" />
+            <circle cx="484" cy="95" r="4" />
+            <circle cx="500" cy="94" r="4" />
+            <circle cx="390" cy="110" r="4" />
+            <circle cx="408" cy="108" r="4" />
+            <circle cx="426" cy="107" r="4" />
+            <circle cx="444" cy="107" r="4" />
+            <circle cx="462" cy="108" r="4" />
+            <circle cx="479" cy="109" r="4" />
+            <circle cx="496" cy="110" r="4" />
+            <circle cx="400" cy="124" r="4" />
+            <circle cx="418" cy="123" r="4" />
+            <circle cx="436" cy="122" r="4" />
+            <circle cx="454" cy="122" r="4" />
+            <circle cx="471" cy="123" r="4" />
+            <circle cx="410" cy="138" r="4" />
+            <circle cx="428" cy="137" r="4" />
+            <circle cx="446" cy="137" r="4" />
+            <circle cx="462" cy="138" r="4" />
+          </g>
+          <!-- Africa -->
+          <g id="af">
+            <circle cx="420" cy="155" r="4" />
+            <circle cx="438" cy="153" r="4" />
+            <circle cx="456" cy="154" r="4" />
+            <circle cx="474" cy="155" r="4" />
+            <circle cx="490" cy="157" r="4" />
+            <circle cx="415" cy="170" r="4" />
+            <circle cx="433" cy="169" r="4" />
+            <circle cx="451" cy="168" r="4" />
+            <circle cx="469" cy="169" r="4" />
+            <circle cx="486" cy="170" r="4" />
+            <circle cx="503" cy="172" r="4" />
+            <circle cx="418" cy="185" r="4" />
+            <circle cx="436" cy="184" r="4" />
+            <circle cx="454" cy="183" r="4" />
+            <circle cx="472" cy="184" r="4" />
+            <circle cx="489" cy="185" r="4" />
+            <circle cx="505" cy="187" r="4" />
+            <circle cx="420" cy="200" r="4" />
+            <circle cx="438" cy="199" r="4" />
+            <circle cx="456" cy="198" r="4" />
+            <circle cx="474" cy="199" r="4" />
+            <circle cx="491" cy="200" r="4" />
+            <circle cx="424" cy="215" r="4" />
+            <circle cx="442" cy="214" r="4" />
+            <circle cx="460" cy="214" r="4" />
+            <circle cx="477" cy="215" r="4" />
+            <circle cx="430" cy="230" r="4" />
+            <circle cx="448" cy="229" r="4" />
+            <circle cx="465" cy="230" r="4" />
+            <circle cx="434" cy="245" r="4" />
+            <circle cx="451" cy="244" r="4" />
+            <circle cx="466" cy="245" r="4" />
+            <circle cx="440" cy="260" r="4" />
+            <circle cx="455" cy="261" r="4" />
+            <circle cx="446" cy="274" r="3" />
+            <circle cx="458" cy="275" r="3" />
+            <circle cx="450" cy="288" r="3" />
+          </g>
+          <!-- Asia -->
+          <g id="as">
+            <circle cx="520" cy="80" r="4" />
+            <circle cx="538" cy="78" r="4" />
+            <circle cx="556" cy="76" r="4" />
+            <circle cx="574" cy="75" r="4" />
+            <circle cx="592" cy="76" r="4" />
+            <circle cx="610" cy="78" r="4" />
+            <circle cx="628" cy="80" r="4" />
+            <circle cx="646" cy="82" r="4" />
+            <circle cx="664" cy="84" r="4" />
+            <circle cx="682" cy="86" r="4" />
+            <circle cx="700" cy="88" r="4" />
+            <circle cx="515" cy="95" r="4" />
+            <circle cx="533" cy="93" r="4" />
+            <circle cx="551" cy="91" r="4" />
+            <circle cx="569" cy="90" r="4" />
+            <circle cx="587" cy="90" r="4" />
+            <circle cx="605" cy="91" r="4" />
+            <circle cx="623" cy="93" r="4" />
+            <circle cx="641" cy="95" r="4" />
+            <circle cx="659" cy="97" r="4" />
+            <circle cx="677" cy="99" r="4" />
+            <circle cx="694" cy="101" r="4" />
+            <circle cx="711" cy="103" r="4" />
+            <circle cx="510" cy="110" r="4" />
+            <circle cx="528" cy="108" r="4" />
+            <circle cx="546" cy="107" r="4" />
+            <circle cx="564" cy="106" r="4" />
+            <circle cx="582" cy="106" r="4" />
+            <circle cx="600" cy="107" r="4" />
+            <circle cx="618" cy="108" r="4" />
+            <circle cx="636" cy="110" r="4" />
+            <circle cx="654" cy="112" r="4" />
+            <circle cx="672" cy="114" r="4" />
+            <circle cx="690" cy="116" r="4" />
+            <circle cx="707" cy="118" r="4" />
+            <circle cx="720" cy="112" r="4" />
+            <circle cx="735" cy="108" r="4" />
+            <circle cx="512" cy="125" r="4" />
+            <circle cx="530" cy="123" r="4" />
+            <circle cx="548" cy="122" r="4" />
+            <circle cx="566" cy="121" r="4" />
+            <circle cx="584" cy="121" r="4" />
+            <circle cx="602" cy="122" r="4" />
+            <circle cx="620" cy="123" r="4" />
+            <circle cx="638" cy="125" r="4" />
+            <circle cx="656" cy="127" r="4" />
+            <circle cx="674" cy="129" r="4" />
+            <circle cx="692" cy="131" r="4" />
+            <circle cx="708" cy="133" r="4" />
+            <circle cx="723" cy="127" r="4" />
+            <circle cx="737" cy="122" r="4" />
+            <circle cx="514" cy="140" r="4" />
+            <circle cx="532" cy="138" r="4" />
+            <circle cx="550" cy="137" r="4" />
+            <circle cx="568" cy="137" r="4" />
+            <circle cx="586" cy="137" r="4" />
+            <circle cx="604" cy="138" r="4" />
+            <circle cx="622" cy="139" r="4" />
+            <circle cx="640" cy="141" r="4" />
+            <circle cx="658" cy="143" r="4" />
+            <circle cx="676" cy="145" r="4" />
+            <circle cx="692" cy="147" r="4" />
+            <circle cx="518" cy="155" r="4" />
+            <circle cx="536" cy="154" r="4" />
+            <circle cx="554" cy="153" r="4" />
+            <circle cx="572" cy="153" r="4" />
+            <circle cx="590" cy="153" r="4" />
+            <circle cx="608" cy="154" r="4" />
+            <circle cx="626" cy="155" r="4" />
+            <circle cx="644" cy="157" r="4" />
+            <circle cx="660" cy="159" r="4" />
+            <!-- Southeast Asia islands -->
+            <circle cx="650" cy="185" r="3" />
+            <circle cx="665" cy="190" r="3" />
+            <circle cx="680" cy="186" r="3" />
+            <circle cx="695" cy="192" r="3" />
+            <circle cx="710" cy="196" r="3" />
+            <circle cx="720" cy="188" r="3" />
+            <circle cx="730" cy="195" r="3" />
+          </g>
+          <!-- Australia -->
+          <g id="au">
+            <circle cx="680" cy="280" r="4" />
+            <circle cx="698" cy="278" r="4" />
+            <circle cx="716" cy="276" r="4" />
+            <circle cx="734" cy="278" r="4" />
+            <circle cx="750" cy="280" r="4" />
+            <circle cx="675" cy="295" r="4" />
+            <circle cx="693" cy="293" r="4" />
+            <circle cx="711" cy="292" r="4" />
+            <circle cx="729" cy="292" r="4" />
+            <circle cx="746" cy="294" r="4" />
+            <circle cx="762" cy="297" r="4" />
+            <circle cx="678" cy="310" r="4" />
+            <circle cx="696" cy="308" r="4" />
+            <circle cx="714" cy="307" r="4" />
+            <circle cx="732" cy="308" r="4" />
+            <circle cx="748" cy="310" r="4" />
+            <circle cx="764" cy="313" r="4" />
+            <circle cx="682" cy="325" r="4" />
+            <circle cx="700" cy="323" r="4" />
+            <circle cx="718" cy="322" r="4" />
+            <circle cx="736" cy="323" r="4" />
+            <circle cx="752" cy="325" r="4" />
+            <circle cx="688" cy="340" r="4" />
+            <circle cx="706" cy="338" r="4" />
+            <circle cx="724" cy="338" r="4" />
+            <circle cx="740" cy="340" r="4" />
+            <circle cx="700" cy="354" r="3" />
+            <circle cx="716" cy="353" r="3" />
+            <circle cx="730" cy="355" r="3" />
+          </g>
+        </g>
+      </svg>
+
+      <!-- Timeline body -->
+      <div class="timeline-body">
+
+        <!-- LEFT COLUMN -->
+        <div class="left-col">
+
+          <!-- 2022 Company Founded (LEFT, row 1) -->
+          <div class="milestone" style="padding-top:0;">
+            <div class="arrow-wrap">
+              <!-- Origami arrow pointing RIGHT (teal) -->
+              <svg class="arrow-svg" width="70" height="38" viewBox="0 0 70 38">
+                <polygon points="0,19 52,0 70,19 52,38" fill="#2ab5c4" />
+                <polygon points="0,19 52,8 52,30" fill="#1a8a96" opacity="0.6" />
+                <polygon points="52,0 70,19 52,8" fill="#60d0dc" opacity="0.7" />
+              </svg>
+            </div>
+            <div class="m-title" style="color:#2ab5c4;">Company Founded</div>
+            <div class="m-body">Care2Data established — an ontology-driven Clinical Data Validation &amp; Verification
+              platform for the Clinical Trial Lifecycle.</div>
+            <div class="thumbs" style="justify-content:flex-end;">
+              <div class="thumb"><svg viewBox="0 0 36 28">
+                  <rect width="36" height="28" fill="#7abfcc" />
+                  <circle cx="18" cy="14" r="7" fill="#fff" opacity="0.4" />
+                </svg></div>
+              <div class="thumb"><svg viewBox="0 0 36 28">
+                  <rect width="36" height="28" fill="#5aabb8" />
+                  <rect x="4" y="6" width="28" height="16" rx="2" fill="#fff" opacity="0.3" />
+                </svg></div>
+            </div>
+          </div>
+
+          <div class="spacer" style="min-height:60px;"></div>
+
+          <!-- 2023 Recognition (LEFT, row 3) -->
+          <div class="milestone">
+            <div class="arrow-wrap">
+              <!-- Origami arrow pointing RIGHT (orange-red) -->
+              <svg class="arrow-svg" width="70" height="38" viewBox="0 0 70 38">
+                <polygon points="0,19 52,0 70,19 52,38" fill="#e05a2b" />
+                <polygon points="0,19 52,8 52,30" fill="#b03a10" opacity="0.6" />
+                <polygon points="52,0 70,19 52,8" fill="#f0825a" opacity="0.7" />
+              </svg>
+            </div>
+            <div class="m-title" style="color:#e05a2b;">International Recognition</div>
+            <div class="m-body">Ontology-driven validation approach recognised by European Network of Cancer Registries
+              and Joint Research Centre, Ispra, Italy.</div>
+            <div class="thumbs" style="justify-content:flex-end;">
+              <div class="thumb"><svg viewBox="0 0 36 28">
+                  <rect width="36" height="28" fill="#e08060" />
+                  <circle cx="10" cy="10" r="5" fill="#fff" opacity="0.4" />
+                </svg></div>
+              <div class="thumb"><svg viewBox="0 0 36 28">
+                  <rect width="36" height="28" fill="#c06040" />
+                  <rect x="4" y="8" width="20" height="12" rx="2" fill="#fff" opacity="0.3" />
+                </svg></div>
+            </div>
+          </div>
+
+          <div class="spacer" style="min-height:60px;"></div>
+
+          <!-- 2024-2026 Kwalify (LEFT, row 5) -->
+          <div class="milestone">
+            <div class="arrow-wrap">
+              <!-- Origami arrow pointing RIGHT (green) -->
+              <svg class="arrow-svg" width="70" height="38" viewBox="0 0 70 38">
+                <polygon points="0,19 52,0 70,19 52,38" fill="#4caf50" />
+                <polygon points="0,19 52,8 52,30" fill="#2e7d32" opacity="0.6" />
+                <polygon points="52,0 70,19 52,8" fill="#80e080" opacity="0.7" />
+              </svg>
+            </div>
+            <div class="m-title" style="color:#4caf50;">Kwalify — Live Platform</div>
+            <div class="m-body">Live demo platform released Feb 2026. Research accepted at ISWC Nara, Japan. Two patents
+              filed with Indian Patent Office &amp; USPTO.</div>
+            <div class="thumbs" style="justify-content:flex-end;">
+              <div class="thumb"><svg viewBox="0 0 36 28">
+                  <rect width="36" height="28" fill="#70b870" />
+                  <circle cx="18" cy="14" r="6" fill="#fff" opacity="0.4" />
+                </svg></div>
+              <div class="thumb"><svg viewBox="0 0 36 28">
+                  <rect width="36" height="28" fill="#508850" />
+                  <rect x="4" y="6" width="28" height="16" rx="2" fill="#fff" opacity="0.3" />
+                </svg></div>
+            </div>
+          </div>
+
+        </div><!-- /left-col -->
+
+        <!-- SPINE COLUMN -->
+        <div class="spine-col">
+          <div class="spine-line"
+            style="display:flex;flex-direction:column;align-items:center;gap:0;width:2px;background:linear-gradient(to bottom,#b8ccd8,#7a9eb5,#b8ccd8);flex:1;position:relative;">
+
+            <!-- Year 2022 -->
+            <div
+              style="position:absolute;top:28px;left:50%;transform:translateX(-50%);background:#fff;border:1.5px solid #b8c8d8;border-radius:20px;padding:3px 9px;font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#1e2d3d;white-space:nowrap;box-shadow:0 2px 6px rgba(0,0,0,0.08);z-index:3;">
+              2022</div>
+            <div
+              style="position:absolute;top:22px;left:50%;transform:translateX(-50%);width:12px;height:12px;border-radius:50%;background:#2ab5c4;border:2px solid #fff;box-shadow:0 0 0 1.5px #2ab5c4;z-index:4;margin-left:0;top:52px;">
+            </div>
+
+            <!-- Year 2023 PoC -->
+            <div
+              style="position:absolute;top:150px;left:50%;transform:translateX(-50%);background:#fff;border:1.5px solid #b8c8d8;border-radius:20px;padding:3px 9px;font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#1e2d3d;white-space:nowrap;box-shadow:0 2px 6px rgba(0,0,0,0.08);z-index:3;">
+              2023</div>
+            <div
+              style="position:absolute;top:174px;left:50%;transform:translateX(-50%);width:12px;height:12px;border-radius:50%;background:#d4b040;border:2px solid #fff;box-shadow:0 0 0 1.5px #d4b040;z-index:4;">
+            </div>
+
+            <!-- Year 2023 Recognition -->
+            <div
+              style="position:absolute;top:300px;left:50%;transform:translateX(-50%);background:#fff;border:1.5px solid #b8c8d8;border-radius:20px;padding:3px 9px;font-family:'Playfair Display',serif;font-size:12px;font-weight:700;color:#1e2d3d;white-space:nowrap;box-shadow:0 2px 6px rgba(0,0,0,0.08);z-index:3;">
+              2023</div>
+            <div
+              style="position:absolute;top:324px;left:50%;transform:translateX(-50%);width:12px;height:12px;border-radius:50%;background:#e05a2b;border:2px solid #fff;box-shadow:0 0 0 1.5px #e05a2b;z-index:4;">
+            </div>
+
+            <!-- Year 2023-2025 -->
+            <div
+              style="position:absolute;top:450px;left:50%;transform:translateX(-50%);background:#fff;border:1.5px solid #b8c8d8;border-radius:20px;padding:3px 9px;font-family:'Playfair Display',serif;font-size:11px;font-weight:700;color:#1e2d3d;white-space:nowrap;box-shadow:0 2px 6px rgba(0,0,0,0.08);z-index:3;">
+              2023–25</div>
+            <div
+              style="position:absolute;top:475px;left:50%;transform:translateX(-50%);width:12px;height:12px;border-radius:50%;background:#8e44ad;border:2px solid #fff;box-shadow:0 0 0 1.5px #8e44ad;z-index:4;">
+            </div>
+
+            <!-- Year 2024-2026 -->
+            <div
+              style="position:absolute;top:600px;left:50%;transform:translateX(-50%);background:#fff;border:1.5px solid #b8c8d8;border-radius:20px;padding:3px 9px;font-family:'Playfair Display',serif;font-size:11px;font-weight:700;color:#1e2d3d;white-space:nowrap;box-shadow:0 2px 6px rgba(0,0,0,0.08);z-index:3;">
+              2024–26</div>
+            <div
+              style="position:absolute;top:624px;left:50%;transform:translateX(-50%);width:12px;height:12px;border-radius:50%;background:#4caf50;border:2px solid #fff;box-shadow:0 0 0 1.5px #4caf50;z-index:4;">
+            </div>
+
+          </div>
+        </div><!-- /spine-col -->
+
+        <!-- RIGHT COLUMN -->
+        <div class="right-col">
+
+          <div class="spacer" style="min-height:120px;"></div>
+
+          <!-- 2023 PoC (RIGHT, row 2) -->
+          <div class="milestone">
+            <div class="arrow-wrap">
+              <!-- Origami arrow pointing LEFT (yellow-gold) -->
+              <svg class="arrow-svg" width="70" height="38" viewBox="0 0 70 38">
+                <polygon points="70,19 18,0 0,19 18,38" fill="#d4b040" />
+                <polygon points="70,19 18,8 18,30" fill="#a08010" opacity="0.6" />
+                <polygon points="18,0 0,19 18,8" fill="#f0d070" opacity="0.7" />
+              </svg>
+            </div>
+            <div class="m-title" style="color:#c49a20;">Proof of Concept &amp; Global Launch</div>
+            <div class="m-body">First PoC completed and presented at PhUSE US Connect, Orlando. Care2Data's validation
+              framework introduced to global clinical research community.</div>
+            <div class="thumbs">
+              <div class="thumb"><svg viewBox="0 0 36 28">
+                  <rect width="36" height="28" fill="#c0a050" />
+                  <circle cx="18" cy="14" r="6" fill="#fff" opacity="0.4" />
+                </svg></div>
+              <div class="thumb"><svg viewBox="0 0 36 28">
+                  <rect width="36" height="28" fill="#a08030" />
+                  <rect x="4" y="8" width="20" height="12" rx="2" fill="#fff" opacity="0.3" />
+                </svg></div>
+            </div>
+          </div>
+
+          <div class="spacer" style="min-height:60px;"></div>
+
+          <!-- 2023-2025 Collaborations (RIGHT, row 4) -->
+          <div class="milestone">
+            <div class="arrow-wrap">
+              <!-- Origami arrow pointing LEFT (purple) -->
+              <svg class="arrow-svg" width="70" height="38" viewBox="0 0 70 38">
+                <polygon points="70,19 18,0 0,19 18,38" fill="#8e44ad" />
+                <polygon points="70,19 18,8 18,30" fill="#5e2070" opacity="0.6" />
+                <polygon points="18,0 0,19 18,8" fill="#c070e0" opacity="0.7" />
+              </svg>
+            </div>
+            <div class="m-title" style="color:#8e44ad;">Research &amp; Academic Collaborations</div>
+            <div class="m-body">Partnerships with IIIT Delhi, IIIT Bangalore, Bharathiar University, and ontology
+              advisory from IIT Madras.</div>
+            <div class="thumbs">
+              <div class="thumb"><svg viewBox="0 0 36 28">
+                  <rect width="36" height="28" fill="#9060b0" />
+                  <circle cx="12" cy="14" r="5" fill="#fff" opacity="0.5" />
+                  <circle cx="24" cy="14" r="5" fill="#fff" opacity="0.4" />
+                </svg></div>
+              <div class="thumb"><svg viewBox="0 0 36 28">
+                  <rect width="36" height="28" fill="#704090" />
+                  <rect x="4" y="8" width="28" height="12" rx="2" fill="#fff" opacity="0.3" />
+                </svg></div>
+            </div>
+          </div>
+
+          <div class="spacer" style="min-height:60px;"></div>
+
+        </div><!-- /right-col -->
+
+      </div><!-- /timeline-body -->
 
     </div>
   </div>
 </section>
 
+<!-- Our Core Focus -->
+<section class="py-8 md:py-12 bg-[#102c50]">
+  <div class="max-w-5xl mx-auto px-6 text-left md:text-center">
 
-<!-- Final Conversion Section -->
-<section class="py-16 bg-gradient-to-b from-[#f6faf6] via-[#f3fbf3] to-[#f3fbf3]">
-  <div class="max-w-5xl mx-auto px-6 text-center">
+    <h1 class="text-5xl lg:text-6xl font-bold text-white mb-6 font-heading">
+      From Data to Knowledge. <br>From Knowledge to Confidence.
+    </h1>
 
-    <h2 class="text-2xl md:text-3xl font-bold mb-6">
-      From Data to Knowledge. From Knowledge to Confidence.
-    </h2>
+    <p class="text-gray-300 max-w-2xl mx-auto mb-10">
+      Care2Data helps life sciences organizations move from fragmented datasets to connected intelligence and trusted
+      knowledge systems. <br><br>
+      By combining life sciences expertise with semantic modeling and validation frameworks, we enable organizations to
+      strengthen compliance, accelerate insight, and operate with greater confidence across clinical research.
 
-    <p class="text-gray-600 max-w-2xl mx-auto mb-10">
-      We help life sciences organizations move from fragmented datasets
-      to connected intelligence — enabling compliance, innovation, and confidence at scale.
     </p>
 
-    <div class="flex flex-wrap justify-center gap-6">
+    <div class="flex flex-wrap justify-left md:justify-center gap-6">
 
-      <a routerLink="/contact"
-        class="inline-flex items-center justify-center gap-2 text-xs md:text-sm px-6 py-3 cursor-pointer rounded-sm font-semibold transition duration-700 cursor-pointer"
-        style="background-color: var(--bg-primary); color: white;"
-        onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='#000';"
-        onmouseout="this.style.backgroundColor='var(--bg-primary)'; this.style.color='white';">
-
+      <a routerLink="/contact-us"
+        class="inline-flex items-center justify-center gap-2 text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 cursor-pointer rounded-md"
+        style="background-color: var(--btn-primary-color); color: white;"
+        onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
+        onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
         Contact Us
-        <!-- <mat-icon class="text-sm">keyboard_arrow_right</mat-icon> -->
-      </a>
-
-      <a routerLink="/contact"
-        class="inline-flex items-center justify-center gap-2 text-xs md:text-sm px-6 py-3 cursor-pointer rounded-sm font-semibold transition duration-700 cursor-pointer"
-        style="background-color: var(--bg-primary); color: white;"
-        onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='#000';"
-        onmouseout="this.style.backgroundColor='var(--bg-primary)'; this.style.color='white';">
-        Explore Engagement Models →
       </a>
 
     </div>
