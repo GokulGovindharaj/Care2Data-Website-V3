@@ -1291,8 +1291,55 @@
   </div>
 </section>
 
+<!--  Academic & Research Partnerships -->
+<section class="py-8 md:py-12 bg-[#114167] text-white">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Heading -->
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-5 text-yellow-400 leading-tight">
+      <span class="text-white">Academic & </span>Research Partnerships
+    </h2>
+
+    <p class="max-w-5xl mx-auto text-justify text-base md:text-lg lg:text-xl leading-relaxed mb-5">
+      Care2Data collaborates with leading academic institutions to advance
+      <strong class="text-yellow-400">clinical data intelligence, AI-driven analytics, and healthcare research
+        methodologies</strong>,
+      ensuring platforms are built on strong foundations.
+    </p>
+
+    <!-- Carousel -->
+    <div class="overflow-hidden py-10 sm:py-12">
+
+      <div class="relative h-[140px] sm:h-[160px] flex items-center justify-center [perspective:900px]">
+
+        <div *ngFor="let card of cards; let i = index" (click)="onCardClick(i)" class="absolute 
+                 w-[140px] h-[90px] 
+                 sm:w-[160px] sm:h-[100px] 
+                 md:w-[180px] md:h-[110px] 
+                 rounded-xl flex items-center justify-center 
+                 p-3 sm:p-4 cursor-pointer border 
+                 bg-white transition-all duration-700 
+                 ease-[cubic-bezier(0.34,1.2,0.64,1)]" [ngStyle]="getStyles(i)">
+          <img [src]="card.img"
+            class="max-h-[60px] sm:max-h-[70px] md:max-h-[75px] object-contain pointer-events-none" />
+        </div>
+
+      </div>
+
+      <!-- Dots -->
+      <div class="flex justify-center gap-2 mt-8 sm:mt-10">
+        <div *ngFor="let d of cards; let i = index" (click)="goTo(i)"
+          class="w-[6px] h-[6px] sm:w-[7px] sm:h-[7px] rounded-full cursor-pointer transition-all duration-300"
+          [ngClass]="i === active ? 'bg-yellow-400 scale-125' : 'bg-white/30'"></div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
 <!-- Final Conversion -->
-<section class="py-8 md:py-12 bg-[#114167]">
+<section class="py-8 md:py-12 bg-[#11193e]">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
     <!-- Heading -->
