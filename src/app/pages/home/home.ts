@@ -99,11 +99,11 @@ export class Home {
 
     // 🔥 Device-based override
     if (this.isMobile) {
-      scale = type === 'center' ? 1.55 : 0.8;
+      scale = type === 'center' ? 2 : 0.8;
     } else if (this.isTablet) {
-      scale = type === 'center' ? 1.55 : 0.85;
+      scale = type === 'center' ? 2 : 0.85;
     } else {
-      scale = type === 'center' ? 1.55 : 0.9;
+      scale = type === 'center' ? 2 : 0.9;
     }
 
     return {
