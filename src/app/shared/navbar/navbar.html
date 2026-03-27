@@ -1,6 +1,6 @@
-<nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-[#36332F] border-b border-white/10 shadow-lg">
+<nav class="fixed top-0 left-0 w-full z-50 bg-[#36332F] border-b border-white/10 shadow-lg">
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 xl:px-8 py-3 flex justify-between items-center">
 
         <!-- Logo -->
         <div class="flex-shrink-0 w-32 sm:w-40">
@@ -36,16 +36,46 @@
                     Our Services
                 </a>
 
-                <a routerLink="/kwalify" class="text-sm text-[#E0E0E0] font-semibold px-2 xl:px-3 py-2 rounded-lg
-                hover:bg-white/10 hover:text-[#417ae3]
-                transition-all duration-300">
-                    Product
-                </a>
+                <div class="relative group inline-block">
+
+                    <!-- Main Link -->
+                    <a class="flex items-center gap-1 text-sm text-[#E0E0E0] font-semibold px-2 xl:px-3 py-2 rounded-lg
+           hover:bg-white/10 hover:text-[#417ae3]
+           transition-all duration-300">
+
+                        Product
+
+                        <!-- Arrow Icon -->
+                        <mat-icon class="text-base transition-transform duration-300 group-hover:rotate-180">
+                            expand_more
+                        </mat-icon>
+
+                    </a>
+
+                    <!-- Dropdown -->
+                    <div class="absolute left-0 mt-2 p-2 w-48 bg-[#11193e] border border-white/10 rounded-xl shadow-lg
+           opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:rounded-xl
+           translate-y-2 group-hover:translate-y-0
+           transition-all duration-300 z-50">
+
+                        <a routerLink="/kwalify"
+                            class="block px-4 py-2 text-sm text-white hover:bg-white/10 hover:text-[#f0ca33] group-hover:rounded-lg">
+                            Kwalify
+                        </a>
+
+                        <a routerLink="/synthetic-gen"
+                            class="block px-4 py-2 text-sm text-white hover:bg-white/10 hover:text-[#f0ca33] group-hover:rounded-lg">
+                            SyntheticGen
+                        </a>
+
+                    </div>
+
+                </div>
 
                 <a routerLink="/news" class="text-sm text-[#E0E0E0] font-semibold px-2 xl:px-3 py-2 rounded-lg
                 hover:bg-white/10 hover:text-[#417ae3]
                 transition-all duration-300">
-                    News
+                    Resources
                 </a>
 
                 <a routerLink="/contact-us" class="text-sm text-[#E0E0E0] font-semibold px-2 xl:px-3 py-2 rounded-lg
@@ -79,10 +109,11 @@
     </div>
 
     <!-- Mobile Menu -->
-    <div class="absolute left-0 w-full h-screen lg:hidden
+    <div class="absolute left-0 w-full lg:hidden
 bg-[#0d1117] border-t border-white/10
-transition-all duration-500 ease-in-out"
-        [ngClass]="isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'">
+transition-all duration-500 ease-in-out" [ngClass]="isMenuOpen 
+  ? 'max-h-[calc(100vh-72px)] opacity-100 overflow-y-auto' 
+  : 'max-h-0 opacity-0 overflow-hidden'">
 
         <div class="flex flex-col px-4 sm:px-6 py-4 space-y-1">
 
@@ -106,14 +137,29 @@ transition-all duration-500 ease-in-out"
                 Our Services
             </a>
 
-            <a routerLink="/kwalify" (click)="closeMenu()" class="text-base text-[#E0E0E0] font-semibold px-4 py-3 rounded-lg
-        hover:bg-white/10 hover:text-[#417ae3] transition">
+            <!-- Mobile Product Dropdown -->
+            <button (click)="toggleMobileDropdown('product')" class="w-full text-left text-base text-white/80 font-semibold px-4 py-3 rounded-lg
+        hover:bg-white/10 hover:text-[#417ae3] transition flex items-center justify-between">
                 Product
-            </a>
+                <svg class="w-4 h-4" [ngClass]="{'rotate-180': mobileProductOpen}" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+            <div *ngIf="mobileProductOpen" class="pl-4 space-y-1">
+                <a routerLink="/kwalify" (click)="onMobileLinkClick()" class="block text-base text-secondary font-semibold px-4 py-2 rounded-lg
+            hover:bg-white/10 hover:text-[#417ae3] transition">
+                    Kwalify
+                </a>
+                <a routerLink="/synthetic-gen" (click)="onMobileLinkClick()" class="block text-base text-secondary font-semibold px-4 py-2 rounded-lg
+            hover:bg-white/10 hover:text-[#417ae3] transition">
+                    SyntheticGen
+                </a>
+            </div>
 
             <a routerLink="/news" (click)="onMobileLinkClick()" class="text-base text-[#E0E0E0] font-semibold px-4 py-3 rounded-lg
         hover:bg-white/10 hover:text-[#417ae3] transition">
-                News
+                Resources
             </a>
 
             <a routerLink="/contact-us" (click)="onMobileLinkClick()" class="text-base text-[#E0E0E0] font-semibold px-4 py-3 rounded-lg

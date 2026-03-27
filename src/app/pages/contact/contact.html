@@ -3,10 +3,11 @@
 
     <!-- Page Title -->
     <div class="text-center mb-7 text-white">
-      <h1 class="text-3xl md:text-5xl font-bold mb-4 font-heading">
-        Contact Us
-      </h1>
-      <p class="text-md text-gray-500 mb-6">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 font-heading">
+        Contact
+        <span class="text-secondary"> Us</span>
+      </h2>
+      <p class="text-white max-w-3xl mx-auto leading-relaxed mb-3 text-base md:text-lg lg:text-xl text-center font-semibold">
         Let’s discuss your data challenges.
       </p>
       <div class="w-20 h-1 bg-blue-600 mx-auto rounded-full"></div>
@@ -20,7 +21,7 @@
         <div class="mb-2">
           <p class="mb-2 font-medium text-sm">Name</p>
           <mat-form-field appearance="outline" class="w-full text-sm">
-            <input matInput formControlName="name" placeholder="Name"/>
+            <input matInput formControlName="name" placeholder="Name" />
           </mat-form-field>
 
           <p class="text-red-500 text-sm mt-1"
@@ -43,7 +44,7 @@
         <div class="mb-2">
           <p class="mb-2 font-medium text-sm">Work Email</p>
           <mat-form-field appearance="outline" class="w-full text-sm">
-            <input matInput type="email" formControlName="email" placeholder="Work Email"/>
+            <input matInput type="email" formControlName="email" placeholder="Work Email" />
           </mat-form-field>
 
           <p class="text-red-500 text-sm mt-1"
@@ -61,7 +62,7 @@
         <div class="mb-2">
           <p class="mb-2 font-medium text-sm">Organization</p>
           <mat-form-field appearance="outline" class="w-full text-sm">
-            <input matInput formControlName="organization" placeholder="Organization"/>
+            <input matInput formControlName="organization" placeholder="Organization" />
           </mat-form-field>
         </div>
 
@@ -103,30 +104,14 @@
         <div class="my-6">
           <button type="submit" [disabled]="isLoading" class="flex items-center justify-center gap-2 text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 cursor-pointer mx-auto w-fit hover:bg-primary hover:border-primary
            disabled:opacity-50 disabled:cursor-not-allowed"
-                style="background-color: var(--btn-primary-color); color: white;"
-                onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
-                onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
+            style="background-color: var(--btn-primary-color); color: white;"
+            onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
+            onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
             <p class="m-0" *ngIf="!isLoading">Send Message</p>
             <p class="m-0 text-white" *ngIf="isLoading">Sending Message...</p>
           </button>
         </div>
-
       </form>
-
-    </div>
-    <!-- DIRECT EMAIL SECTION -->
-    <div class="py-6">
-      <div class="max-w-3xl mx-auto px-4 text-center">
-
-        <h2 class="text-xl text-white font-semibold mb-4">
-          Prefer to email us directly?
-        </h2>
-
-        <a href="mailto:admin@care2data.com" class="text-blue-600 font-medium hover:underline">
-          admin@care2data.com
-        </a>
-
-      </div>
     </div>
   </div>
 </section>

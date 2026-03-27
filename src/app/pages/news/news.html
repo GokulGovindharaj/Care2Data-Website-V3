@@ -2,19 +2,20 @@
     <!-- Page Title -->
     <div class="text-center text-white px-4 sm:px-6 lg:px-8 ">
         <h1 class="text-3xl md:text-5xl font-bold font-heading mb-4">
-            News
+            Resources
         </h1>
-        <p class="text-md text-gray-500 mb-6">
+        <p
+            class="text-white max-w-3xl mx-auto leading-relaxed mb-3 text-base md:text-lg lg:text-xl text-center font-semibold">
             Updates, research, and perspectives from Care2Data.
         </p>
         <div class="w-20 h-1 bg-blue-600 mx-auto rounded-full"></div>
     </div>
 </section>
 
-<section class="py-8 md:py-12 bg-[#102c50]">
+<section class="py-8 bg-[#102c50]">
 
     <div class="mx-auto max-w-7xl space-y-12 px-5 md:px-6">
-        <div class="mb-8 flex flex-wrap gap-4 pb-2">
+        <div class="mb-5 flex flex-wrap gap-4 pb-2">
             <button *ngFor="let c of categories" (click)="selectedCategory = c.value" [ngClass]="selectedCategory === c.value 
       ? 'border-b-2 border-primary text-primary font-bold'
       : 'text-slate-500 hover:text-primary font-medium'"
@@ -54,7 +55,7 @@
     </div>
 
     <!-- Pagination -->
-    <div *ngIf="articles.length > pageSize" class="mt-10 flex items-center justify-center gap-3">
+    <div *ngIf="articles.length > pageSize" class="mt-5 flex items-center justify-center gap-3">
         <!-- Prev -->
         <button (click)="prevPage()" [disabled]="currentPage === 1"
             [ngClass]="currentPage === 1 ? 'opacity-40 cursor-not-allowed' : 'cursor-pointer hover:bg-primary'"

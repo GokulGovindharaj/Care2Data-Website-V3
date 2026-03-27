@@ -4,19 +4,21 @@ import { About } from './pages/about/about';
 import { Contact } from './pages/contact/contact';
 import { Careers } from './pages/careers/careers';
 import { KnowledgeServices } from './pages/knowledge-services/knowledge-services';
-import { Product } from './pages/product/product';
+import { Kwalify } from './pages/kwalify/kwalify';
 import { News } from './pages/news/news';
 import { Engagement } from './pages/engagement/engagement';
+import { SyntheticGen } from './pages/synthetic-gen/synthetic-gen';
 
 export const routes: Routes = [
   { path: '', component: Home },
   { path: 'about-us', component: About },
   { path: 'contact-us', component: Contact },
   { path: 'careers', component: Careers },
-  { path: 'kwalify', component: Product },
+  { path: 'kwalify', component: Kwalify },
   { path: 'knowledge-services', component: KnowledgeServices },
   { path: 'news', component: News },
   { path: 'engagement-models', component: Engagement },
+  { path: 'synthetic-gen', component: SyntheticGen },
   // Wildcard MUST be last
   { path: '**', redirectTo: '' }
 ];

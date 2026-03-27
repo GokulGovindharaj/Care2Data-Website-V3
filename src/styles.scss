@@ -30,7 +30,7 @@ body {
   --btn-primary-color: #3d7ffc;
   --btn-secondary-color: #ffffff;
 
-  --container-6xl: 85rem;
+  --container-7xl: 90rem;
   --background-color: #fafafa;
 
   --c1: #f5c842;
@@ -72,9 +72,17 @@ body {
   color: var(--secondary-color);
 }
 
+.btn-primary {
+  background-color: var(--btn-primary-color);
+}
+
+.btn-secondary {
+  background-color: var(--btn-secondary-color);
+}
+
 /* Container */
-.max-w-6xl {
-  max-width: var(--container-6xl);
+.max-w-7xl {
+  max-width: var(--container-7xl);
 }
 
 /* Section Background */
@@ -106,7 +114,7 @@ a mat-icon,
 button mat-icon {
   font-size: 20px !important;
   width: 22px !important;
-  height: 22px !important;
+  height: 16px !important;
 }
 
 
@@ -184,19 +192,19 @@ button mat-icon {
   border-radius: 12px !important;
 }
 
-.mat-expansion-panel-header {
-  border-radius: inherit !important;
-  margin: 4px;
-  height: 35px !important;
-}
+// .mat-expansion-panel-header {
+//   border-radius: inherit !important;
+//   margin: 4px;
+//   height: 35px !important;
+// }
 
-.mat-accordion .mat-expansion-panel {
-  margin-bottom: 8px !important;
-}
+// .mat-accordion .mat-expansion-panel {
+//   margin-bottom: 8px !important;
+// }
 
-.mat-accordion .mat-expansion-panel:last-child {
-  margin-bottom: 0 !important;
-}
+// .mat-accordion .mat-expansion-panel:last-child {
+//   margin-bottom: 0 !important;
+// }
 
 /* Reduce mat-form-field height */
 .mat-mdc-form-field {
@@ -225,7 +233,6 @@ textarea.mat-mdc-input-element {
   padding: 4px 0 !important;
 }
 
-
 @keyframes float {
   0% {
     transform: translateY(0px);
@@ -242,4 +249,34 @@ textarea.mat-mdc-input-element {
 
 .hero-float {
   animation: float 6s ease-in-out infinite;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.example-headers-align .mat-mdc-form-field+.mat-mdc-form-field {
+    margin-left: 8px;
+}
+
+.mat-expansion-panel {
+    background-color: #ffffff;
+    box-shadow: none !important;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px !important;
+}
+
+.mat-expansion-panel mat-icon {
+    font-size: 17px;
+    padding: 3px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
