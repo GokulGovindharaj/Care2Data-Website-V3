@@ -37,39 +37,9 @@
                 <!-- Outcome Strip -->
                 <div class="mt-5 border-y border-white/10 py-6">
 
-                    <div class="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
-
-                        <!-- Item 1 -->
-                        <div class="flex items-center gap-3">
-                            <mat-icon class="text-[#417AE3] text-2xl">check_circle</mat-icon>
-                            <span class="text-sm md:text-base lg:text-lg text-gray-300">
-                                Fewer queries
-                            </span>
-                        </div>
-
-                        <!-- Divider -->
-                        <div class="hidden md:block h-6 w-px bg-white/10"></div>
-
-                        <!-- Item 2 -->
-                        <div class="flex items-center gap-3">
-                            <mat-icon class="text-[#417AE3] text-2xl">bolt</mat-icon>
-                            <span class="text-sm md:text-base lg:text-lg text-gray-300">
-                                Faster validation cycles
-                            </span>
-                        </div>
-
-                        <!-- Divider -->
-                        <div class="hidden md:block h-6 w-px bg-white/10"></div>
-
-                        <!-- Item 3 -->
-                        <div class="flex items-center gap-3">
-                            <mat-icon class="text-[#417AE3] text-2xl">verified</mat-icon>
-                            <span class="text-sm md:text-base lg:text-lg text-gray-300">
-                                Enterprise-grade submission confidence
-                            </span>
-                        </div>
-
-                    </div>
+                    <p class="text-xs sm:text-xl font-senibold tracking-wider uppercase font-medium text-yellow-400">
+                        Fewer queries • Faster validation cycles • Higher accuracy
+                    </p>
 
                 </div>
 
@@ -175,19 +145,19 @@
                 <ul class="space-y-4 text-white text-base md:text-lg">
                     <li class="flex gap-3">
                         <span class="w-2 h-2 mt-2 bg-red-400 rounded-full"></span>
-                        Applies semantic, context-aware validation across linked datasets
+                        Semantic and reasoning-driven
                     </li>
                     <li class="flex gap-3">
                         <span class="w-2 h-2 mt-2 bg-red-400 rounded-full"></span>
-                        Generates explainable insights—not just pass/fail outcomes
+                        Generates explainable insights
                     </li>
                     <li class="flex gap-3">
                         <span class="w-2 h-2 mt-2 bg-red-400 rounded-full"></span>
-                        Automates root cause analysis with AI-assisted reasoning
+                        Provides accurate recommended fix
                     </li>
                     <li class="flex gap-3">
                         <span class="w-2 h-2 mt-2 bg-red-400 rounded-full"></span>
-                        Enables cross-domain intelligence and impact-aware validation
+                        Context awareness based validation
                     </li>
                 </ul>
                 <!-- Divider -->
@@ -259,8 +229,8 @@
                     [ngStyle]="getStyles(i)">
 
                     <!-- Icon -->
-                    <div class="mb-1 w-8 h-8 flex items-center justify-center rounded-lg bg-primary">
-                        <mat-icon class="text-[#417AE3] text-xl">{{ card.icon }}</mat-icon>
+                    <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0">
+                        <img [src]="card.icon" alt="" class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
                     </div>
 
                     <!-- Title -->
@@ -327,7 +297,7 @@
                 KWALIFY™ operates as an intelligence layer across submission datasets.
             </p>
         </div>
-        <div class="max-w-6xl mx-auto">
+        <div class="ml-5 md:ml-10">
             <style>
                 .node-group .tooltip {
                     opacity: 0;
@@ -363,7 +333,13 @@
                 }
             </style>
             <svg width="100%" viewBox="0 0 620 300" xmlns="http://www.w3.org/2000/svg">
-                <!-- ✅ FLOW PATH (FULL CONNECTED PATH) -->
+
+                <!-- ✅ ARROW SHAPE FOR ANIMATION -->
+                <defs>
+                    <polygon id="arrowShape" points="0,-5 10,0 0,5" fill="#2F6FE8" />
+                </defs>
+
+                <!-- ✅ FLOW PATH -->
                 <path id="flowPath" d="
         M118 70 H242
         M298 70 H422
@@ -377,12 +353,12 @@
                     <animate attributeName="stroke-dashoffset" from="0" to="-100" dur="10s" repeatCount="indefinite" />
                 </path>
 
-                <!-- ✅ MOVING BUBBLE -->
-                <circle r="5" fill="#2F6FE8">
+                <!-- ✅ MOVING ARROW -->
+                <use href="#arrowShape">
                     <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
                         <mpath href="#flowPath" />
                     </animateMotion>
-                </circle>
+                </use>
                 <defs>
                     <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6"
                         orient="auto-start-reverse">
@@ -392,42 +368,36 @@
                 </defs>
 
                 <!-- ── Row 1 line ── -->
-                <line class="flow-line" x1="118" y1="70" x2="242" y2="70" stroke="#2F6FE8" stroke-width="2"
+                <line class="flow-line" x1="118" y1="70" x2="242" y2="70" stroke="#f0ca33" stroke-width="2"
                     stroke-linecap="round" />
-                <line class="flow-line" x1="298" y1="70" x2="422" y2="70" stroke="#2F6FE8" stroke-width="2"
+                <line class="flow-line" x1="298" y1="70" x2="422" y2="70" stroke="#f0ca33" stroke-width="2"
                     stroke-linecap="round" />
 
                 <!-- ── Right U-curve ── -->
-                <path class="flow-line" d="M 450 70 Q 570 70 570 112 Q 570 155 450 155" fill="none" stroke="#2F6FE8"
+                <path class="flow-line" d="M 450 70 Q 570 70 570 112 Q 570 155 450 155" fill="none" stroke="#f0ca33"
                     stroke-width="2" stroke-linecap="round" />
 
                 <!-- ── Middle connector ── -->
-                <line class="flow-line" x1="450" y1="155" x2="90" y2="155" stroke="#2F6FE8" stroke-width="2"
+                <line class="flow-line" x1="450" y1="155" x2="90" y2="155" stroke="#f0ca33" stroke-width="2"
                     stroke-linecap="round" />
 
                 <!-- ── Left U-curve ── -->
-                <path class="flow-line" d="M 90 155 Q 15 155 15 188 Q 15 220 90 220" fill="none" stroke="#2F6FE8"
+                <path class="flow-line" d="M 90 155 Q 15 155 15 188 Q 15 220 90 220" fill="none" stroke="#f0ca33"
                     stroke-width="2" stroke-linecap="round" />
 
                 <!-- ── Row 2 line ── -->
-                <line class="flow-line" x1="118" y1="220" x2="242" y2="220" stroke="#2F6FE8" stroke-width="2"
+                <line class="flow-line" x1="118" y1="220" x2="242" y2="220" stroke="#f0ca33" stroke-width="2"
                     stroke-linecap="round" />
 
                 <!-- ════ NODE 1: Submission Dataset Ingestion ════ -->
                 <g class="node-group">
                     <circle cx="90" cy="70" r="28" fill="white" stroke="#2F6FE8" stroke-width="1.8" />
-                    <ellipse cx="90" cy="62" rx="10" ry="3.5" fill="none" stroke="#2F6FE8" stroke-width="1.4" />
-                    <line x1="80" y1="62" x2="80" y2="74" stroke="#2F6FE8" stroke-width="1.4" />
-                    <line x1="100" y1="62" x2="100" y2="74" stroke="#2F6FE8" stroke-width="1.4" />
-                    <ellipse cx="90" cy="74" rx="10" ry="3.5" fill="none" stroke="#2F6FE8" stroke-width="1.4" />
-                    <line x1="90" y1="52" x2="90" y2="60" stroke="#2F6FE8" stroke-width="1.4" stroke-linecap="round" />
-                    <polyline points="86,56 90,52 94,56" fill="none" stroke="#2F6FE8" stroke-width="1.4"
-                        stroke-linecap="round" stroke-linejoin="round" />
+                    <image href="images/kwalify/black/storage.png" x="78" y="58" width="25" height="25" />
                     <rect x="18" y="105" width="150" height="34" rx="11" fill="white" stroke="#2F6FE8"
                         stroke-width="1.2" />
-                    <text font-size="7" x="90" y="118" text-anchor="middle" fill="#2F6FE8">Submission
+                    <text font-size="7" x="90" y="118" text-anchor="middle" fill="#222">Submission
                         Dataset</text>
-                    <text font-size="7" x="90" y="131" text-anchor="middle" fill="#2F6FE8">Ingestion</text>
+                    <text font-size="7" x="90" y="131" text-anchor="middle" fill="#222">Ingestion</text>
 
                     <!-- Tooltip -->
                     <foreignObject x="10" y="0" width="200" height="90" class="tooltip">
@@ -447,15 +417,12 @@
                 <!-- ════ NODE 2: Regulatory Rule Validation ════ -->
                 <g class="node-group">
                     <circle cx="270" cy="70" r="28" fill="white" stroke="#2F6FE8" stroke-width="1.8" />
-                    <path d="M270 55 Q280 57 280 66 Q280 75 270 81 Q260 75 260 66 Q260 57 270 55Z" fill="none"
-                        stroke="#2F6FE8" stroke-width="1.5" />
-                    <polyline points="264,67 268,72 277,62" fill="none" stroke="#2F6FE8" stroke-width="1.6"
-                        stroke-linecap="round" stroke-linejoin="round" />
+                    <image href="images/kwalify/black/qa.png" x="258" y="58" width="25" height="25" />
                     <rect x="198" y="105" width="150" height="34" rx="11" fill="white" stroke="#2F6FE8"
                         stroke-width="1.2" />
-                    <text font-size="7" x="270" y="118" text-anchor="middle" fill="#2F6FE8">Regulatory
+                    <text font-size="7" x="270" y="118" text-anchor="middle" fill="#222">Regulatory
                         Rule</text>
-                    <text font-size="7" x="270" y="131" text-anchor="middle" fill="#2F6FE8">Validation</text>
+                    <text font-size="7" x="270" y="131" text-anchor="middle" fill="#222">Validation</text>
                     <!-- Tooltip -->
                     <foreignObject x="190" y="0" width="200" height="90" class="tooltip">
                         <div xmlns="http://www.w3.org/1999/xhtml" class="tooltip-card">
@@ -473,15 +440,12 @@
                 <!-- ════ NODE 3: Cross-Domain Contextual Validation ════ -->
                 <g class="node-group">
                     <circle cx="450" cy="70" r="28" fill="white" stroke="#2F6FE8" stroke-width="1.8" />
-                    <circle cx="444" cy="68" r="10" fill="none" stroke="#2F6FE8" stroke-width="1.4" />
-                    <circle cx="456" cy="68" r="10" fill="none" stroke="#2F6FE8" stroke-width="1.4" />
-                    <line x1="450" y1="80" x2="450" y2="86" stroke="#2F6FE8" stroke-width="1.3"
-                        stroke-linecap="round" />
+                    <image href="images/kwalify/black/knowledgemodeling.png" x="438" y="58" width="25" height="25" />
                     <rect x="373" y="105" width="150" height="34" rx="11" fill="white" stroke="#2F6FE8"
                         stroke-width="1.2" />
-                    <text font-size="7" x="450" y="118" text-anchor="middle" fill="#2F6FE8">Cross-Domain
+                    <text font-size="7" x="450" y="118" text-anchor="middle" fill="#222">Cross-Domain
                         Contextual</text>
-                    <text font-size="7" x="450" y="131" text-anchor="middle" fill="#2F6FE8">Validation</text>
+                    <text font-size="7" x="450" y="131" text-anchor="middle" fill="#222">Validation</text>
                     <!-- Tooltip -->
                     <foreignObject x="360" y="0" width="200" height="90" class="tooltip">
                         <div xmlns="http://www.w3.org/1999/xhtml" class="tooltip-card">
@@ -505,25 +469,19 @@
                 </g>
 
                 <!-- ════ NODE 4: AI-Assisted Root Cause Analysis ════ -->
-                <!-- ════ NODE 4: AI-Assisted Root Cause Analysis ════ -->
                 <g class="node-group">
                     <!-- Circle CENTER aligned to row -->
                     <circle cx="90" cy="220" r="28" fill="white" stroke="#2F6FE8" stroke-width="1.8" />
 
-                    <!-- Icon centered inside circle -->
-                    <rect x="80" y="212" width="20" height="16" rx="3" fill="none" stroke="#2F6FE8"
-                        stroke-width="1.4" />
-                    <line x1="84" y1="212" x2="84" y2="209" stroke="#2F6FE8" stroke-width="1.2" />
-                    <line x1="90" y1="212" x2="90" y2="209" stroke="#2F6FE8" stroke-width="1.2" />
-                    <line x1="96" y1="212" x2="96" y2="209" stroke="#2F6FE8" stroke-width="1.2" />
+                    <image href="images/kwalify/black/datasetsubmission.png" x="78" y="208" width="25" height="25" />
 
                     <!-- Label directly below -->
                     <rect x="18" y="255" width="150" height="34" rx="11" fill="white" stroke="#2F6FE8"
                         stroke-width="1.2" />
-                    <text font-size="7" x="90" y="268" text-anchor="middle" fill="#2F6FE8">
+                    <text font-size="7" x="90" y="268" text-anchor="middle" fill="#222">
                         AI-Assisted Root Cause
                     </text>
-                    <text font-size="7" x="90" y="281" text-anchor="middle" fill="#2F6FE8">
+                    <text font-size="7" x="90" y="281" text-anchor="middle" fill="#222">
                         Analysis
                     </text>
 
@@ -560,10 +518,7 @@
                 <g class="node-group" transform="translate(0,-60)">
                     <circle cx="270" cy="280" r="28" fill="#2F6FE8" stroke="#2F6FE8" stroke-width="1.8" />
 
-                    <circle cx="267" cy="277" r="9" fill="none" stroke="white" stroke-width="1.6" />
-                    <line x1="274" y1="284" x2="280" y2="290" stroke="white" stroke-width="2" stroke-linecap="round" />
-                    <polyline points="260,277 263,273 266,279 269,274 272,277" fill="none" stroke="white"
-                        stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+                    <image href="images/kwalify/white/anomoliesdetect.png" x="258" y="268" width="25" height="25" />
 
                     <rect x="198" y="316" width="150" height="34" rx="11" fill="#2F6FE8" stroke="#2F6FE8" />
 
@@ -636,8 +591,9 @@
         <div class="grid md:grid-cols-2 gap-8 mb-5">
 
             <div class="flex items-center gap-4">
-                <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-white text-xl">
-                    <mat-icon>monitoring</mat-icon>
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0 mb-2">
+                    <img src="images/kwalify/white/undervalidation.png" alt=""
+                        class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
                 </div>
                 <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed">
                     Active studies under validation
@@ -645,8 +601,9 @@
             </div>
 
             <div class="flex items-center gap-4">
-                <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-white text-xl">
-                    <mat-icon>check_circle</mat-icon>
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0 mb-2">
+                    <img src="images/kwalify/white/compliancestatus.png" alt=""
+                        class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
                 </div>
                 <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed">
                     Rule compliance status
@@ -654,8 +611,9 @@
             </div>
 
             <div class="flex items-center gap-4">
-                <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-white text-xl">
-                    <mat-icon>timeline</mat-icon>
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0 mb-2">
+                    <img src="images/kwalify/white/validationprogress.png" alt=""
+                        class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
                 </div>
                 <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed">
                     Validation progress milestones
@@ -663,8 +621,9 @@
             </div>
 
             <div class="flex items-center gap-4">
-                <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-white text-xl">
-                    <mat-icon>report</mat-icon>
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0 mb-2">
+                    <img src="images/kwalify/white/domainlevelviolation.png" alt=""
+                        class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
                 </div>
                 <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed">
                     Domain-level violation summaries
@@ -672,8 +631,9 @@
             </div>
 
             <div class="flex items-center gap-4">
-                <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-white text-xl">
-                    <mat-icon>insights</mat-icon>
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0 mb-2">
+                    <img src="images/kwalify/white/validationtrend.png" alt=""
+                        class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
                 </div>
                 <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed">
                     Validation trend analysis across multiple runs
@@ -681,8 +641,9 @@
             </div>
 
             <div class="flex items-center gap-4">
-                <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-white text-xl">
-                    <mat-icon>group</mat-icon>
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0 mb-2">
+                    <img src="images/kwalify/white/dataintegrity.png" alt=""
+                        class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
                 </div>
                 <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed">
                     Intelligent grouping of related errors and prioritization
@@ -739,11 +700,12 @@
 
             <!-- Card 1 -->
             <div class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition duration-300">
-                <div class="mb-4 w-12 h-12 flex items-center justify-center rounded-xl bg-primary text-white text-xl">
-                    <mat-icon>verified_user</mat-icon>
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0 mb-2">
+                    <img src="images/kwalify/white/strengtheneddataintegrity.png" alt=""
+                        class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
                 </div>
                 <h3
-                    class="text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-3 lg:h-12">
+                    class="text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-3 lg:h-18 xl:h-12">
                     Strengthened Data Integrity
                 </h3>
                 <p class="text-base md:text-lg lg:text-xl leading-relaxed">
@@ -753,11 +715,12 @@
 
             <!-- Card 2 -->
             <div class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition duration-300">
-                <div class="mb-4 w-12 h-12 flex items-center justify-center rounded-xl bg-primary text-white text-xl">
-                    <mat-icon>speed</mat-icon>
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0 mb-2">
+                    <img src="images/kwalify/white/fastervalidation.png" alt=""
+                        class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
                 </div>
                 <h3
-                    class="text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-3 lg:h-12">
+                    class="text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-3 lg:h-18 xl:h-12">
                     Faster Validation Cycles</h3>
                 <p class="text-base md:text-lg lg:text-xl leading-relaxed">
                     AI-assisted investigation using LLM models reduces manual debugging and accelerates issue
@@ -769,11 +732,12 @@
 
             <!-- Card 3 -->
             <div class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition duration-300">
-                <div class="mb-4 w-12 h-12 flex items-center justify-center rounded-xl bg-primary text-white text-xl">
-                    <mat-icon>assignment_turned_in</mat-icon>
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0 mb-2">
+                    <img src="images/kwalify/white/xai.png" alt=""
+                        class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
                 </div>
                 <h3
-                    class="text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-3 lg:h-12">
+                    class="text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-3 lg:h-18 xl:h-12">
                     Reduced Regulatory Queries</h3>
                 <p class="text-base md:text-lg lg:text-xl leading-relaxed">
                     Explainable AI validation outputs improve clarity and traceability in submissions.
@@ -782,11 +746,12 @@
 
             <!-- Card 4 -->
             <div class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition duration-300">
-                <div class="mb-4 w-12 h-12 flex items-center justify-center rounded-xl bg-primary text-white text-xl">
-                    <mat-icon>public</mat-icon>
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0 mb-2">
+                    <img src="images/kwalify/white/scalability.png" alt=""
+                        class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
                 </div>
                 <h3
-                    class="text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-3 lg:h-12">
+                    class="text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-3 lg:h-18 xl:h-12">
                     Enterprise Scalability</h3>
                 <p class="text-base md:text-lg lg:text-xl leading-relaxed">
                     KWALIFY™ scales across therapeutic areas, studies, and global trial programs without increasing
@@ -831,8 +796,9 @@
         <div class="grid md:grid-cols-2 gap-4 mb-5">
 
             <div class="flex items-center gap-4 p-4">
-                <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-white text-xl">
-                    <mat-icon>block</mat-icon>
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0 mb-2">
+                    <img src="images/kwalify/white/crossdataset.png" alt=""
+                        class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
                 </div>
                 <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed">
                     Limited cross-dataset reasoning
@@ -840,8 +806,9 @@
             </div>
 
             <div class="flex items-center gap-4 p-4">
-                <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-white text-xl">
-                    <mat-icon>settings</mat-icon>
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0 mb-2">
+                    <img src="images/kwalify/white/knowledgegraph.png" alt=""
+                        class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
                 </div>
                 <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed">
                     Lack of contextual validation logic
@@ -849,8 +816,9 @@
             </div>
 
             <div class="flex items-center gap-4 p-4">
-                <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-white text-xl">
-                    <mat-icon>help</mat-icon>
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0 mb-2">
+                    <img src="images/kwalify/white/issueresolution.png" alt=""
+                        class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
                 </div>
                 <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed">
                     Minimal guidance for issue resolution
@@ -858,8 +826,9 @@
             </div>
 
             <div class="flex items-center gap-4 p-4">
-                <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-white text-xl">
-                    <mat-icon>visibility</mat-icon>
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0 mb-2">
+                    <img src="images/kwalify/white/fragmentedvisibility.png" alt=""
+                        class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
                 </div>
                 <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed">
                     Fragmented visibility across studies
@@ -955,7 +924,7 @@
     hover:-translate-y-2 hover:shadow-xl hover:border-primary">
                     <!-- Body -->
                     <div class="p-5 flex flex-col flex-1">
-                        <h3 class="text-lg lg:text-2xl font-semibold text-primary mb-2">
+                        <h3 class="text-base md:text-lg lg:text-xl font-semibold text-primary mb-2 h-12 max-w-3xl">
                             Knowledge-Driven Validation Framework
                         </h3>
                         <p class="text-base md:text-md text-black leading-relaxed flex-1">
@@ -977,7 +946,7 @@
               bg-white rounded-2xl border shadow-sm flex flex-col transition-all duration-300 ease-out
     hover:-translate-y-2 hover:shadow-xl hover:border-primary">
                     <div class="p-5 flex flex-col flex-1">
-                        <h3 class="text-base md:text-lg lg:text-xl font-semibold text-primary leading-snug mb-2">
+                        <h3 class="text-base md:text-lg lg:text-xl font-semibold text-primary mb-2 h-12 max-w-3xl">
                             Linked Clinical Data Model
                         </h3>
                         <p class="text-base md:text-md text-black leading-relaxed flex-1">
@@ -991,7 +960,7 @@
               bg-white rounded-2xl border shadow-sm flex flex-col transition-all duration-300 ease-out
     hover:-translate-y-2 hover:shadow-xl hover:border-primary">
                     <div class="p-5 flex flex-col flex-1">
-                        <h3 class="text-base md:text-lg lg:text-xl font-semibold text-primary leading-snug mb-2">
+                        <h3 class="text-base md:text-lg lg:text-xl font-semibold text-primary mb-2 h-12 max-w-3xl">
                             Embedded Semantic Intelligence
                         </h3>
                         <p class="text-base md:text-md text-black leading-relaxed flex-1">
@@ -1005,7 +974,7 @@
               bg-white rounded-2xl border shadow-sm flex flex-col transition-all duration-300 ease-out
     hover:-translate-y-2 hover:shadow-xl hover:border-primary">
                     <div class="p-5 flex flex-col flex-1">
-                        <h3 class="text-base md:text-lg lg:text-xl font-semibold text-primary leading-snug mb-2">
+                        <h3 class="text-base md:text-lg lg:text-xl font-semibold text-primary mb-2 h-12 max-w-3xl">
                             Audit-Ready Architecture
                         </h3>
                         <p class="text-base md:text-md text-black leading-relaxed flex-1">
@@ -1020,7 +989,7 @@
               bg-white rounded-2xl border shadow-sm flex flex-col transition-all duration-300 ease-out
     hover:-translate-y-2 hover:shadow-xl hover:border-primary">
                     <div class="p-5 flex flex-col flex-1">
-                        <h3 class="text-base md:text-lg lg:text-xl font-semibold text-primary leading-snug mb-2">
+                        <h3 class="text-base md:text-lg lg:text-xl font-semibold text-primary mb-2 h-12 max-w-3xl">
                             Governance-Aligned Deployment
                         </h3>
                         <p class="text-base md:text-md text-black leading-relaxed flex-1">
@@ -1066,13 +1035,13 @@
             <div
                 class="group bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white hover:text-black transition duration-300">
 
-                <div
-                    class="mb-4 w-12 h-12 flex items-center justify-center rounded-xl bg-primary group-hover:bg-black/10 transition">
-                    <mat-icon class="text-white group-hover:text-primary">groups</mat-icon>
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0 mb-2">
+                    <img src="images/kwalify/white/croleadership.png" alt=""
+                        class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
                 </div>
 
                 <h3
-                    class="text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-3 lg:h-12">
+                    class="text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-3 lg:h-18 xl:h-12">
                     CRO Leadership
                 </h3>
 
@@ -1086,13 +1055,13 @@
             <div
                 class="group bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white hover:text-black transition duration-300">
 
-                <div
-                    class="mb-4 w-12 h-12 flex items-center justify-center rounded-xl bg-primary group-hover:bg-black/10 transition">
-                    <mat-icon class="text-white group-hover:text-primary">biotech</mat-icon>
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0 mb-2">
+                    <img src="images/kwalify/white/pharmaceutical.png" alt=""
+                        class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
                 </div>
 
                 <h3
-                    class="text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-3 lg:h-12">
+                    class="text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-3 lg:h-18 xl:h-12">
                     Pharmaceutical & Biotech Sponsors
                 </h3>
 
@@ -1106,13 +1075,13 @@
             <div
                 class="group bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white hover:text-black transition duration-300">
 
-                <div
-                    class="mb-4 w-12 h-12 flex items-center justify-center rounded-xl bg-primary group-hover:bg-black/10 transition">
-                    <mat-icon class="text-white group-hover:text-primary">analytics</mat-icon>
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0 mb-2">
+                    <img src="images/kwalify/white/clinicalprogrammer.png" alt=""
+                        class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
                 </div>
 
                 <h3
-                    class="text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-3 lg:h-12">
+                    class="text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-3 lg:h-18 xl:h-12">
                     Clinical Data Managers & SAS Programmers
                 </h3>
 
@@ -1126,13 +1095,13 @@
             <div
                 class="group bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white hover:text-black transition duration-300">
 
-                <div
-                    class="mb-4 w-12 h-12 flex items-center justify-center rounded-xl bg-primary group-hover:bg-black/10 transition">
-                    <mat-icon class="text-white group-hover:text-primary">verified_user</mat-icon>
+                <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0 mb-2">
+                    <img src="images/kwalify/white/qa.png" alt=""
+                        class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
                 </div>
 
                 <h3
-                    class="text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-3 lg:h-12">
+                    class="text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-3 lg:h-18 xl:h-12">
                     QA and Regulatory Teams
                 </h3>
 
@@ -1553,7 +1522,7 @@
         </div>
         <p class="text-white max-w-7xl mx-auto text-center mt-5 opacity-50">Still have questions?</p>
         <div class="mt-2 text-center gap-2 flex flex-col sm:flex-row justify-center">
-            <button
+            <button routerLink="/contact-us"
                 class="inline-flex items-center cursor-pointer gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
                 style="background-color: var(--btn-primary-color); color: #fff;"
                 onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"

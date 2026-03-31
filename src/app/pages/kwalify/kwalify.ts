@@ -142,13 +142,13 @@ export class Kwalify {
   isTablet = false;
   cards = [
     {
-      icon: 'psychology',
+      icon: 'images/home/white/context-aware.png',
       title: 'Context-Aware Validation',
       subtitle: `KWALIFY™ evaluates relationships across domains, variables, and study logic—moving beyond isolated rule checks.`,
       description1: "Validation logic understands study structure, regulatory expectations, and cross-dataset dependencies."
     },
     {
-      icon: 'manage_search',
+      icon: 'images/about/white/xai.png',
       title: 'Explainable AI',
       subtitle: 'For every validation finding, KWALIFY™ generates:',
       list: [
@@ -156,23 +156,22 @@ export class Kwalify {
         'Root cause explanation',
         'Impact analysis',
         'Recommended remediation'
-      ],
-      // footer: `This transforms validation from manual investigation into guided resolution.`
+      ]
     },
     {
-      icon: 'settings',
+      icon: 'images/kwalify/white/compliancerules.png',
       title: 'Customizable Compliance Rules',
       subtitle: `Beyond regulatory rule libraries, teams can configure study-specific validation rules to enforce additional compliance requirements—ensuring quality, integrity, and conformance alongside regulatory checks.`,
       description1: "This enables organizations to apply internal governance standards alongside regulatory checks."
     },
     {
-      icon: 'analytics',
+      icon: 'images/about/white/traceability.png',
       title: 'Traceable by Design',
       subtitle: `Validation lineage, rule logic, and investigation trails are embedded into the architecture.`,
       description1: "Every validation outcome is traceable—supporting regulatory inspections and internal QA review."
     },
     {
-      icon: 'hub',
+      icon: 'images/home/white/ecosystem.png',
       title: 'Works Within Your Ecosystem',
       subtitle: 'KWALIFY integrates seamlessly with existing clinical systems including:',
       list: [

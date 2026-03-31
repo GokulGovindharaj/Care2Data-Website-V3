@@ -1,5 +1,28 @@
 <!-- Hero Section -->
 <section class="relative min-h-screen flex items-center bg-[#11193e] overflow-hidden">
+  <!-- 🔥 Animated Background Lines -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none z-0"
+     xmlns="http://www.w3.org/2000/svg"
+     preserveAspectRatio="none">
+
+  <defs>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c9862a" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#c9862a" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#c9862a" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Horizontal lines -->
+  <path d="M0 100 H100%" class="bg-line"/>
+  <path d="M0 250 H100%" class="bg-line"/>
+  <path d="M0 400 H100%" class="bg-line"/>
+  <path d="M0 550 H100%" class="bg-line"/>
+
+  <!-- Diagonal flow -->
+  <path d="M0 0 L100% 300" class="bg-line slow"/>
+  <path d="M0 300 L100% 600" class="bg-line slow"/>
+</svg>
   <!-- Content Container -->
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 py-16 items-center">
@@ -636,7 +659,7 @@
 
     <!-- Heading -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div class="space-y-5 mb-12">
+      <div class="space-y-5 mb-5">
         <h2
           class="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-left mb-5 text-yellow-400 leading-tight max-w-3xl">
           <span style="color: #fff">Where Validation</span> Becomes Intelligence
@@ -666,48 +689,59 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
       <div
-        class="bg-white/5 rounded-md border-r border-b border-gray-100 shadow-lg hover:shadow-xl hover:bg-white/10 transition-all duration-500 ease-out overflow-hidden">
-        <div class="bg-white px-4 py-3 border-b border-red-100">
+        class="bg-white/5 rounded-md border-r border-b border-gray-100 shadow-lg hover:shadow-xl transition-all duration-500 ease-out overflow-hidden">
+        <div class="bg-white px-4 py-3 border-r border-b border-gray-100">
           <h3 class="text-base md:text-lg lg:text-xl font-bold text-primary">
             Most systems...
           </h3>
         </div>
 
-        <ul class="divide-y divide-gray-100 text-base md:text-sm lg:text-xl">
+        <ul class="divide-y divide-gray-100 text-base md:text-sm lg:text-md xl:text-lg">
           <li class="px-4 py-3 text-white flex items-center border-l-4 border-b border-gray-100">
+            <img src="images/home/white/executescripts.png" alt="" class="w-7 h-7 md:w-10 md:h-10 object-contain flex-shrink-0 mr-2">
             Execute static scripts
           </li>
           <li class="px-4 py-3 text-white flex items-center border-l-4 border-b border-gray-100">
+            <img src="images/home/white/pass.png" alt="" class="w-7 h-7 md:w-10 md:h-10 object-contain flex-shrink-0 mr-2">
             Return pass/fail flags only
           </li>
           <li class="px-4 py-3 text-white flex items-center border-l-4 border-b border-gray-100">
+            <img src="images/home/white/humans.png" alt="" class="w-7 h-7 md:w-10 md:h-10 object-contain flex-shrink-0 mr-2">
             Push root-cause analysis back to humans
           </li>
           <li class="px-4 py-3 text-white flex items-center border-l-4 border-b-0 border-gray-100">
+            <img src="images/home/white/danger.png" alt="" class="w-7 h-7 md:w-10 md:h-10 object-contain flex-shrink-0 mr-2">
             Offer no context, no reasoning, no insight
           </li>
         </ul>
       </div>
 
       <div
-        class="bg-white/5 rounded-md border border-gray-100 shadow-lg hover:shadow-xl hover:bg-white/10 transition-all duration-500 ease-out overflow-hidden">
-        <div class="bg-white px-4 py-3 border-b border-[#2d7a71]">
+        class="bg-white/5 rounded-md border-r border-b border-gray-100 shadow-lg hover:shadow-xl transition-all duration-500 ease-out overflow-hidden">
+        <div class="bg-white px-4 py-3 border-r border-b border-gray-100">
           <h3 class="text-base md:text-lg lg:text-xl font-bold text-primary">
             Care2Data...
           </h3>
         </div>
 
-        <ul class="divide-y divide-gray-100 text-base md:text-sm lg:text-xl">
+        <ul class="divide-y divide-gray-100 text-base md:text-sm lg:text-md xl:text-lg">
           <li class="px-4 py-3 text-white flex items-center border-l-4 border-gray-100">
+            <img src="images/home/white/datasets.png" alt=""
+              class="w-7 h-7 md:w-10 md:h-10 object-contain flex-shrink-0 mr-2">
             Reasons across datasets, not just within them
           </li>
           <li class="px-4 py-3 text-white flex items-center border-l-4 border-gray-100">
+            <img src="images/home/white/clinicalvalidation.png" alt="" class="w-7 h-7 md:w-10 md:h-10 object-contain flex-shrink-0 mr-2">
             Encodes study logic and regulatory intent
           </li>
           <li class="px-4 py-3 text-white flex items-center border-l-4 border-gray-100">
+            <img src="images/home/white/diagnoses.png" alt=""
+              class="w-7 h-7 md:w-10 md:h-10 object-contain flex-shrink-0 mr-2">
             Diagnoses inconsistencies at their source
           </li>
           <li class="px-4 py-3 text-white flex items-center border-l-4 border-gray-100">
+            <img src="images/home/white/downstream.png" alt=""
+              class="w-7 h-7 md:w-10 md:h-10 object-contain flex-shrink-0 mr-2">
             Reveals downstream impact before submission
           </li>
         </ul>
@@ -790,8 +824,8 @@
         class="bg-white/5 rounded-2xl p-4 md:p-6 border border-white/10 shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 ease-out group">
 
         <div class="flex items-center gap-3 mb-3">
-          <div class="w-10 h-10 flex items-center justify-center rounded-full bg-primary shrink-0">
-            <mat-icon class="text-2xl !text-white w-6 h-6">track_changes</mat-icon>
+          <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0">
+            <img src="images/home/white/strategicalignment.png" alt="" class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
           </div>
 
           <h3
@@ -809,8 +843,8 @@
       <div
         class="bg-white/5 rounded-2xl p-4 md:p-6 border border-white/10 shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 ease-out group">
         <div class="flex items-center gap-3 mb-3">
-          <div class="w-10 h-10 flex items-center justify-center rounded-full bg-primary shrink-0">
-            <mat-icon class="text-2xl !text-white w-6 h-6">settings</mat-icon>
+          <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0">
+            <img src="images/home/white/deployment.png" alt="" class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
           </div>
 
           <h3
@@ -829,8 +863,8 @@
         class="bg-white/5 rounded-2xl p-4 md:p-6 border border-white/10 shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 ease-out group">
 
         <div class="flex items-center gap-3 mb-3">
-          <div class="w-10 h-10 flex items-center justify-center rounded-full bg-primary shrink-0">
-            <mat-icon class="text-2xl !text-white w-6 h-6">school</mat-icon>
+          <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0">
+            <img src="images/home/white/Enablement.png" alt="" class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
           </div>
 
           <h3
@@ -893,14 +927,15 @@
 
         <!-- Knowledge Modeling -->
         <mat-expansion-panel #panel1 hideToggle (mouseenter)="openPanel(panel1)" (mouseleave)="closePanel(panel1)"
-          class="!bg-white/5 !border !border-white/10 !rounded-xl shadow-lg hover:shadow-xl transition-all duration-500 ease-out">
+          class="!bg-white/5 !border !border-white/10 !rounded-xl shadow-lg transition-all duration-500 ease-out">
 
           <mat-expansion-panel-header (click)="$event.stopPropagation()"
             class="!px-6 !py-4 flex items-center justify-between hover:bg-white/10">
 
             <div class="flex gap-2">
-              <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary">
-                <mat-icon class="text-2xl text-white">account_tree</mat-icon>
+              <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0">
+                <img src="images/home/white/knowledgemodeling.png" alt=""
+                  class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
               </div>
               <mat-panel-title class="text-lg font-bold" style="color: #fff;">
                 Knowledge Modeling
@@ -919,14 +954,15 @@
 
         <!-- Knowledge Repository -->
         <mat-expansion-panel #panel2 hideToggle (mouseenter)="openPanel(panel2)" (mouseleave)="closePanel(panel2)"
-          class="!bg-white/5 !border !border-white/10 !rounded-xl shadow-lg hover:shadow-xl transition-all duration-500 ease-out">
+          class="!bg-white/5 !border !border-white/10 !rounded-xl shadow-lg transition-all duration-500 ease-out">
 
           <mat-expansion-panel-header (click)="$event.stopPropagation()"
             class="!px-6 !py-4 flex items-center justify-between hover:bg-white/10">
 
             <div class="flex gap-2">
-              <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary">
-                <mat-icon class="text-2xl text-white">hub</mat-icon>
+              <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0">
+                <img src="images/home/white/knowledgerepository.png" alt=""
+                  class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
               </div>
               <mat-panel-title class="text-lg font-bold" style="color: #fff;">
                 Knowledge Repository
@@ -945,14 +981,15 @@
 
         <!-- Knowledge Discovery -->
         <mat-expansion-panel #panel3 hideToggle (mouseenter)="openPanel(panel3)" (mouseleave)="closePanel(panel3)"
-          class="!bg-white/5 !border !border-white/10 !rounded-xl shadow-lg hover:shadow-xl transition-all duration-500 ease-out">
+          class="!bg-white/5 !border !border-white/10 !rounded-xl shadow-lg transition-all duration-500 ease-out">
 
           <mat-expansion-panel-header (click)="$event.stopPropagation()"
             class="!px-6 !py-4 flex items-center justify-between hover:bg-white/10">
 
             <div class="flex gap-2">
-              <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary">
-                <mat-icon class="text-2xl text-white">search</mat-icon>
+              <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0">
+                <img src="images/home/white/knowledgediscovery.png" alt=""
+                  class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
               </div>
               <mat-panel-title class="text-lg font-bold" style="color: #fff;">
                 Knowledge Discovery
@@ -971,14 +1008,15 @@
 
         <!-- Knowledge Management -->
         <mat-expansion-panel #panel4 hideToggle (mouseenter)="openPanel(panel4)" (mouseleave)="closePanel(panel4)"
-          class="!bg-white/5 !border !border-white/10 !rounded-xl shadow-lg hover:shadow-xl transition-all duration-500 ease-out">
+          class="!bg-white/5 !border !border-white/10 !rounded-xl shadow-lg transition-all duration-500 ease-out">
 
           <mat-expansion-panel-header (click)="$event.stopPropagation()"
             class="!px-6 !py-4 flex items-center justify-between hover:bg-white/10">
 
             <div class="flex gap-2">
-              <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary">
-                <mat-icon class="text-2xl text-white">rule</mat-icon>
+              <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0">
+                <img src="images/home/white/knowledgemanagement.png" alt=""
+                  class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
               </div>
               <mat-panel-title class="text-lg font-bold" style="color: #fff;">
                 Knowledge Management
@@ -997,14 +1035,15 @@
 
         <!-- Training & Enablement -->
         <mat-expansion-panel #panel5 hideToggle (mouseenter)="openPanel(panel5)" (mouseleave)="closePanel(panel5)"
-          class="!bg-white/5 !border !border-white/10 !rounded-xl shadow-lg hover:shadow-xl transition-all duration-500 ease-out">
+          class="!bg-white/5 !border !border-white/10 !rounded-xl shadow-lg transition-all duration-500 ease-out">
 
           <mat-expansion-panel-header (click)="$event.stopPropagation()"
             class="!px-6 !py-4 flex items-center justify-between hover:bg-white/10">
 
             <div class="flex gap-2">
-              <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary">
-                <mat-icon class="text-2xl text-white">school</mat-icon>
+              <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0">
+                <img src="images/home/white/trainingenablement.png" alt=""
+                  class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
               </div>
               <mat-panel-title class="text-lg font-bold" style="color: #fff;">
                 Training & Enablement
@@ -1076,12 +1115,13 @@
       <div
         class="bg-white/5 rounded-2xl p-4 md:p-6 border border-white/10 shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 ease-out group">
 
-        <div class="w-10 h-10 mx-auto flex items-center justify-center rounded-full mb-4 bg-primary">
-          <mat-icon class="text-2xl">verified</mat-icon>
+        <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0 mb-2">
+          <img src="images/home/white/clinicalvalidation.png" alt=""
+            class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
         </div>
 
         <h3
-          class="text-lg sm:text-lg md:text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-4">
+          class="text-lg sm:text-lg md:text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-4 lg:h-18 xl:h-12">
           Built for clinical validation
         </h3>
 
@@ -1095,12 +1135,13 @@
       <div
         class="bg-white/5 rounded-2xl p-4 md:p-6 border border-white/10 shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 ease-out group">
 
-        <div class="w-10 h-10 mx-auto flex items-center justify-center rounded-full mb-4 bg-primary">
-          <mat-icon class="text-2xl">psychology</mat-icon>
+        <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0 mb-2">
+          <img src="images/home/white/context-aware.png" alt=""
+            class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
         </div>
 
         <h3
-          class="text-lg sm:text-lg md:text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-4">
+          class="text-lg sm:text-lg md:text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-4 lg:h-18 xl:h-12">
           Context-aware & reasoning-enabled
         </h3>
 
@@ -1114,12 +1155,13 @@
       <div
         class="bg-white/5 rounded-2xl p-4 md:p-6 border border-white/10 shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 ease-out group">
 
-        <div class="w-10 h-10 mx-auto flex items-center justify-center rounded-full mb-4 bg-primary">
-          <mat-icon class="text-2xl">search</mat-icon>
+        <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0 mb-2">
+          <img src="images/home/white/traceable.png" alt=""
+            class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
         </div>
 
         <h3
-          class="text-lg sm:text-lg md:text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-4">
+          class="text-lg sm:text-lg md:text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-4 lg:h-18 xl:h-12">
           Traceable by design
         </h3>
 
@@ -1133,12 +1175,13 @@
       <div
         class="bg-white/5 rounded-2xl p-4 md:p-6 border border-white/10 shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 ease-out group">
 
-        <div class="w-10 h-10 mx-auto flex items-center justify-center rounded-full mb-4 bg-primary">
-          <mat-icon class="text-2xl">settings</mat-icon>
+        <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0 mb-2">
+          <img src="images/home/white/ecosystem.png" alt=""
+            class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
         </div>
 
         <h3
-          class="text-lg sm:text-lg md:text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-4">
+          class="text-lg sm:text-lg md:text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-4 lg:h-18 xl:h-12">
           Works within your ecosystem
         </h3>
 
@@ -1200,7 +1243,7 @@
         </div> -->
 
         <h3
-          class="text-lg sm:text-lg md:text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-4">
+          class="text-lg sm:text-lg md:text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-2 lg:h-12 xl:h-10">
           Biotech & Pharma
         </h3>
 
@@ -1217,7 +1260,7 @@
         </div> -->
 
         <h3
-          class="text-lg sm:text-lg md:text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-4">
+          class="text-lg sm:text-lg md:text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-2 lg:h-12 xl:h-10">
           CROs & FSPs
         </h3>
 
@@ -1234,7 +1277,7 @@
         </div> -->
 
         <h3
-          class="text-lg sm:text-lg md:text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-4">
+          class="text-lg sm:text-lg md:text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-2 lg:h-12 xl:h-10">
           Statistical Programmers
         </h3>
 
@@ -1251,7 +1294,7 @@
         </div> -->
 
         <h3
-          class="text-lg sm:text-lg md:text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-4">
+          class="text-lg sm:text-lg md:text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-2 lg:h-12 xl:h-10">
           QA & Regulatory Teams
         </h3>
 
