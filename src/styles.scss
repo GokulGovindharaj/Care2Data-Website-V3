@@ -110,7 +110,12 @@ body {
 }
 
 /* Material Icons */
-a mat-icon,
+a mat-icon {
+  font-size: 20px !important;
+  width: 22px !important;
+  height: 22px !important;
+}
+
 button mat-icon {
   font-size: 20px !important;
   width: 22px !important;
