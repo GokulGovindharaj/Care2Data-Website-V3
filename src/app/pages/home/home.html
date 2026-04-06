@@ -1,28 +1,27 @@
 <!-- Hero Section -->
 <section class="relative min-h-screen flex items-center bg-[#11193e] overflow-hidden">
   <!-- 🔥 Animated Background Lines -->
-<svg class="absolute inset-0 w-full h-full pointer-events-none z-0"
-     xmlns="http://www.w3.org/2000/svg"
-     preserveAspectRatio="none">
+  <svg class="absolute inset-0 w-full h-full pointer-events-none z-0" xmlns="http://www.w3.org/2000/svg"
+    preserveAspectRatio="none">
 
-  <defs>
-    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#c9862a" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#c9862a" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#c9862a" stop-opacity="0"/>
-    </linearGradient>
-  </defs>
+    <defs>
+      <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#c9862a" stop-opacity="0" />
+        <stop offset="50%" stop-color="#c9862a" stop-opacity="1" />
+        <stop offset="100%" stop-color="#c9862a" stop-opacity="0" />
+      </linearGradient>
+    </defs>
 
-  <!-- Horizontal lines -->
-  <path d="M0 100 H100%" class="bg-line"/>
-  <path d="M0 250 H100%" class="bg-line"/>
-  <path d="M0 400 H100%" class="bg-line"/>
-  <path d="M0 550 H100%" class="bg-line"/>
+    <!-- Horizontal lines -->
+    <path d="M0 100 H100%" class="bg-line" />
+    <path d="M0 250 H100%" class="bg-line" />
+    <path d="M0 400 H100%" class="bg-line" />
+    <path d="M0 550 H100%" class="bg-line" />
 
-  <!-- Diagonal flow -->
-  <path d="M0 0 L100% 300" class="bg-line slow"/>
-  <path d="M0 300 L100% 600" class="bg-line slow"/>
-</svg>
+    <!-- Diagonal flow -->
+    <path d="M0 0 L100% 300" class="bg-line slow" />
+    <path d="M0 300 L100% 600" class="bg-line slow" />
+  </svg>
   <!-- Content Container -->
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 py-16 items-center">
@@ -34,7 +33,7 @@
           <i class="block text-yellow-400 mt-2">Intelligent</i>
         </h1>
 
-        <p class="text-base md:text-lg lg:text-xl text-white mb-4 leading-relaxed max-w-xl">
+        <p class="text-base md:text-lg text-white mb-4 text-justify leading-relaxed max-w-xl">
           Care2Data applies semantic intelligence and reasoning over a linked clinical data model —
           moving beyond pass/fail checks to identify root causes, explain impact, and guide what to fix before
           submission.
@@ -47,7 +46,7 @@
         <div class="flex flex-col sm:flex-row gap-4 pt-4">
 
           <button routerLink="/kwalify"
-            class="text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 cursor-pointer"
+            class="text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 uppercase"
             style="background-color: var(--btn-primary-color); color: #fff;"
             onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
             onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
@@ -55,7 +54,7 @@
           </button>
 
           <button routerLink="/contact-us"
-            class="text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 cursor-pointer"
+            class="text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 uppercase"
             style="background-color: var(--btn-primary-color); color: #fff;"
             onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
             onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
@@ -665,7 +664,7 @@
           <span style="color: #fff">Where Validation</span> Becomes Intelligence
         </h2>
 
-        <p class="text-base md:text-lg lg:text-xl text-white text-left mb-4 font-semibold">
+        <p class="text-base md:text-lg text-white text-left mb-4 font-semibold">
           Clinical trials aren't failing because of too much data. <br>
           They're failing because validation still doesn't understand it.
         </p>
@@ -675,7 +674,7 @@
           <i> <span>Flags don't solve problems.</span> <br> <span>Intelligence does.</span></i>
         </p>
 
-        <p class="text-base md:text-lg lg:text-xl text-white text-justify mb-4 leading-relaxed">
+        <p class="text-base md:text-lg text-white text-justify mb-4 leading-relaxed">
           Care2Data replaces rule execution with semantic intelligence. Powered by knowledge graphs and a linked
           clinical
           data model, we reason across datasets, encode study logic, diagnose inconsistencies at their source, and
@@ -691,26 +690,30 @@
       <div
         class="bg-white/5 rounded-md border-r border-b border-gray-100 shadow-lg hover:shadow-xl transition-all duration-500 ease-out overflow-hidden">
         <div class="bg-white px-4 py-3 border-r border-b border-gray-100">
-          <h3 class="text-base md:text-lg lg:text-xl font-bold text-primary">
+          <h3 class="text-base md:text-lg font-bold text-primary">
             Most systems...
           </h3>
         </div>
 
         <ul class="divide-y divide-gray-100 text-base md:text-sm lg:text-md xl:text-lg">
           <li class="px-4 py-3 text-white flex items-center border-l-4 border-b border-gray-100">
-            <img src="images/home/white/executescripts.png" alt="" class="w-7 h-7 md:w-10 md:h-10 object-contain flex-shrink-0 mr-2">
+            <img src="images/home/white/executescripts.png" alt=""
+              class="w-7 h-7 md:w-10 md:h-10 object-contain flex-shrink-0 mr-2">
             Execute static scripts
           </li>
           <li class="px-4 py-3 text-white flex items-center border-l-4 border-b border-gray-100">
-            <img src="images/home/white/pass.png" alt="" class="w-7 h-7 md:w-10 md:h-10 object-contain flex-shrink-0 mr-2">
+            <img src="images/home/white/pass.png" alt=""
+              class="w-7 h-7 md:w-10 md:h-10 object-contain flex-shrink-0 mr-2">
             Return pass/fail flags only
           </li>
           <li class="px-4 py-3 text-white flex items-center border-l-4 border-b border-gray-100">
-            <img src="images/home/white/humans.png" alt="" class="w-7 h-7 md:w-10 md:h-10 object-contain flex-shrink-0 mr-2">
+            <img src="images/home/white/humans.png" alt=""
+              class="w-7 h-7 md:w-10 md:h-10 object-contain flex-shrink-0 mr-2">
             Push root-cause analysis back to humans
           </li>
           <li class="px-4 py-3 text-white flex items-center border-l-4 border-b-0 border-gray-100">
-            <img src="images/home/white/danger.png" alt="" class="w-7 h-7 md:w-10 md:h-10 object-contain flex-shrink-0 mr-2">
+            <img src="images/home/white/danger.png" alt=""
+              class="w-7 h-7 md:w-10 md:h-10 object-contain flex-shrink-0 mr-2">
             Offer no context, no reasoning, no insight
           </li>
         </ul>
@@ -719,7 +722,7 @@
       <div
         class="bg-white/5 rounded-md border-r border-b border-gray-100 shadow-lg hover:shadow-xl transition-all duration-500 ease-out overflow-hidden">
         <div class="bg-white px-4 py-3 border-r border-b border-gray-100">
-          <h3 class="text-base md:text-lg lg:text-xl font-bold text-primary">
+          <h3 class="text-base md:text-lg font-bold text-primary">
             Care2Data...
           </h3>
         </div>
@@ -731,7 +734,8 @@
             Reasons across datasets, not just within them
           </li>
           <li class="px-4 py-3 text-white flex items-center border-l-4 border-gray-100">
-            <img src="images/home/white/clinicalvalidation.png" alt="" class="w-7 h-7 md:w-10 md:h-10 object-contain flex-shrink-0 mr-2">
+            <img src="images/home/white/clinicalvalidation.png" alt=""
+              class="w-7 h-7 md:w-10 md:h-10 object-contain flex-shrink-0 mr-2">
             Encodes study logic and regulatory intent
           </li>
           <li class="px-4 py-3 text-white flex items-center border-l-4 border-gray-100">
@@ -790,7 +794,7 @@
     <!-- CTA -->
     <div class="text-center mt-5">
       <button routerLink="/contact-us"
-        class="text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 cursor-pointer"
+        class="text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 uppercase"
         style="background-color: var(--btn-primary-color); color: #fff;"
         onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
         onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
@@ -811,7 +815,7 @@
       <span style="color: #fff">Built to Work</span> Alongside Your Team
     </h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <p class="text-base sm:text-lg lg:text-xl mb-5 text-white leading-relaxed text-justify">
+      <p class="text-base md:text-lg mb-5 text-white leading-relaxed text-justify">
         Care2Data partners with sponsors to embed semantic intelligence into clinical operations —
         <span class="text-secondary">without disrupting existing systems.</span>
       </p>
@@ -825,7 +829,8 @@
 
         <div class="flex items-center gap-3 mb-3">
           <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0">
-            <img src="images/home/white/strategicalignment.png" alt="" class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
+            <img src="images/home/white/strategicalignment.png" alt=""
+              class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
           </div>
 
           <h3
@@ -834,7 +839,7 @@
           </h3>
         </div>
 
-        <p class="text-base md:text-lg lg:text-xl text-white group-hover:text-black text-justify">
+        <p class="text-base md:text-lg text-white group-hover:text-black text-justify">
           Define high-impact knowledge use cases tied to regulatory defensibility
         </p>
       </div>
@@ -844,7 +849,8 @@
         class="bg-white/5 rounded-2xl p-4 md:p-6 border border-white/10 shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 ease-out group">
         <div class="flex items-center gap-3 mb-3">
           <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0">
-            <img src="images/home/white/deployment.png" alt="" class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
+            <img src="images/home/white/deployment.png" alt=""
+              class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
           </div>
 
           <h3
@@ -853,7 +859,7 @@
           </h3>
         </div>
 
-        <p class="text-base md:text-lg lg:text-xl text-white group-hover:text-black text-justify">
+        <p class="text-base md:text-lg text-white group-hover:text-black text-justify">
           Embed knowledge models and reasoning into your existing ecosystem
         </p>
       </div>
@@ -864,7 +870,8 @@
 
         <div class="flex items-center gap-3 mb-3">
           <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0">
-            <img src="images/home/white/Enablement.png" alt="" class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
+            <img src="images/home/white/Enablement.png" alt=""
+              class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
           </div>
 
           <h3
@@ -873,7 +880,7 @@
           </h3>
         </div>
 
-        <p class="text-base md:text-lg lg:text-xl text-white group-hover:text-black text-justify">
+        <p class="text-base md:text-lg text-white group-hover:text-black text-justify">
           Equip teams to sustain and scale intelligence independently
         </p>
       </div>
@@ -881,7 +888,7 @@
     <!-- CTA -->
     <div class="text-center mt-5">
       <button routerLink="/engagement-models"
-        class="text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 cursor-pointer"
+        class="text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 uppercase"
         style="background-color: var(--btn-primary-color); color: #fff;"
         onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
         onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
@@ -902,10 +909,10 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div class="text-justify">
-        <p class="text-base sm:text-lg lg:text-xl text-white group-hover:text-black leading-relaxed mb-4">
+        <p class="text-base md:text-lg text-white group-hover:text-black leading-relaxed mb-4">
           Care2Data transforms fragmented clinical data into structured, governed, and reasoning-enabled intelligence —
           without replacing your existing systems. </p>
-        <p class="text-base sm:text-lg lg:text-xl text-white group-hover:text-black leading-relaxed mb-8">
+        <p class="text-base md:text-lg text-white group-hover:text-black leading-relaxed mb-8">
           Validation doesn’t need more rules. It needs understanding.
           This is how intelligence becomes operational.
         </p>
@@ -913,7 +920,7 @@
         <!-- CTA -->
         <div class="mt-5">
           <button routerLink="/knowledge-services"
-            class="text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 cursor-pointer"
+            class="text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 uppercase"
             style="background-color: var(--btn-primary-color); color: #fff;"
             onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
             onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
@@ -947,7 +954,7 @@
             </mat-icon>
           </mat-expansion-panel-header>
 
-          <div class="px-4 md:px-6 py-3 text-white text-base sm:text-lg lg:text-xl">
+          <div class="px-4 md:px-6 py-3 text-white text-base md:text-lg">
             We encode study logic and regulatory intent into structured semantic models
           </div>
         </mat-expansion-panel>
@@ -974,7 +981,7 @@
             </mat-icon>
           </mat-expansion-panel-header>
 
-          <div class="px-4 md:px-6 py-3 text-white text-base sm:text-lg lg:text-xl">
+          <div class="px-4 md:px-6 py-3 text-white text-base md:text-lg">
             We deploy governed knowledge graph repositories as a unified source of truth
           </div>
         </mat-expansion-panel>
@@ -1001,7 +1008,7 @@
             </mat-icon>
           </mat-expansion-panel-header>
 
-          <div class="px-4 md:px-6 py-3 text-white text-base sm:text-lg lg:text-xl">
+          <div class="px-4 md:px-6 py-3 text-white text-base md:text-lg">
             We activate reasoning to uncover inconsistencies and hidden risk
           </div>
         </mat-expansion-panel>
@@ -1028,7 +1035,7 @@
             </mat-icon>
           </mat-expansion-panel-header>
 
-          <div class="px-4 md:px-6 py-3 text-white text-base sm:text-lg lg:text-xl">
+          <div class="px-4 md:px-6 py-3 text-white text-base md:text-lg">
             We ensure continuous model governance and regulatory alignment
           </div>
         </mat-expansion-panel>
@@ -1055,7 +1062,7 @@
             </mat-icon>
           </mat-expansion-panel-header>
 
-          <div class="px-4 md:px-6 py-3 text-white text-base sm:text-lg lg:text-xl">
+          <div class="px-4 md:px-6 py-3 text-white text-base md:text-lg">
             We enable teams to sustain and scale intelligence independently
           </div>
         </mat-expansion-panel>
@@ -1081,15 +1088,15 @@
           Powered by a Linked Clinical Data Model
         </p>
 
-        <p class="text-white text-justify leading-relaxed mb-4 text-base sm:text-lg lg:text-xl">
-          <strong>Kwalify™</strong> operationalizes the Care2Data knowledge-driven validation framework.
-          Purpose-built for complex clinical quality checks, it applies semantic intelligence across linked datasets —
-          strengthening accuracy, traceability, and regulatory readiness before submission.
-        </p>
-
-        <p class="text-white text-justify leading-relaxed mb-4 text-base sm:text-lg lg:text-xl">
-          Designed to work alongside your existing systems, <strong>Kwalify™</strong> enhances validation without
-          disrupting
+        <p class="text-white text-justify leading-relaxed mb-4 text-base md:text-lg">
+          <strong>Kwalify™</strong> operationalizes Care2Data’s knowledge-driven validation framework—transforming
+          clinical data
+          validation from rule-based execution into intelligence-driven assurance. <br><br>
+          Purpose-built for complex clinical validation workflows, <strong>Kwalify™</strong> embeds semantic
+          intelligence across linked
+          datasets and leverages Explainable AI to generate transparent, context-aware validation insights—strengthening
+          data accuracy, traceability, and regulatory readiness before submission. <br><br>
+          Designed to work alongside existing clinical systems, it enhances validation capabilities without disrupting
           established workflows.
         </p>
 
@@ -1097,8 +1104,7 @@
         <div class="text-left mb-5 text-white">
           <p
             class="text-xl md:text-2xl text-yellow-400 font-semibold text-left mb-5 space-x-3 border-l-4 border-primary pl-4">
-            <i> <span>Fewer queries,</span> <br><span> Faster reviews, </span> <br> <span>Greater confidence in every
-                dataset.</span></i>
+            <i> <span>Fewer queries,</span> <br><span> Faster validation cycles, </span> <br> <span>Greater confidence in every submission dataset.</span></i>
           </p>
         </div>
       </div>
@@ -1125,8 +1131,9 @@
           Built for clinical validation
         </h3>
 
-        <p class="text-base md:text-lg lg:text-xl text-white group-hover:text-black text-justify leading-relaxed">
-          Engineered specifically for quality checks and regulatory standards
+        <p class="text-base md:text-lg text-white group-hover:text-black leading-relaxed">
+          Engineered specifically for clinical data validation, regulatory compliance, and submission workflows—not
+          adapted from generic data quality tools.
         </p>
 
       </div>
@@ -1145,8 +1152,9 @@
           Context-aware & reasoning-enabled
         </h3>
 
-        <p class="text-base md:text-lg lg:text-xl text-white group-hover:text-black text-justify leading-relaxed">
-          Embeds semantic intelligence directly into validation workflows
+        <p class="text-base md:text-lg text-white group-hover:text-black leading-relaxed">
+          Moves beyond static rule execution by embedding semantic intelligence, cross-dataset reasoning, and
+          Explainable AI-driven validation insights into workflows.
         </p>
 
       </div>
@@ -1156,8 +1164,7 @@
         class="bg-white/5 rounded-2xl p-4 md:p-6 border border-white/10 shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 ease-out group">
 
         <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0 mb-2">
-          <img src="images/home/white/traceable.png" alt=""
-            class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
+          <img src="images/home/white/traceable.png" alt="" class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
         </div>
 
         <h3
@@ -1165,8 +1172,9 @@
           Traceable by design
         </h3>
 
-        <p class="text-base md:text-lg lg:text-xl text-white group-hover:text-black text-justify leading-relaxed">
-          Transparent documentation and lineage support audit readiness
+        <p class="text-base md:text-lg text-white group-hover:text-black leading-relaxed">
+          Validation logic, lineage, and investigation trails are fully transparent—supported by explainable outputs
+          that enable audit readiness and regulatory review.
         </p>
 
       </div>
@@ -1176,8 +1184,7 @@
         class="bg-white/5 rounded-2xl p-4 md:p-6 border border-white/10 shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 ease-out group">
 
         <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary shrink-0 mb-2">
-          <img src="images/home/white/ecosystem.png" alt=""
-            class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
+          <img src="images/home/white/ecosystem.png" alt="" class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
         </div>
 
         <h3
@@ -1185,8 +1192,9 @@
           Works within your ecosystem
         </h3>
 
-        <p class="text-base md:text-lg lg:text-xl text-white group-hover:text-black text-justify leading-relaxed">
-          Seamless integration alongside existing tools
+        <p class="text-base md:text-lg text-white group-hover:text-black leading-relaxed">
+          Seamlessly integrates with existing clinical systems. <br>
+          No rip-and-replace. No disruption to workflows.
         </p>
 
       </div>
@@ -1196,7 +1204,7 @@
     <!-- CTA -->
     <div class="text-center mt-5">
       <button routerLink="/kwalify"
-        class="inline-flex items-center cursor-pointer gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
+        class="inline-flex items-center cursor-pointer uppercase gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
         style="background-color: var(--btn-primary-color); color: #fff;"
         onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
         onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
@@ -1224,10 +1232,9 @@
             </span> <br> <span> For Teams Who Don't Guess. They Know.</span></i>
         </p>
 
-        <p class="text-white max-w-3xl leading-relaxed mb-5 text-base sm:text-lg lg:text-xl">
+        <p class="text-white max-w-3xl text-justify leading-relaxed mb-5 text-base md:text-lg">
           Care2Data is designed for teams who demand precision in clinical data validation—whether managing a single
-          study
-          or complex, multi-study programs.
+          study or complex, multi-study programs.
         </p>
       </div>
     </div>
@@ -1243,11 +1250,11 @@
         </div> -->
 
         <h3
-          class="text-lg sm:text-lg md:text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-2 lg:h-12 xl:h-10">
+          class="text-lg sm:text-lg md:text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-2 lg:h-12 xl:h-6">
           Biotech & Pharma
         </h3>
 
-        <p class="text-base sm:text-lg lg:text-xl text-white group-hover:text-black leading-relaxed">
+        <p class="text-base md:text-lg text-white group-hover:text-black leading-relaxed">
           Ensure assets are supported by high-quality, submission-ready data.
         </p>
       </div>
@@ -1260,11 +1267,11 @@
         </div> -->
 
         <h3
-          class="text-lg sm:text-lg md:text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-2 lg:h-12 xl:h-10">
+          class="text-lg sm:text-lg md:text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-2 lg:h-12 xl:h-6">
           CROs & FSPs
         </h3>
 
-        <p class="text-base sm:text-lg lg:text-xl text-white group-hover:text-black leading-relaxed">
+        <p class="text-base md:text-lg text-white group-hover:text-black leading-relaxed">
           Deliver sponsor-ready datasets with less manual effort.
         </p>
       </div>
@@ -1277,11 +1284,11 @@
         </div> -->
 
         <h3
-          class="text-lg sm:text-lg md:text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-2 lg:h-12 xl:h-10">
+          class="text-lg sm:text-lg md:text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-2 lg:h-12 xl:h-6">
           Statistical Programmers
         </h3>
 
-        <p class="text-base sm:text-lg lg:text-xl text-white group-hover:text-black leading-relaxed">
+        <p class="text-base md:text-lg text-white group-hover:text-black leading-relaxed">
           Spend less time debugging and more time analyzing.
         </p>
       </div>
@@ -1294,11 +1301,11 @@
         </div> -->
 
         <h3
-          class="text-lg sm:text-lg md:text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-2 lg:h-12 xl:h-10">
+          class="text-lg sm:text-lg md:text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-2 lg:h-12 xl:h-6">
           QA & Regulatory Teams
         </h3>
 
-        <p class="text-base sm:text-lg lg:text-xl text-white group-hover:text-black leading-relaxed">
+        <p class="text-base md:text-lg text-white group-hover:text-black leading-relaxed">
           Get the traceability and documentation needed to sign off confidently.
         </p>
       </div>
@@ -1326,7 +1333,7 @@
             </span> <br> <span>We built a regulatory tool.</span></i>
         </p>
         <div class="space-y-5">
-          <p class="text-white leading-relaxed text-base md:text-lg lg:text-xl text-white">
+          <p class="text-white text-justify leading-relaxed text-base md:text-lg text-white">
             This isn't an upgrade. It's a reset — from binary checking to knowledge-driven assurance. Care2Data brings
             order, data intelligence, and confidence to clinical trial data validation so teams can move forward with
             certainty.
@@ -1340,17 +1347,16 @@
             <thead>
               <tr
                 class="bg-white/5 rounded-2xl p-4 md:p-6 border border-white/10 shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 ease-out">
-                <th
-                  class="px-6 py-4 text-base sm:text-lg lg:text-xl font-bold text-white uppercase tracking-wider w-1/3">
+                <th class="px-6 py-4 text-base md:text-lg font-bold text-white uppercase tracking-wider w-1/3">
                   Feature</th>
-                <th class="px-6 py-4 text-base sm:text-lg lg:text-xl font-bold text-white uppercase tracking-wider">
+                <th class="px-6 py-4 text-base md:text-lg font-bold text-white uppercase tracking-wider">
                   Benefit</th>
               </tr>
             </thead>
-            <tbody class="text-base sm:text-lg lg:text-xl">
+            <tbody class="text-base md:text-lg">
               <tr class="bg-white border-b border-gray-50">
                 <td class="px-4 py-3 font-bold text-[#11193e]">Validation-First Design</td>
-                <td class="px-4 py-3 text-gray-500">Accuracy and compliance is prioritised over everything else</td>
+                <td class="px-4 py-3 text-gray-500">Accuracy and compliance is prioritized over everything else</td>
               </tr>
               <tr class="bg-[#f8fafb] border-b border-gray-50">
                 <td class="px-4 py-3 font-bold text-[#11193e]">Audit-Ready Evidence</td>
@@ -1361,7 +1367,7 @@
                 <td class="px-4 py-3 text-gray-500">No disruption to existing systems</td>
               </tr>
               <tr class="bg-[#f8fafb]">
-                <td class="px-4 py-3 font-bold text-[#11193e]">Scalable Architecture</td>
+                <td class="px-4 py-3 font-bold text-[#11193e]">Scalable</td>
                 <td class="px-4 py-3 text-gray-500">Processes that scale seamlessly from one study to many</td>
               </tr>
             </tbody>
@@ -1373,7 +1379,7 @@
     <div class="text-center mt-5">
       <!-- CTA -->
       <button routerLink="/contact-us"
-        class="text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 cursor-pointer"
+        class="text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 uppercase"
         style="background-color: var(--btn-primary-color); color: #fff;"
         onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
         onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
@@ -1392,7 +1398,7 @@
       <span class="text-white">Academic & </span>Research Partnerships
     </h2>
 
-    <p class="max-w-5xl mx-auto text-justify text-base md:text-lg lg:text-xl leading-relaxed mb-5">
+    <p class="max-w-5xl mx-auto text-justify text-base md:text-lg leading-relaxed mb-5">
       Care2Data collaborates with leading academic institutions to advance
       <strong class="text-yellow-400">
         Ontology-driven AI, Semantic Intelligence, and XAI
@@ -1446,10 +1452,9 @@
     </h2>
 
     <p
-      class="text-white max-w-3xl mx-auto leading-relaxed mb-5 ext-base md:text-lg lg:text-xl text-left md:text-center">
-      Clinical decisions demand more than checked <br> Care2Data connects your data through
-      knowledge graphs — embedding semantic intelligence
-      to transform validation into a submission-ready advantage.
+      class="text-white max-w-3xl mx-auto leading-relaxed mb-5 text-base md:text-lg lg:text-xl text-left md:text-center">
+      Care2Data is not merely a validation tool. <br> It is a Semantic Intelligence outfit transforming clinical data
+      governance—where Knowledge fuels Quality, Integrity, Conformance, and Plausibility by design.
     </p>
 
     <!-- CTA Buttons -->
@@ -1457,7 +1462,7 @@
 
       <!-- Primary CTA -->
       <button routerLink="/contact-us"
-        class="text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 cursor-pointer"
+        class="text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 uppercase"
         style="background-color: var(--btn-primary-color); color: #fff;"
         onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
         onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
@@ -1465,22 +1470,22 @@
       </button>
 
       <!-- Secondary CTA -->
-      <button routerLink="/contact-us"
-        class="text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 cursor-pointer"
+      <!-- <button routerLink="/contact-us"
+        class="text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 uppercase"
         style="background-color: var(--btn-primary-color); color: #fff;"
         onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
         onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
         Contact Us →
-      </button>
+      </button> -->
 
       <!-- Tertiary CTA -->
-      <button
-        class="text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 cursor-pointer"
+      <!-- <button
+        class="text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 uppercase"
         style="background-color: var(--btn-primary-color); color: #fff;"
         onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
         onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
         Download Overview →
-      </button>
+      </button> -->
 
     </div>
 

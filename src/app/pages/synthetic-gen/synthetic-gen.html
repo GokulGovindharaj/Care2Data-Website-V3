@@ -18,7 +18,7 @@
                 </h1>
 
                 <!-- Subheadline -->
-                <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed mb-5 max-w-xl">
+                <p class="text-white text-base md:text-lg leading-relaxed mb-5 max-w-xl">
                     SyntheticGEN™ enables the generation of statistically consistent, regulation-aware synthetic
                     clinical datasets—allowing teams to test, validate, and refine workflows without exposure to
                     sensitive patient data.
@@ -35,7 +35,7 @@
 
                     <!-- Primary CTA -->
                     <button routerLink="/contact-us"
-                        class="inline-flex items-center justify-center cursor-pointer gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
+                        class="inline-flex items-center justify-center cursor-pointer uppercase gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
                         style="background-color: var(--btn-primary-color); color: #fff;"
                         onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
                         onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
@@ -44,7 +44,7 @@
 
                     <!-- Secondary CTA -->
                     <button routerLink="/contact-us"
-                        class="inline-flex items-center justify-center cursor-pointer gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
+                        class="inline-flex items-center justify-center cursor-pointer uppercase gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
                         style="background-color: var(--btn-primary-color); color: #fff;"
                         onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
                         onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
@@ -54,9 +54,17 @@
                 </div>
 
             </div>
-
             <!-- RIGHT VISUAL CARD -->
             <div class="relative">
+
+                <div class="rounded-2xl overflow-hidden shadow-xl border border-white/10">
+
+                    <video #videoRef class="w-full h-full object-cover" autoplay muted loop playsinline preload="metadata">
+                        <source src="videos/home.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+
+                </div>
 
             </div>
 
@@ -73,7 +81,7 @@
                 Clinical Validation is
                 <span class="text-secondary">Limited by Data Access</span>
             </h2>
-            <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed mb-5">
+            <p class="text-white text-base md:text-lg leading-relaxed mb-5">
                 Clinical data teams often face a fundamental constraint—real data is either unavailable, restricted,
                 or incomplete when it’s needed most.
             </p>
@@ -147,7 +155,7 @@
 
                     <!-- CTA -->
                     <button
-                        class="inline-flex items-center justify-center cursor-pointer gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
+                        class="inline-flex items-center justify-center cursor-pointer uppercase gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
                         style="background-color: var(--btn-primary-color); color: #fff;"
                         onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
                         onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
@@ -176,12 +184,12 @@
                 <span class="text-secondary">Clinical Data Systems</span>
             </h2>
 
-            <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed mb-4">
+            <p class="text-white text-base md:text-lg leading-relaxed mb-4">
                 SyntheticGEN™ creates high-fidelity synthetic datasets that replicate the structure, relationships, and
                 statistical behavior of real clinical trial data—without compromising privacy or compliance.
             </p>
 
-            <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed">
+            <p class="text-white text-base md:text-lg leading-relaxed">
                 It enables teams to simulate real-world scenarios across study design, data validation, and regulatory
                 workflows, ensuring systems perform as expected before live deployment.
             </p>
@@ -200,7 +208,7 @@
                 <!-- Icon -->
                 <div
                     class="mb-4 w-12 h-12 flex items-center justify-center rounded-xl bg-primary transition group-hover:bg-black/10">
-                    <mat-icon class="text-white group-hover:text-primary">science</mat-icon>
+                    <mat-icon class="text-white group-hover:text-primary">biotech</mat-icon>
                 </div>
 
                 <!-- Title -->
@@ -211,7 +219,7 @@
 
                 <!-- Description -->
                 <p
-                    class="text-base md:text-lg lg:text-xl leading-relaxed text-gray-300 transition group-hover:text-black">
+                    class="text-base md:text-lg leading-relaxed text-gray-300 transition group-hover:text-black">
                     Generate datasets aligned with clinical standards (e.g., CDISC structures, domains, and
                     relationships)
                 </p>
@@ -223,7 +231,7 @@
 
                 <div
                     class="mb-4 w-12 h-12 flex items-center justify-center rounded-xl bg-primary transition group-hover:bg-black/10">
-                    <mat-icon class="text-white group-hover:text-primary">verified</mat-icon>
+                    <mat-icon class="text-white group-hover:text-primary">fact_check</mat-icon>
                 </div>
 
                 <h3
@@ -232,7 +240,7 @@
                 </h3>
 
                 <p
-                    class="text-base md:text-lg lg:text-xl leading-relaxed text-gray-300 transition group-hover:text-black">
+                    class="text-base md:text-lg leading-relaxed text-gray-300 transition group-hover:text-black">
                     Test validation rules, workflows, and pipelines under simulated trial conditions
                 </p>
 
@@ -243,7 +251,7 @@
 
                 <div
                     class="mb-4 w-12 h-12 flex items-center justify-center rounded-xl bg-primary transition group-hover:bg-black/10">
-                    <mat-icon class="text-white group-hover:text-primary">shield</mat-icon>
+                    <mat-icon class="text-white group-hover:text-primary">health_and_safety</mat-icon>
                 </div>
 
                 <h3
@@ -252,7 +260,7 @@
                 </h3>
 
                 <p
-                    class="text-base md:text-lg lg:text-xl leading-relaxed text-gray-300 transition group-hover:text-black">
+                    class="text-base md:text-lg leading-relaxed text-gray-300 transition group-hover:text-black">
                     Eliminate dependency on sensitive or restricted datasets during development and testing
                 </p>
 
@@ -263,7 +271,7 @@
 
                 <div
                     class="mb-4 w-12 h-12 flex items-center justify-center rounded-xl bg-primary transition group-hover:bg-black/10">
-                    <mat-icon class="text-white group-hover:text-primary">hub</mat-icon>
+                    <mat-icon class="text-white group-hover:text-primary">trending_up</mat-icon>
                 </div>
 
                 <h3
@@ -272,7 +280,7 @@
                 </h3>
 
                 <p
-                    class="text-base md:text-lg lg:text-xl leading-relaxed text-gray-300 transition group-hover:text-black">
+                    class="text-base md:text-lg leading-relaxed text-gray-300 transition group-hover:text-black">
                     Simulate edge cases, anomalies, and complex data interactions for robust system validation
                 </p>
 
@@ -283,7 +291,7 @@
         <!-- CTA -->
         <div class="text-center">
             <button routerLink="/contact-us"
-                class="inline-flex items-center justify-center cursor-pointer gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
+                class="inline-flex items-center justify-center cursor-pointer uppercase gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
                 style="background-color: var(--btn-primary-color); color: #fff;"
                 onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
                 onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
@@ -308,7 +316,7 @@
                 <span class="text-secondary">to Data Readiness</span>
             </h2>
 
-            <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed">
+            <p class="text-white text-base md:text-lg leading-relaxed">
                 SyntheticGEN™ integrates seamlessly into clinical data workflows—supporting simulation, validation, and
                 system readiness across the lifecycle.
             </p>
@@ -407,7 +415,7 @@
 
         <!-- Closing -->
         <div class="max-w-3xl mx-auto text-center mb-5">
-            <p class="text-base md:text-lg lg:text-xl text-white text-center mb-4 font-semibold italic">
+            <p class="text-base md:text-lg text-white text-center mb-4 font-semibold italic">
                 SyntheticGEN™ transforms synthetic data from a workaround into a strategic validation layer.
             </p>
         </div>
@@ -417,7 +425,7 @@
 
             <!-- Primary -->
             <button routerLink="/contact-us"
-                class="inline-flex items-center justify-center cursor-pointer gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
+                class="inline-flex items-center justify-center cursor-pointer uppercase gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
                 style="background-color: var(--btn-primary-color); color: #fff;"
                 onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
                 onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
@@ -426,7 +434,7 @@
 
             <!-- Secondary -->
             <button routerLink="/contact-us"
-                class="inline-flex items-center justify-center cursor-pointer gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
+                class="inline-flex items-center justify-center cursor-pointer uppercase gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
                 style="background-color: var(--btn-primary-color); color: #fff;"
                 onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
                 onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">

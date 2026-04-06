@@ -8,6 +8,8 @@ import { Kwalify } from './pages/kwalify/kwalify';
 import { News } from './pages/news/news';
 import { Engagement } from './pages/engagement/engagement';
 import { SyntheticGen } from './pages/synthetic-gen/synthetic-gen';
+import { ClinicalIntelligence } from './pages/clinical-intelligence/clinical-intelligence';
+import { ServicesExplore } from './pages/services-explore/services-explore';
 
 export const routes: Routes = [
   { path: '', component: Home },
@@ -19,6 +21,8 @@ export const routes: Routes = [
   { path: 'news', component: News },
   { path: 'engagement-models', component: Engagement },
   { path: 'synthetic-gen', component: SyntheticGen },
+  { path: 'clinical-intelligence', component: ClinicalIntelligence },
+  { path: 'services-explore', component: ServicesExplore },
   // Wildcard MUST be last
   { path: '**', redirectTo: '' }
 ];

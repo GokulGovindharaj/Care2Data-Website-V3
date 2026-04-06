@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { Meta, Title } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
@@ -11,7 +11,10 @@ import { RouterModule } from '@angular/router';
   styleUrl: './synthetic-gen.scss',
 })
 export class SyntheticGen {
- constructor(private titleService: Title, private metaService: Meta) { }
+
+  @ViewChild('videoRef') video!: ElementRef<HTMLVideoElement>;
+
+  constructor(private titleService: Title, private metaService: Meta) { }
 
   ngOnInit(): void {
 
@@ -50,5 +53,34 @@ export class SyntheticGen {
       content: 'Care2Data’s synthetic data generation solution creates realistic, diverse datasets for training and testing machine learning models in healthcare.'
     });
 
+  }
+
+  isPlaying = true;
+  isMuted = true;
+
+  ngAfterViewInit() {
+    const vid = this.video.nativeElement;
+
+    vid.muted = true;
+    vid.play().catch(() => { });
+  }
+
+  togglePlay() {
+    const vid = this.video.nativeElement;
+
+    if (vid.paused) {
+      vid.play();
+      this.isPlaying = true;
+    } else {
+      vid.pause();
+      this.isPlaying = false;
+    }
+  }
+
+  toggleMute() {
+    const vid = this.video.nativeElement;
+
+    vid.muted = !vid.muted;
+    this.isMuted = vid.muted;
   }
 }

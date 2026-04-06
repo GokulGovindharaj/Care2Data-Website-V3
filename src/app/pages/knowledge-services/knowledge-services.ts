@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { Meta, Title } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { debounceTime, fromEvent } from 'rxjs';
 
 @Component({
   selector: 'app-knowledge-services',
@@ -12,36 +13,54 @@ import { RouterModule } from '@angular/router';
 })
 export class KnowledgeServices {
 
-  steps: any[] = [
+  cards: any = [
     {
-      title: "Knowledge Modelling",
-      icon: "device_hub"
+      link: '/services-explore',
+      icon: 'images/home/white/knowledgemodeling.png',
+      title: 'Knowledge Modelling',
+      fragment: 'knowledge-modelling',
+      description: "Define structured semantic representations of clinical entities, regulatory dependencies, workflows, and scientific relationships—establishing the foundation for context-aware validation and reasoning.."
     },
     {
-      title: "Knowledge Repository Creation",
-      icon: "storage"
+      link: '/services-explore',
+      icon: 'images/home/white/knowledgerepository.png',
+      title: 'Knowledge Repository Creation & Setup',
+      fragment: 'knowledge-repository',
+      description: "Operationalise knowledge models within scalable knowledge graph infrastructure, creating a unified semantic source of truth across clinical datasets and systems."
     },
     {
-      title: "Knowledge Discovery & Reasoning",
-      icon: "psychology"
+      link: '/services-explore',
+      icon: 'images/home/white/knowledgediscovery.png',
+      title: 'Knowledge Discovery & Reasoning',
+      fragment: 'knowledge-discovery',
+      description: "Enable contextual discovery, relationship analysis, anomaly detection, and knowledge-driven clinical data validation and verification through reasoning-enabled systems."
     },
     {
-      title: "Knowledge Management & Governance",
-      icon: "gavel"
+      link: '/services-explore',
+      icon: 'images/home/white/knowledgemanagement.png',
+      title: 'Governance & Lifecycle Management',
+      fragment: 'governance',
+      description: " Implement governance frameworks, traceability mechanisms, and regulatory compliance controls—ensuring long-term reliability, audit readiness, and alignment with evolving standards."
     },
     {
-      title: "Training & Enablement",
-      icon: "school"
-    },
-    {
-      title: "Industry Validation & Platform Proof",
-      icon: "verified"
-    },
-    {
-      title: "End-to-End Knowledge Transformation",
-      icon: "hub"
+      link: '/services-explore',
+      icon: 'images/home/white/trainingenablement.png',
+      title: 'Training & Capability Transfer (BOT Model)',
+      fragment: 'training',
+      description: "Equip sponsor and partner teams with the knowledge and capabilities to manage, operate, and extend these systems independently—following a Build, Operate, and Transfer (BOT) model. Each service offering layer reinforces the next—transforming fragmented datasets into interlinked, reasoning-enabled clinical intelligence."
     }
   ];
+
+  active = 0;
+  timer: any;
+  isMobile = false;
+  isTablet = false;
+  positions: any = {
+    center: { x: 0, z: 0, scale: 1.15, opacity: 1, blur: 0, border: 'rgba(250,204,21,0.6)' },
+    left: { x: -220, z: -80, scale: 0.8, opacity: 0.55, blur: 1.5, border: 'rgba(255,255,255,0.1)' },
+    right: { x: 220, z: -80, scale: 0.8, opacity: 0.55, blur: 1.5, border: 'rgba(255,255,255,0.1)' },
+    hidden: { x: 0, z: -200, scale: 0.5, opacity: 0, blur: 4, border: 'rgba(255,255,255,0.05)' }
+  };
 
   groupedCards: any[][] = [];
   currentIndex = 0;
@@ -85,30 +104,82 @@ export class KnowledgeServices {
       content: 'Explore Care2Data knowledge services including knowledge modelling, repository creation, discovery, reasoning, and governance for clinical data intelligence.'
     });
 
-    // Auto-advance steps
-    setInterval(() => {
-      this.next();
-    }, 150000);
-
+    this.checkDevice();
+    fromEvent(window, 'resize')
+      .pipe(debounceTime(200))
+      .subscribe(() => this.checkDevice());
+    this.startAutoSlide();
   }
 
-  next() {
-    if (this.currentIndex < this.steps.length - 1) {
-      this.currentIndex++;
+  checkDevice() {
+    const w = window.innerWidth;
+
+    this.isMobile = w < 640;       // Tailwind sm
+    this.isTablet = w >= 640 && w < 1024; // md
+  }
+
+  ngOnDestroy() {
+    clearInterval(this.timer);
+  }
+
+  getPos(i: number) {
+    const total = this.cards.length;
+    const diff = ((i - this.active) % total + total) % total;
+
+    if (diff === 0) return 'center';
+    if (diff === 1) return 'right';
+    if (diff === total - 1) return 'left';
+    return 'hidden';
+  }
+
+  getStyles(i: number) {
+    const pos = this.positions[this.getPos(i)];
+    const type = this.getPos(i);
+
+    let scale = pos.scale;
+
+    // 🔥 Device-based override
+    if (this.isMobile) {
+      scale = type === 'center' ? 0.9 : 0.8;
+    } else if (this.isTablet) {
+      scale = type === 'center' ? 1 : 0.85;
     } else {
-      this.currentIndex = 0;
+      scale = type === 'center' ? 1.1 : 0.9;
+    }
+
+    return {
+      transform: `translateX(${pos.x}px) translateZ(${pos.z}px) scale(${scale})`,
+      opacity: pos.opacity,
+      filter: `blur(${pos.blur}px)`,
+      borderColor: pos.border,
+      zIndex: type === 'center' ? 5 : type === 'hidden' ? 0 : 2
+    };
+  }
+
+  go(dir: number) {
+    const total = this.cards.length;
+    this.active = ((this.active + dir) % total + total) % total;
+    this.resetTimer();
+  }
+
+  goTo(i: number) {
+    this.active = i;
+    this.resetTimer();
+  }
+
+  onCardClick(i: number) {
+    if (i !== this.active) {
+      this.active = i;
+      this.resetTimer();
     }
   }
 
-  prev() {
-    if (this.currentIndex > 0) {
-      this.currentIndex--;
-    } else {
-      this.currentIndex = this.steps.length - 1;
-    }
+  startAutoSlide() {
+    this.timer = setInterval(() => this.go(1), 10000); // 10s per slide
   }
 
-  goTo(index: number) {
-    this.currentIndex = index;
+  resetTimer() {
+    clearInterval(this.timer);
+    this.startAutoSlide();
   }
 }

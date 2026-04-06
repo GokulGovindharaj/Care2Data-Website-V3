@@ -13,10 +13,47 @@ import { RouterModule } from '@angular/router';
   styleUrl: './home.scss',
 })
 export class Home {
-
+  slides = [
+    {
+      title: 'Kwalify™  ·  Data Quality Platform',
+      sub: 'Validation & Verification — Powered by Graph AI',
+      // img: 'images/home/white/strategicalignment.png'
+    },
+    {
+      title: 'Data Quality Platform — Powered by Graph AI',
+      sub: '',
+      img: 'images/whatiskwalify.png'
+    },
+    {
+      title: 'Kwalify Features',
+      sub: '',
+      img: 'images/kwalifyfuture.png'
+    },
+    {
+      title: 'No other organisation has reached this stage',
+      sub: '',
+      img: 'images/whatsuniqueaboutkwalify.png'
+    },
+    {
+      title: 'Designed for clarity, speed and clinical context',
+      sub: '',
+      img: 'images/interfacedesign.png'
+    }
+  ];
+  current = 0;
+  animationClass = 'opacity-100 scale-100';
   constructor(private titleService: Title, private metaService: Meta) { }
 
   ngOnInit(): void {
+    setInterval(() => {
+      this.animationClass = 'opacity-0 scale-95';
+
+      setTimeout(() => {
+        this.current = (this.current + 1) % this.slides.length;
+        this.animationClass = 'opacity-100 scale-100';
+      }, 800);
+
+    }, 4000);
 
     // Change Page Title
     this.titleService.setTitle(

@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { Meta, Title } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { debounceTime, fromEvent } from 'rxjs';
 
 @Component({
   selector: 'app-about',
@@ -15,6 +16,33 @@ export class About {
     { img: 'images/partners/iiitd_logo.png' },
     { img: 'images/partners/iiitb_logo.png' },
     { img: 'images/partners/bharathiar_logo.png' }
+  ];
+  approch: any = [
+    {
+      icon: '01',
+      title: 'Governance-first design',
+      description: "Ensuring validation and verification processes support transparency, traceability, and regulatory compliance—including alignment with global regulatory frameworks and AI governance expectations."
+    },
+    {
+      icon: '02',
+      title: 'Semantic intelligence',
+      description: "Using ontology frameworks to connect datasets through meaning and relationships rather than isolated rules, enabling context-aware validation."
+    },
+    {
+      icon: '03',
+      title: 'Structured validation frameworks',
+      description: "Enabling reproducible, explainable (XAI-driven), and audit-ready validation processes across the clinical data lifecycle."
+    },
+    {
+      icon: '04',
+      title: 'Integrated validation and verification',
+      description: "Combining ontology-driven validation with graph-based verification models to identify inconsistencies, confirm data integrity, and ensure completeness across datasets."
+    },
+    {
+      icon: '05',
+      title: 'Operational integration',
+      description: "Embedding governed intelligence within existing clinical workflows without replacing established systems."
+    }
   ];
 
   active = 0;
@@ -68,7 +96,9 @@ export class About {
     });
 
     this.checkDevice();
-    window.addEventListener('resize', this.checkDevice.bind(this));
+    fromEvent(window, 'resize')
+      .pipe(debounceTime(200))
+      .subscribe(() => this.checkDevice());
     this.startAutoSlide();
   }
 
@@ -84,7 +114,7 @@ export class About {
   }
 
   getPos(i: number) {
-    const total = this.cards.length;
+    const total = this.approch.length;
     const diff = ((i - this.active) % total + total) % total;
 
     if (diff === 0) return 'center';
@@ -93,32 +123,32 @@ export class About {
     return 'hidden';
   }
 
-getStyles(i: number) {
-  const pos = this.positions[this.getPos(i)];
-  const type = this.getPos(i);
+  getStyles(i: number) {
+    const pos = this.positions[this.getPos(i)];
+    const type = this.getPos(i);
 
-  let scale = pos.scale;
+    let scale = pos.scale;
 
-  // 🔥 Device-based override
-  if (this.isMobile) {
-    scale = type === 'center' ? 1.55 : 0.8;
-  } else if (this.isTablet) {
-    scale = type === 'center' ? 1.55 : 0.85;
-  } else {
-    scale = type === 'center' ? 1.55 : 0.9;
+    // 🔥 Device-based override
+    if (this.isMobile) {
+      scale = type === 'center' ? 0.9 : 0.8;
+    } else if (this.isTablet) {
+      scale = type === 'center' ? 1 : 0.85;
+    } else {
+      scale = type === 'center' ? 1.1 : 0.9;
+    }
+
+    return {
+      transform: `translateX(${pos.x}px) translateZ(${pos.z}px) scale(${scale})`,
+      opacity: pos.opacity,
+      filter: `blur(${pos.blur}px)`,
+      borderColor: pos.border,
+      zIndex: type === 'center' ? 5 : type === 'hidden' ? 0 : 2
+    };
   }
 
-  return {
-    transform: `translateX(${pos.x}px) translateZ(${pos.z}px) scale(${scale})`,
-    opacity: pos.opacity,
-    filter: `blur(${pos.blur}px)`,
-    borderColor: pos.border,
-    zIndex: type === 'center' ? 5 : type === 'hidden' ? 0 : 2
-  };
-}
-
   go(dir: number) {
-    const total = this.cards.length;
+    const total = this.approch.length;
     this.active = ((this.active + dir) % total + total) % total;
     this.resetTimer();
   }
@@ -136,7 +166,7 @@ getStyles(i: number) {
   }
 
   startAutoSlide() {
-    this.timer = setInterval(() => this.go(1), 5000);
+    this.timer = setInterval(() => this.go(1), 10000); // 10s per slide
   }
 
   resetTimer() {

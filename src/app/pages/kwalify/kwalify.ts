@@ -156,7 +156,8 @@ export class Kwalify {
         'Root cause explanation',
         'Impact analysis',
         'Recommended remediation'
-      ]
+      ],
+      footer: 'This transforms validation from manual investigation into guided resolution.'
     },
     {
       icon: 'images/kwalify/white/compliancerules.png',

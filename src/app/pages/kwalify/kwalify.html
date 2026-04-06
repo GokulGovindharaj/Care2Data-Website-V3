@@ -1,5 +1,5 @@
 <!-- Hero Section -->
-<section class="py-24 bg-[#11193e] text-white overflow-hidden">
+<section class="pt-24 bg-[#11193e] text-white overflow-hidden">
     <div class="max-w-7xl mx-auto px-6">
 
         <div class="max-w-5xl mx-auto text-center mb-5">
@@ -11,7 +11,7 @@
                     <span class="text-secondary">Intelligent Clinical Data Validation</span>
                 </h1>
 
-                <p class="text-base md:text-lg lg:text-xl text-white mb-4 font-semibold">
+                <p class="text-base md:text-lg text-white mb-4 font-semibold">
                     Powered by a Linked Clinical Data Model
                 </p>
                 <!-- Heading -->
@@ -21,7 +21,7 @@
                     <span class="text-secondary">Start Understanding It.</span>
                 </p>
                 <!-- Subheadline -->
-                <p class="text-white text-base md:text-lg lg:text-xl text-white mb-4 leading-relaxed mb-5">
+                <p class="text-white text-base md:text-lg text-white mb-4 leading-relaxed mb-5">
                     KWALIFY™ operationalizes Care2Data’s knowledge-driven validation framework—embedding semantic
                     intelligence across linked clinical datasets to strengthen accuracy, traceability, and regulatory
                     readiness before submission.
@@ -54,7 +54,7 @@
 
                     <!-- Primary -->
                     <button routerLink="/contact-us"
-                        class="inline-flex items-center justify-center cursor-pointer gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
+                        class="inline-flex items-center justify-center cursor-pointer uppercase gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
                         style="background-color: var(--btn-primary-color); color: #fff;"
                         onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
                         onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
@@ -63,7 +63,7 @@
 
                     <!-- Secondary -->
                     <button
-                        class="inline-flex items-center justify-center cursor-pointer gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
+                        class="inline-flex items-center justify-center cursor-pointer uppercase gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
                         style="background-color: var(--btn-primary-color); color: #fff;"
                         onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
                         onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
@@ -78,7 +78,7 @@
 </section>
 
 <!-- CATEGORY POSITIONING -->
-<section class="py-8 bg-[#102c50] text-white">
+<section class="pt-8 bg-[#102c50] text-white">
     <div class="max-w-7xl mx-auto px-6">
 
         <!-- Heading -->
@@ -88,7 +88,7 @@
                 <span class="text-secondary">Outgrown Static Rules</span>
             </h2>
 
-            <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed text-center max-w-3xl mx-auto">
+            <p class="text-white text-base md:text-lg leading-relaxed text-center max-w-3xl mx-auto">
                 Clinical trials generate deeply interconnected datasets across subjects, treatments,
                 outcomes, and safety signals. <br>Regulatory scrutiny continues to increase. <br>And validation
                 tools that rely on static rule execution are no longer sufficient.
@@ -176,12 +176,12 @@
                 KWALIFY™ introduces an intelligence layer for clinical data validation.
             </h3>
 
-            <p class="text-base md:text-lg lg:text-xl text-white text-justify leading-relaxed mb-5 max-w-4xl">
+            <p class="text-base md:text-lg text-white text-justify leading-relaxed mb-5 max-w-4xl">
                 By combining semantic reasoning, anomaly verification, and contextual validation across linked datasets,
                 KWALIFY™ transforms validation from checklist execution into knowledge-driven assurance.
             </p>
 
-            <p class="text-base md:text-lg lg:text-xl text-white text-justify leading-relaxed mb-5 max-w-4xl">
+            <p class="text-base md:text-lg text-white text-justify leading-relaxed mb-5 max-w-4xl">
                 Instead of identifying violations, KWALIFY™ enables teams to understand the
                 <span class="text-white font-semibold">cause, impact, and resolution</span> of data inconsistencies
                 before submission.
@@ -189,7 +189,7 @@
 
             <!-- CTA -->
             <button
-                class="inline-flex items-center cursor-pointer gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
+                class="inline-flex items-center cursor-pointer uppercase gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
                 style="background-color: var(--btn-primary-color); color: #fff;"
                 onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
                 onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
@@ -222,10 +222,10 @@
 
         <!-- Carousel -->
         <div class="overflow-hidden pt-0 lg:pt-5">
-            <div class="relative h-[305px] lg:h-[315px] flex items-center justify-center perspective-[900px]">
+            <div class="relative h-[390px] lg:h-[330px] flex items-center justify-center perspective-[900px]">
 
                 <div *ngFor="let card of cards; let i = index" (click)="onCardClick(i)"
-                    class="absolute rounded-2xl p-6 w-full md:w-[400px] lg:w-[465px] h-[305px] md:h-[280px] cursor-pointer border transition-all duration-700 ease-[cubic-bezier(0.34,1.2,0.64,1)] bg-white text-black"
+                    class="absolute rounded-2xl p-6 w-full md:w-[400px] lg:w-[465px] h-[375px] md:h-[310px] cursor-pointer border transition-all duration-700 ease-[cubic-bezier(0.34,1.2,0.64,1)] bg-white text-black"
                     [ngStyle]="getStyles(i)">
 
                     <!-- Icon -->
@@ -261,7 +261,7 @@
             <!-- Dots -->
             <div class="flex justify-center gap-2 lg:mt-5">
                 <div *ngFor="let d of cards; let i = index" (click)="goTo(i)"
-                    class="w-[9px] h-[9px] rounded-full cursor-pointer transition-all duration-300"
+                    class="w-[9px] h-[9px] xl:w-[10px] xl:h-[10px] rounded-full cursor-pointer transition-all duration-300"
                     [ngClass]="i === active ? 'bg-yellow-400 scale-105' : 'bg-white/30'">
                 </div>
             </div>
@@ -271,7 +271,7 @@
         <!-- CTA -->
         <div class="mt-5 text-center">
             <button
-                class="inline-flex items-center cursor-pointer gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
+                class="inline-flex items-center cursor-pointer uppercase gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
                 style="background-color: var(--btn-primary-color); color: #fff;"
                 onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
                 onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
@@ -293,7 +293,7 @@
                 <span class="text-secondary">—Driven by Accuracy, Consistency, and Scalability</span>
             </h2>
 
-            <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed text-center max-w-3xl mx-auto">
+            <p class="text-white text-base md:text-lg leading-relaxed text-center max-w-3xl mx-auto">
                 KWALIFY™ operates as an intelligence layer across submission datasets.
             </p>
         </div>
@@ -557,7 +557,7 @@
         <!-- CTA -->
         <div class="mt-16 text-center">
             <button
-                class="inline-flex items-center cursor-pointer gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
+                class="inline-flex items-center cursor-pointer uppercase gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
                 style="background-color: var(--btn-primary-color); color: #fff;"
                 onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
                 onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
@@ -578,11 +578,11 @@
                 Operational Visibility
                 <span class="text-secondary">Across Studies</span>
             </h2>
-            <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed">
+            <p class="text-white text-base md:text-lg leading-relaxed">
                 KWALIFY™ provides a centralized validation dashboard for monitoring study progress and compliance
                 readiness.
             </p>
-            <p class="text-base md:text-lg lg:text-xl text-secondary text-center my-5 font-semibold">
+            <p class="text-base md:text-lg text-secondary text-center my-5 font-semibold">
                 Teams can instantly view:
             </p>
         </div>
@@ -595,7 +595,7 @@
                     <img src="images/kwalify/white/undervalidation.png" alt=""
                         class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
                 </div>
-                <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed">
+                <p class="text-white text-base md:text-lg leading-relaxed">
                     Active studies under validation
                 </p>
             </div>
@@ -605,7 +605,7 @@
                     <img src="images/kwalify/white/compliancestatus.png" alt=""
                         class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
                 </div>
-                <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed">
+                <p class="text-white text-base md:text-lg leading-relaxed">
                     Rule compliance status
                 </p>
             </div>
@@ -615,7 +615,7 @@
                     <img src="images/kwalify/white/validationprogress.png" alt=""
                         class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
                 </div>
-                <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed">
+                <p class="text-white text-base md:text-lg leading-relaxed">
                     Validation progress milestones
                 </p>
             </div>
@@ -625,7 +625,7 @@
                     <img src="images/kwalify/white/domainlevelviolation.png" alt=""
                         class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
                 </div>
-                <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed">
+                <p class="text-white text-base md:text-lg leading-relaxed">
                     Domain-level violation summaries
                 </p>
             </div>
@@ -635,7 +635,7 @@
                     <img src="images/kwalify/white/validationtrend.png" alt=""
                         class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
                 </div>
-                <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed">
+                <p class="text-white text-base md:text-lg leading-relaxed">
                     Validation trend analysis across multiple runs
                 </p>
             </div>
@@ -645,7 +645,7 @@
                     <img src="images/kwalify/white/dataintegrity.png" alt=""
                         class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
                 </div>
-                <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed">
+                <p class="text-white text-base md:text-lg leading-relaxed">
                     Intelligent grouping of related errors and prioritization
                 </p>
             </div>
@@ -654,7 +654,7 @@
 
         <!-- Description Paragraph -->
         <div class="max-w-4xl mx-auto text-justify text-white mb-5 mt-5">
-            <p class="text-base md:text-lg lg:text-xl leading-relaxed">
+            <p class="text-base md:text-lg leading-relaxed">
                 <span class="text-xl md:text-2xl font-semibold">Includes intelligent grouping of related errors and
                     prioritization—addressing a
                     major pain point where teams struggle to identify affected records and error clusters efficiently.
@@ -666,7 +666,7 @@
         <!-- CTA -->
         <div class="text-center">
             <button
-                class="inline-flex items-center cursor-pointer gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
+                class="inline-flex items-center cursor-pointer uppercase gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
                 style="background-color: var(--btn-primary-color); color: #fff;"
                 onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
                 onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
@@ -708,7 +708,7 @@
                     class="text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-3 lg:h-18 xl:h-12">
                     Strengthened Data Integrity
                 </h3>
-                <p class="text-base md:text-lg lg:text-xl leading-relaxed">
+                <p class="text-base md:text-lg leading-relaxed">
                     Identify discrepancies at their origin— ensuring data accuracy before QA or regulatory review.
                 </p>
             </div>
@@ -722,7 +722,7 @@
                 <h3
                     class="text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-3 lg:h-18 xl:h-12">
                     Faster Validation Cycles</h3>
-                <p class="text-base md:text-lg lg:text-xl leading-relaxed">
+                <p class="text-base md:text-lg leading-relaxed">
                     AI-assisted investigation using LLM models reduces manual debugging and accelerates issue
                     resolution.
                     <br>Significantly cuts down the cumulative time lost in error resolution—currently one of the
@@ -739,7 +739,7 @@
                 <h3
                     class="text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-3 lg:h-18 xl:h-12">
                     Reduced Regulatory Queries</h3>
-                <p class="text-base md:text-lg lg:text-xl leading-relaxed">
+                <p class="text-base md:text-lg leading-relaxed">
                     Explainable AI validation outputs improve clarity and traceability in submissions.
                 </p>
             </div>
@@ -753,7 +753,7 @@
                 <h3
                     class="text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-3 lg:h-18 xl:h-12">
                     Enterprise Scalability</h3>
-                <p class="text-base md:text-lg lg:text-xl leading-relaxed">
+                <p class="text-base md:text-lg leading-relaxed">
                     KWALIFY™ scales across therapeutic areas, studies, and global trial programs without increasing
                     validation complexity.
                 </p>
@@ -764,7 +764,7 @@
         <!-- CTA -->
         <div class="text-center">
             <button
-                class="inline-flex items-center cursor-pointer gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
+                class="inline-flex items-center cursor-pointer uppercase gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
                 style="background-color: var(--btn-primary-color); color: #fff;"
                 onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
                 onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
@@ -785,7 +785,7 @@
                 Why Enterprise Teams Are Moving
                 <span class="text-secondary">Beyond Traditional Validation Tools</span>
             </h2>
-            <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed">
+            <p class="text-white text-base md:text-lg leading-relaxed">
                 Many clinical validation tools in the market rely on static rule execution engines.
                 While these systems can detect rule violations, they often require extensive manual investigation to
                 understand the root cause and downstream impact of errors.
@@ -800,7 +800,7 @@
                     <img src="images/kwalify/white/crossdataset.png" alt=""
                         class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
                 </div>
-                <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed">
+                <p class="text-white text-base md:text-lg leading-relaxed">
                     Limited cross-dataset reasoning
                 </p>
             </div>
@@ -810,7 +810,7 @@
                     <img src="images/kwalify/white/knowledgegraph.png" alt=""
                         class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
                 </div>
-                <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed">
+                <p class="text-white text-base md:text-lg leading-relaxed">
                     Lack of contextual validation logic
                 </p>
             </div>
@@ -820,7 +820,7 @@
                     <img src="images/kwalify/white/issueresolution.png" alt=""
                         class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
                 </div>
-                <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed">
+                <p class="text-white text-base md:text-lg leading-relaxed">
                     Minimal guidance for issue resolution
                 </p>
             </div>
@@ -830,7 +830,7 @@
                     <img src="images/kwalify/white/fragmentedvisibility.png" alt=""
                         class="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0">
                 </div>
-                <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed">
+                <p class="text-white text-base md:text-lg leading-relaxed">
                     Fragmented visibility across studies
                 </p>
             </div>
@@ -844,7 +844,7 @@
                 <p
                     class="text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transitiontext-lg lg:text-xl font-semibold mb-2">
                     41%</p>
-                <p class="text-white text-base md:text-lg lg:text-xl">Vague error messages</p>
+                <p class="text-white text-base md:text-lg">Vague error messages</p>
             </div>
 
             <div
@@ -852,7 +852,7 @@
                 <p
                     class="text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transitiontext-lg lg:text-xl font-semibold mb-2">
                     47%</p>
-                <p class="text-white text-base md:text-lg lg:text-xl">No prioritization</p>
+                <p class="text-white text-base md:text-lg">No prioritization</p>
             </div>
 
             <div
@@ -860,13 +860,13 @@
                 <p
                     class="text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transitiontext-lg lg:text-xl font-semibold mb-2">
                     35%</p>
-                <p class="text-white text-base md:text-lg lg:text-xl">Difficulty identifying affected records</p>
+                <p class="text-white text-base md:text-lg">Difficulty identifying affected records</p>
             </div>
         </div>
 
         <!-- Description Paragraph -->
         <div class="max-w-3xl mx-auto text-justify text-white mb-5">
-            <p class="text-base md:text-lg lg:text-xl leading-relaxed">
+            <p class="text-base md:text-lg leading-relaxed">
                 KWALIFY™ addresses these gaps through an intelligence-driven validation architecture.
                 By combining semantic reasoning, anomaly verification, and explainable AI validation outputs, KWALIFY
                 enables teams to move beyond simple rule checking toward comprehensive data integrity assurance.
@@ -878,7 +878,7 @@
         <!-- CTA -->
         <div class="text-center">
             <button
-                class="inline-flex items-center cursor-pointer gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
+                class="inline-flex items-center cursor-pointer uppercase gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
                 style="background-color: var(--btn-primary-color); color: #fff;"
                 onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
                 onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
@@ -901,7 +901,7 @@
             </h2>
         </div>
 
-        <div class="relative">
+        <div class="relative magzine">
             <!-- LEFT BUTTON -->
             <button *ngIf="!isAtStart" (click)="scroll('left')" class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-secondary text-black shadow-md rounded-full p-2 
          hover:scale-110 cursor-pointer transition">
@@ -924,13 +924,13 @@
     hover:-translate-y-2 hover:shadow-xl hover:border-primary">
                     <!-- Body -->
                     <div class="p-5 flex flex-col flex-1">
-                        <h3 class="text-base md:text-lg lg:text-xl font-semibold text-primary mb-2 h-12 max-w-3xl">
+                        <h3 class="text-base md:text-lg font-semibold text-primary mb-2 h-12 max-w-3xl">
                             Knowledge-Driven Validation Framework
                         </h3>
                         <p class="text-base md:text-md text-black leading-relaxed flex-1">
                             Operationalizes semantic reasoning across the validation lifecycle.
                         </p>
-                        <span class="font-semibold text-black text-base md:text-lg lg:text-xl mb-2">
+                        <span class="font-semibold text-black text-base md:text-lg mb-2">
                             Delivers the exact capabilities users ranked most valuable:
                         </span>
                         <ul class="list-disc pl-6 space-y-2 text-black">
@@ -946,7 +946,7 @@
               bg-white rounded-2xl border shadow-sm flex flex-col transition-all duration-300 ease-out
     hover:-translate-y-2 hover:shadow-xl hover:border-primary">
                     <div class="p-5 flex flex-col flex-1">
-                        <h3 class="text-base md:text-lg lg:text-xl font-semibold text-primary mb-2 h-12 max-w-3xl">
+                        <h3 class="text-base md:text-lg font-semibold text-primary mb-2 h-12 max-w-3xl">
                             Linked Clinical Data Model
                         </h3>
                         <p class="text-base md:text-md text-black leading-relaxed flex-1">
@@ -960,7 +960,7 @@
               bg-white rounded-2xl border shadow-sm flex flex-col transition-all duration-300 ease-out
     hover:-translate-y-2 hover:shadow-xl hover:border-primary">
                     <div class="p-5 flex flex-col flex-1">
-                        <h3 class="text-base md:text-lg lg:text-xl font-semibold text-primary mb-2 h-12 max-w-3xl">
+                        <h3 class="text-base md:text-lg font-semibold text-primary mb-2 h-12 max-w-3xl">
                             Embedded Semantic Intelligence
                         </h3>
                         <p class="text-base md:text-md text-black leading-relaxed flex-1">
@@ -974,7 +974,7 @@
               bg-white rounded-2xl border shadow-sm flex flex-col transition-all duration-300 ease-out
     hover:-translate-y-2 hover:shadow-xl hover:border-primary">
                     <div class="p-5 flex flex-col flex-1">
-                        <h3 class="text-base md:text-lg lg:text-xl font-semibold text-primary mb-2 h-12 max-w-3xl">
+                        <h3 class="text-base md:text-lg font-semibold text-primary mb-2 h-12 max-w-3xl">
                             Audit-Ready Architecture
                         </h3>
                         <p class="text-base md:text-md text-black leading-relaxed flex-1">
@@ -989,7 +989,7 @@
               bg-white rounded-2xl border shadow-sm flex flex-col transition-all duration-300 ease-out
     hover:-translate-y-2 hover:shadow-xl hover:border-primary">
                     <div class="p-5 flex flex-col flex-1">
-                        <h3 class="text-base md:text-lg lg:text-xl font-semibold text-primary mb-2 h-12 max-w-3xl">
+                        <h3 class="text-base md:text-lg font-semibold text-primary mb-2 h-12 max-w-3xl">
                             Governance-Aligned Deployment
                         </h3>
                         <p class="text-base md:text-md text-black leading-relaxed flex-1">
@@ -1005,7 +1005,7 @@
         <!-- CTA -->
         <div class="text-center mt-5">
             <button
-                class="inline-flex items-center cursor-pointer gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
+                class="inline-flex items-center cursor-pointer uppercase gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
                 style="background-color: var(--btn-primary-color); color: #fff;"
                 onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
                 onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
@@ -1116,7 +1116,7 @@
         <!-- CTA -->
         <div class="mt-5 text-center">
             <button
-                class="inline-flex items-center cursor-pointer gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
+                class="inline-flex items-center cursor-pointer uppercase gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
                 style="background-color: var(--btn-primary-color); color: #fff;"
                 onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
                 onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
@@ -1140,16 +1140,16 @@
             <!-- LEFT CONTENT -->
             <div class="max-w-3xl mx-auto text-justify mb-5">
 
-                <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed mb-5">
+                <p class="text-white text-base md:text-lg leading-relaxed mb-5">
                     KWALIFY™ is designed as a validation platform, not just a submission checker.
                 </p>
 
-                <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed mb-5">
+                <p class="text-white text-base md:text-lg leading-relaxed mb-5">
                     The current platform focuses on submission dataset validation, with a roadmap extending across the
                     entire clinical trial lifecycle.
                 </p>
 
-                <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed">
+                <p class="text-white text-base md:text-lg leading-relaxed">
                     This positions KWALIFY™ as a long-term validation infrastructure for modern clinical trials.
                 </p>
             </div>
@@ -1174,26 +1174,26 @@
 
                     <!-- Odd: white -->
                     <g>
-                        <polygon points="15,40 245,40 275,75 245,110 15,110 45,75" fill="#417ae3" />
+                        <polygon points="15,40 245,40 275,75 245,110 15,110 45,75" fill="#11193e" />
                         <text x="145" y="80" class="step-text" fill="white">Derived analysis outputs</text>
                     </g>
 
-                    <!-- Even: black -->
+                    <!-- Even: white -->
                     <g>
-                        <polygon points="285,40 515,40 545,75 515,110 285,110 315,75" fill="#f0ca33" />
-                        <text x="425" y="80" class="step-text" fill="black">Statistical analysis datasets</text>
+                        <polygon points="285,40 515,40 545,75 515,110 285,110 315,75" fill="#2a347a" />
+                        <text x="425" y="80" class="step-text" fill="white">Statistical analysis datasets</text>
                     </g>
 
-                    <!-- Odd: white -->
+                    <!-- Odd: black -->
                     <g>
-                        <polygon points="555,40 785,40 815,75 785,110 555,110 585,75" fill="#417ae3" />
-                        <text x="690" y="80" class="step-text" fill="white">Clinical reporting data</text>
+                        <polygon points="555,40 785,40 815,75 785,110 555,110 585,75" fill="#f1dba0" />
+                        <text x="690" y="80" class="step-text" fill="black">Clinical reporting data</text>
                     </g>
 
-                    <!-- Even: black -->
+                    <!-- Even: white -->
                     <g>
-                        <polygon points="825,40 1085,40 1115,75 1085,110 825,110 855,75" fill="#f0ca33" />
-                        <text x="980" y="80" class="step-text" fill="black">Cross-stage clinical data integrity</text>
+                        <polygon points="825,40 1085,40 1115,75 1085,110 825,110 855,75" fill="#b78c3e" />
+                        <text x="980" y="80" class="step-text" fill="white">Cross-stage clinical data integrity</text>
                     </g>
                 </svg>
 
@@ -1215,13 +1215,13 @@
         </h2>
 
         <!-- Description -->
-        <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed mb-5 max-w-3xl mx-auto">
+        <p class="text-white text-base md:text-lg leading-relaxed mb-5 max-w-3xl mx-auto">
             Discover how KWALIFY™ identifies validation issues, diagnoses root causes, and verifies data integrity
             before
             submission.
         </p>
 
-        <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed mb-5 max-w-3xl mx-auto">
+        <p class="text-white text-base md:text-lg leading-relaxed mb-5 max-w-3xl mx-auto">
             Experience how semantic intelligence transforms validation into a strategic advantage for clinical teams.
         </p>
 
@@ -1230,7 +1230,7 @@
 
             <!-- Primary CTA -->
             <button
-                class="inline-flex items-center justify-center cursor-pointer gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
+                class="inline-flex items-center justify-center cursor-pointer uppercase gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
                 style="background-color: var(--btn-primary-color); color: #fff;"
                 onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
                 onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
@@ -1239,7 +1239,7 @@
 
             <!-- Secondary CTA -->
             <button
-                class="inline-flex items-center justify-center cursor-pointer gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
+                class="inline-flex items-center justify-center cursor-pointer uppercase gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
                 style="background-color: var(--btn-primary-color); color: #fff;"
                 onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
                 onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
@@ -1263,13 +1263,13 @@
         </h2>
 
         <p
-            class="text-white max-w-3xl mx-auto leading-relaxed mb-3 text-base md:text-lg lg:text-xl text-center font-semibold">
+            class="text-white max-w-3xl mx-auto leading-relaxed mb-3 text-base md:text-lg text-center font-semibold">
             KWALIFY™ transforms clinical data validation
             from binary rule checking
             into enterprise-grade, knowledge-driven assurance.
         </p>
 
-        <p class="text-white max-w-3xl mx-auto leading-relaxed mb-5 text-base md:text-lg lg:text-xl text-center">
+        <p class="text-white max-w-3xl mx-auto leading-relaxed mb-5 text-base md:text-lg text-center">
             And eliminates the systemic inefficiencies that continue to slow down clinical validation teams today.
         </p>
     </div>
@@ -1523,7 +1523,7 @@
         <p class="text-white max-w-7xl mx-auto text-center mt-5 opacity-50">Still have questions?</p>
         <div class="mt-2 text-center gap-2 flex flex-col sm:flex-row justify-center">
             <button routerLink="/contact-us"
-                class="inline-flex items-center cursor-pointer gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
+                class="inline-flex items-center cursor-pointer uppercase gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
                 style="background-color: var(--btn-primary-color); color: #fff;"
                 onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
                 onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
