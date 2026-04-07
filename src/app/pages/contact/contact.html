@@ -1,21 +1,16 @@
-<section class="pt-20 pb-5 bg-[#11193e]">
+<div class="contact-page">
   <div class="max-w-6xl mx-auto px-4 md:px-6">
 
     <!-- Page Title -->
-    <div class="text-center mb-7 text-white">
-      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 font-heading">
-        Contact
-        <span class="text-secondary"> Us</span>
-      </h2>
-      <p class="text-white max-w-3xl mx-auto leading-relaxed mb-3 text-base md:text-lg lg:text-xl text-center font-semibold">
-        Let’s discuss your data challenges.
-      </p>
-      <div class="w-20 h-1 bg-blue-600 mx-auto rounded-full"></div>
+    <div class="contact-title">
+      <h2>Contact <span style="color: #f5c36e;">Us</span></h2>
+      <p>Let’s discuss your data challenges.</p>
+      <div class="w-20 h-1 bg-[#f5c36e] mx-auto rounded-full"></div>
     </div>
 
-    <div class="max-w-3xl mx-auto">
+    <div class="contact-form-container">
 
-      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="text-white space-y-6">
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
 
         <!-- Name -->
         <div class="mb-2">
@@ -102,16 +97,12 @@
 
         <!-- Submit Button -->
         <div class="my-6">
-          <button type="submit" [disabled]="isLoading" class="flex items-center justify-center gap-2 text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 cursor-pointer mx-auto w-fit hover:bg-primary hover:border-primary
-           disabled:opacity-50 disabled:cursor-not-allowed"
-            style="background-color: var(--btn-primary-color); color: white;"
-            onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
-            onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
+          <button type="submit" [disabled]="isLoading" class="btn-submit disabled:opacity-50 disabled:cursor-not-allowed">
             <p class="m-0" *ngIf="!isLoading">Send Message</p>
-            <p class="m-0 text-white" *ngIf="isLoading">Sending Message...</p>
+            <p class="m-0" *ngIf="isLoading">Sending Message...</p>
           </button>
         </div>
       </form>
     </div>
   </div>
-</section>
+</div>

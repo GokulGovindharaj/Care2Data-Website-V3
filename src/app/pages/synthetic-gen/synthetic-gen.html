@@ -1,439 +1,291 @@
-<section class="py-24 flex items-center bg-[#11193e] overflow-hidden">
-    <div class="max-w-7xl mx-auto px-6">
-        <div class="grid lg:grid-cols-2 gap-10 items-center">
+<!-- ═══════════════════════════════════════════════════════════
+     HERO — Split layout with animated data grid visual
+═══════════════════════════════════════════════════════════ -->
+<section class="sg-hero">
+  <div class="sg-hero__noise"></div>
 
-            <!-- LEFT CONTENT -->
+  <div class="sg-hero__inner">
+    <!-- Left copy -->
+    <div class="sg-hero__copy">
+      <span class="sg-badge">Synthetic Clinical Data Generation</span>
+
+      <h1 class="sg-hero__title">
+        Simulate Clinical Data.<br>
+        <em>Validate Without Risk.</em>
+      </h1>
+
+      <p class="sg-hero__sub">
+        SyntheticGEN™ enables the generation of statistically consistent, regulation-aware synthetic
+        clinical datasets—allowing teams to test, validate, and refine workflows without exposure to
+        sensitive patient data.
+      </p>
+
+      <p class="sg-hero__support">
+        Built to support clinical trial simulations, system testing, and validation workflows across the
+        clinical data lifecycle.
+      </p>
+
+      <div class="sg-hero__cta">
+        <a routerLink="/contact-us" class="btn btn-primary">Explore SyntheticGEN™ →</a>
+        <a routerLink="/contact-us" class="btn btn-outline">Request a Demo →</a>
+      </div>
+    </div>
+
+    <!-- Right visual panel -->
+    <div class="sg-hero__visual" aria-hidden="true">
+      <div class="sg-panel">
+        <div class="sg-panel__label">SyntheticGEN™ Output</div>
+        <div class="sg-panel__rows">
+          <div class="sg-row">
+            <span class="sg-row__dot sg-row__dot--gold"></span>
+            <div class="sg-row__bar sg-row__bar--80"></div>
+            <span class="sg-row__tag">SDTM</span>
+          </div>
+          <div class="sg-row">
+            <span class="sg-row__dot sg-row__dot--blue"></span>
+            <div class="sg-row__bar sg-row__bar--65"></div>
+            <span class="sg-row__tag">ADaM</span>
+          </div>
+          <div class="sg-row">
+            <span class="sg-row__dot sg-row__dot--teal"></span>
+            <div class="sg-row__bar sg-row__bar--90"></div>
+            <span class="sg-row__tag">CDASH</span>
+          </div>
+          <div class="sg-row">
+            <span class="sg-row__dot sg-row__dot--gold"></span>
+            <div class="sg-row__bar sg-row__bar--55"></div>
+            <span class="sg-row__tag">TLF</span>
+          </div>
+          <div class="sg-row">
+            <span class="sg-row__dot sg-row__dot--blue"></span>
+            <div class="sg-row__bar sg-row__bar--75"></div>
+            <span class="sg-row__tag">Safety</span>
+          </div>
+        </div>
+        <div class="sg-panel__chips">
+          <span class="sg-chip sg-chip--green">Privacy-safe</span>
+          <span class="sg-chip sg-chip--blue">CDISC-aligned</span>
+          <span class="sg-chip sg-chip--gold">Regulation-aware</span>
+        </div>
+        <div class="sg-panel__stat">
+          <strong>100%</strong>
+          <span>No real patient data</span>
+        </div>
+      </div>
+      <div class="sg-hero__glow"></div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="sg-hero__scroll" aria-hidden="true">
+    <span></span>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     PROBLEM — Diagnostic two-column with constraint list
+═══════════════════════════════════════════════════════════ -->
+<section class="sg-problem">
+  <div class="sg-problem__inner">
+
+    <div class="sg-problem__left">
+      <span class="sg-eyebrow">The Challenge</span>
+      <h2>Clinical Validation is Limited by Data Access</h2>
+      <p>Clinical data teams often face a fundamental constraint—real data is either unavailable, restricted, or incomplete when it's needed most.</p>
+
+      <p class="sg-problem__lead">This creates critical bottlenecks:</p>
+
+      <ul class="sg-constraint-list">
+        <li>
+          <span class="sg-constraint-list__icon"><mat-icon>schedule</mat-icon></span>
+          <span>Validation workflows are delayed due to lack of usable datasets</span>
+        </li>
+        <li>
+          <span class="sg-constraint-list__icon"><mat-icon>dataset</mat-icon></span>
+          <span>Testing is performed on limited or non-representative data</span>
+        </li>
+        <li>
+          <span class="sg-constraint-list__icon"><mat-icon>warning</mat-icon></span>
+          <span>Edge cases and anomalies remain untested until late stages</span>
+        </li>
+        <li>
+          <span class="sg-constraint-list__icon"><mat-icon>shield</mat-icon></span>
+          <span>Privacy and compliance risks restrict data usage across teams</span>
+        </li>
+      </ul>
+
+      <p class="sg-problem__conclusion">As a result, systems are often validated reactively, not proactively.</p>
+    </div>
+
+    <div class="sg-problem__right">
+      <div class="sg-shift">
+        <div class="sg-shift__tag">The Shift</div>
+        <div class="sg-shift__line"></div>
+        <blockquote class="sg-shift__quote">
+          SyntheticGEN™ removes this dependency—enabling teams to simulate realistic clinical datasets on demand and validate systems before real data is available.
+        </blockquote>
+        <a routerLink="/contact-us" class="btn btn-primary">Understand the Approach →</a>
+        <div class="sg-shift__glow"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     CAPABILITIES — Bento grid layout
+═══════════════════════════════════════════════════════════ -->
+<section class="sg-capabilities">
+  <div class="sg-capabilities__inner">
+
+    <div class="sg-section-header">
+      <span class="sg-eyebrow">Key Capabilities</span>
+      <h2>Safe, Scalable Testing for Clinical Data Systems</h2>
+      <p>SyntheticGEN™ creates high-fidelity synthetic datasets that replicate the structure, relationships, and statistical behavior of real clinical trial data—without compromising privacy or compliance.</p>
+    </div>
+
+    <!-- Bento grid: 2 wide cards top, 2 standard bottom -->
+    <div class="sg-bento">
+
+      <div class="sg-bento__card sg-bento__card--wide">
+        <div class="sg-bento__icon"><mat-icon>science</mat-icon></div>
+        <h3>Realistic Data Simulation</h3>
+        <p>Generate datasets aligned with clinical standards (e.g., CDISC structures, domains, and relationships)—statistically consistent and structurally valid.</p>
+        <div class="sg-bento__tag">CDISC-aligned</div>
+      </div>
+
+      <div class="sg-bento__card sg-bento__card--wide">
+        <div class="sg-bento__icon"><mat-icon>verified</mat-icon></div>
+        <h3>Validation Readiness</h3>
+        <p>Test validation rules, workflows, and pipelines under simulated trial conditions—identifying gaps before live deployment.</p>
+        <div class="sg-bento__tag">Pre-deployment testing</div>
+      </div>
+
+      <div class="sg-bento__card">
+        <div class="sg-bento__icon"><mat-icon>shield</mat-icon></div>
+        <h3>Privacy-Safe Data Environments</h3>
+        <p>Eliminate dependency on sensitive or restricted datasets during development and testing phases.</p>
+      </div>
+
+      <div class="sg-bento__card">
+        <div class="sg-bento__icon"><mat-icon>hub</mat-icon></div>
+        <h3>Scenario-Based Testing</h3>
+        <p>Simulate edge cases, anomalies, and complex data interactions for robust system validation.</p>
+      </div>
+
+    </div>
+
+    <p class="sg-capabilities__note">It enables teams to simulate real-world scenarios across study design, data validation, and regulatory workflows—ensuring systems perform as expected before live deployment.</p>
+
+    <div class="sg-capabilities__cta">
+      <a routerLink="/contact-us" class="btn btn-primary">See How It Works →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     USE CASES + VALUE — Two-column timeline layout
+═══════════════════════════════════════════════════════════ -->
+<section class="sg-readiness">
+  <div class="sg-readiness__inner">
+
+    <div class="sg-section-header sg-section-header--light">
+      <span class="sg-eyebrow sg-eyebrow--blue">From Constraints to Confidence</span>
+      <h2>From Data Constraints to Data Readiness</h2>
+      <p>SyntheticGEN™ integrates seamlessly into clinical data workflows—supporting simulation, validation, and system readiness across the lifecycle.</p>
+    </div>
+
+    <div class="sg-readiness__grid">
+
+      <!-- Use Cases column -->
+      <div class="sg-timeline">
+        <h3 class="sg-timeline__heading">Use Cases</h3>
+        <div class="sg-timeline__items">
+          <div class="sg-timeline__item">
+            <div class="sg-timeline__dot"><mat-icon>science</mat-icon></div>
+            <div class="sg-timeline__body">
+              <strong>Clinical Trial Simulation</strong>
+              <p>Simulate before study execution—validate the full data pipeline before a single real subject is enrolled.</p>
+            </div>
+          </div>
+          <div class="sg-timeline__item">
+            <div class="sg-timeline__dot"><mat-icon>settings</mat-icon></div>
+            <div class="sg-timeline__body">
+              <strong>System & Pipeline Testing</strong>
+              <p>EDC, SDTM, and downstream workflow testing under realistic synthetic conditions.</p>
+            </div>
+          </div>
+          <div class="sg-timeline__item">
+            <div class="sg-timeline__dot"><mat-icon>verified</mat-icon></div>
+            <div class="sg-timeline__body">
+              <strong>Validation Framework Testing</strong>
+              <p>Including KWALIFY™—stress-test your validation logic before going live.</p>
+            </div>
+          </div>
+          <div class="sg-timeline__item">
+            <div class="sg-timeline__dot"><mat-icon>school</mat-icon></div>
+            <div class="sg-timeline__body">
+              <strong>Training & Sandbox</strong>
+              <p>Safe, realistic environments for onboarding, training, and QA rehearsal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Value column -->
+      <div class="sg-value">
+        <h3 class="sg-value__heading">Value</h3>
+        <div class="sg-value__items">
+          <div class="sg-value__item">
+            <div class="sg-value__icon"><mat-icon>bolt</mat-icon></div>
             <div>
-
-                <!-- Eyebrow -->
-                <div
-                    class="inline-block mb-2 px-4 py-1 text-xs text-white md:text-sm rounded-full bg-white/10 border border-white/20">
-                    Synthetic Clinical Data Generation
-                </div>
-
-                <!-- Headline -->
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5 font-heading">
-                    Simulate Clinical Data.
-                    <span class="text-secondary">Validate Without Risk.</span>
-                </h1>
-
-                <!-- Subheadline -->
-                <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed mb-5 max-w-xl">
-                    SyntheticGEN™ enables the generation of statistically consistent, regulation-aware synthetic
-                    clinical datasets—allowing teams to test, validate, and refine workflows without exposure to
-                    sensitive patient data.
-                </p>
-
-                <!-- Supporting Line -->
-                <p class="text-white text-sm md:text-base lg:text-lg leading-relaxed mb-5 max-w-xl">
-                    Built to support clinical trial simulations, system testing, and validation workflows across the
-                    clinical data lifecycle.
-                </p>
-
-                <!-- CTA Buttons -->
-                <div class="flex flex-col sm:flex-row gap-4">
-
-                    <!-- Primary CTA -->
-                    <button routerLink="/contact-us"
-                        class="inline-flex items-center justify-center cursor-pointer gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
-                        style="background-color: var(--btn-primary-color); color: #fff;"
-                        onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
-                        onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
-                        Explore SyntheticGEN™ →
-                    </button>
-
-                    <!-- Secondary CTA -->
-                    <button routerLink="/contact-us"
-                        class="inline-flex items-center justify-center cursor-pointer gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
-                        style="background-color: var(--btn-primary-color); color: #fff;"
-                        onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
-                        onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
-                        Request a Demo →
-                    </button>
-
-                </div>
-
+              <strong>Accelerated Cycles</strong>
+              <p>Accelerates development and validation cycles—no more waiting for production data.</p>
             </div>
-
-            <!-- RIGHT VISUAL CARD -->
-            <div class="relative">
-
-            </div>
-
-        </div>
-
-    </div>
-</section>
-
-<section class="py-8 bg-[#102c50] text-white">
-    <div class="max-w-7xl mx-auto px-6">
-
-        <div class="text-center mb-5 max-w-5xl mx-auto">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 font-heading">
-                Clinical Validation is
-                <span class="text-secondary">Limited by Data Access</span>
-            </h2>
-            <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed mb-5">
-                Clinical data teams often face a fundamental constraint—real data is either unavailable, restricted,
-                or incomplete when it’s needed most.
-            </p>
-        </div>
-        <div class="grid lg:grid-cols-2 gap-6 items-center">
-
-            <!-- LEFT CONTENT -->
+          </div>
+          <div class="sg-value__item">
+            <div class="sg-value__icon"><mat-icon>insights</mat-icon></div>
             <div>
-
-                <p class="text-lg md:text-xl lg:text-lg xl:text-xl text-[var(--secondary-color)] font-semibold mb-3">
-                    This creates critical bottlenecks:
-                </p>
-
-                <ul class="space-y-5 text-white text-base md:text-lg lg:text-lg xl:text-xl mb-5">
-
-                    <li class="flex items-start gap-3 min-w-0">
-                        <mat-icon class="text-[#417AE3] shrink-0">schedule</mat-icon>
-                        <span class="break-words">
-                            Validation workflows are delayed due to lack of usable datasets
-                        </span>
-                    </li>
-
-                    <li class="flex items-start gap-3 min-w-0">
-                        <mat-icon class="text-[#417AE3] shrink-0">dataset</mat-icon>
-                        <span class="break-words">
-                            Testing is performed on limited or non-representative data
-                        </span>
-                    </li>
-
-                    <li class="flex items-start gap-3 min-w-0">
-                        <mat-icon class="text-[#417AE3] shrink-0">warning</mat-icon>
-                        <span class="break-words">
-                            Edge cases and anomalies remain untested until late stages
-                        </span>
-                    </li>
-
-                    <li class="flex items-start gap-3 min-w-0">
-                        <mat-icon class="text-[#417AE3] shrink-0">shield</mat-icon>
-                        <span class="break-words">
-                            Privacy and compliance risks restrict data usage across teams
-                        </span>
-                    </li>
-
-                </ul>
-
-                <p class="text-white text-base md:text-lg lg:text-lg xl:text-xl">
-                    As a result, systems are often validated reactively, not proactively.
-                </p>
-
+              <strong>Greater Confidence</strong>
+              <p>Improves confidence in data and system behavior through thorough pre-deployment testing.</p>
             </div>
-
-            <!-- RIGHT SHIFT CARD -->
-            <div class="relative">
-
-                <div class="bg-gradient-to-br from-white/5 to-white/10 border border-white/10 rounded-2xl p-8
-                 shadow-xl hover:shadow-2xl transition-all duration-300">
-
-                    <!-- Shift Label -->
-                    <p class="text-xs uppercase tracking-widest text-[#417AE3] mb-3">
-                        The Shift
-                    </p>
-
-                    <!-- Divider -->
-                    <div class="w-12 h-[2px] bg-[#417AE3] mb-5"></div>
-
-                    <!-- Shift Statement -->
-                    <h3 class="text-xl md:text-2xl font-semibold leading-relaxed mb-5">
-                        SyntheticGEN™ removes this dependency—enabling teams to simulate realistic clinical datasets on
-                        demand and validate systems before real data is available.
-                    </h3>
-
-                    <!-- CTA -->
-                    <button
-                        class="inline-flex items-center justify-center cursor-pointer gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
-                        style="background-color: var(--btn-primary-color); color: #fff;"
-                        onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
-                        onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
-                        Understand the Approach →
-                    </button>
-
-                </div>
-
-                <!-- Glow -->
-                <div class="absolute -bottom-10 xl:-right-4 w-52 h-52 bg-[#417AE3]/20 blur-3xl rounded-full"></div>
-
+          </div>
+          <div class="sg-value__item">
+            <div class="sg-value__icon"><mat-icon>autorenew</mat-icon></div>
+            <div>
+              <strong>Proactive Validation</strong>
+              <p>Enables proactive, not reactive, validation—catching issues before they reach submission.</p>
             </div>
-
+          </div>
+          <div class="sg-value__item">
+            <div class="sg-value__icon"><mat-icon>hub</mat-icon></div>
+            <div>
+              <strong>Enterprise Scale</strong>
+              <p>Scales across studies, domains, and complexity levels without additional overhead.</p>
+            </div>
+          </div>
         </div>
+      </div>
 
     </div>
+
+  </div>
 </section>
 
-<section class="py-8 bg-[#114167] text-white">
-    <div class="max-w-7xl mx-auto px-6">
-
-        <!-- Heading -->
-        <div class="max-w-3xl mx-auto text-center mb-5">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 font-heading">
-                Safe, Scalable Testing for
-                <span class="text-secondary">Clinical Data Systems</span>
-            </h2>
-
-            <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed mb-4">
-                SyntheticGEN™ creates high-fidelity synthetic datasets that replicate the structure, relationships, and
-                statistical behavior of real clinical trial data—without compromising privacy or compliance.
-            </p>
-
-            <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed">
-                It enables teams to simulate real-world scenarios across study design, data validation, and regulatory
-                workflows, ensuring systems perform as expected before live deployment.
-            </p>
-
-            <p class="text-base md:text-lg lg:text-2xl text-secondary text-center mt-4 font-semibold">
-                Key Capabilities:
-            </p>
-        </div>
-
-        <!-- Capability Cards -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-5">
-
-            <!-- Card -->
-            <div class="group bg-white/5 border border-white/10 rounded-2xl p-6 transition duration-300 hover:bg-white">
-
-                <!-- Icon -->
-                <div
-                    class="mb-4 w-12 h-12 flex items-center justify-center rounded-xl bg-primary transition group-hover:bg-black/10">
-                    <mat-icon class="text-white group-hover:text-primary">science</mat-icon>
-                </div>
-
-                <!-- Title -->
-                <h3
-                    class="text-lg lg:text-xl font-semibold mb-3 lg:h-12 text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition">
-                    Realistic Data Simulation
-                </h3>
-
-                <!-- Description -->
-                <p
-                    class="text-base md:text-lg lg:text-xl leading-relaxed text-gray-300 transition group-hover:text-black">
-                    Generate datasets aligned with clinical standards (e.g., CDISC structures, domains, and
-                    relationships)
-                </p>
-
-            </div>
-
-            <!-- Card -->
-            <div class="group bg-white/5 border border-white/10 rounded-2xl p-6 transition duration-300 hover:bg-white">
-
-                <div
-                    class="mb-4 w-12 h-12 flex items-center justify-center rounded-xl bg-primary transition group-hover:bg-black/10">
-                    <mat-icon class="text-white group-hover:text-primary">verified</mat-icon>
-                </div>
-
-                <h3
-                    class="text-lg lg:text-xl font-semibold mb-3 lg:h-12 text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition">
-                    Validation Readiness
-                </h3>
-
-                <p
-                    class="text-base md:text-lg lg:text-xl leading-relaxed text-gray-300 transition group-hover:text-black">
-                    Test validation rules, workflows, and pipelines under simulated trial conditions
-                </p>
-
-            </div>
-
-            <!-- Card -->
-            <div class="group bg-white/5 border border-white/10 rounded-2xl p-6 transition duration-300 hover:bg-white">
-
-                <div
-                    class="mb-4 w-12 h-12 flex items-center justify-center rounded-xl bg-primary transition group-hover:bg-black/10">
-                    <mat-icon class="text-white group-hover:text-primary">shield</mat-icon>
-                </div>
-
-                <h3
-                    class="text-lg lg:text-xl font-semibold mb-3 lg:h-12 text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition">
-                    Privacy-Safe Data Environments
-                </h3>
-
-                <p
-                    class="text-base md:text-lg lg:text-xl leading-relaxed text-gray-300 transition group-hover:text-black">
-                    Eliminate dependency on sensitive or restricted datasets during development and testing
-                </p>
-
-            </div>
-
-            <!-- Card -->
-            <div class="group bg-white/5 border border-white/10 rounded-2xl p-6 transition duration-300 hover:bg-white">
-
-                <div
-                    class="mb-4 w-12 h-12 flex items-center justify-center rounded-xl bg-primary transition group-hover:bg-black/10">
-                    <mat-icon class="text-white group-hover:text-primary">hub</mat-icon>
-                </div>
-
-                <h3
-                    class="text-lg lg:text-xl font-semibold mb-3 lg:h-12 text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition">
-                    Scenario-Based Testing
-                </h3>
-
-                <p
-                    class="text-base md:text-lg lg:text-xl leading-relaxed text-gray-300 transition group-hover:text-black">
-                    Simulate edge cases, anomalies, and complex data interactions for robust system validation
-                </p>
-
-            </div>
-
-        </div>
-
-        <!-- CTA -->
-        <div class="text-center">
-            <button routerLink="/contact-us"
-                class="inline-flex items-center justify-center cursor-pointer gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
-                style="background-color: var(--btn-primary-color); color: #fff;"
-                onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
-                onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
-                See How It Works →
-            </button>
-        </div>
-
+<!-- ═══════════════════════════════════════════════════════════
+     CLOSING CTA — Full-width bold band
+═══════════════════════════════════════════════════════════ -->
+<section class="sg-cta">
+  <div class="sg-cta__inner">
+    <div class="sg-cta__glow"></div>
+    <div class="sg-cta__content">
+      <span class="sg-eyebrow">Ready to start?</span>
+      <h2>SyntheticGEN™ transforms synthetic data from a workaround into a strategic validation layer.</h2>
+      <div class="sg-cta__actions">
+        <a routerLink="/contact-us" class="btn btn-primary">Request a Demo →</a>
+        <a routerLink="/kwalify" class="btn btn-outline">Explore KWALIFY™ →</a>
+      </div>
     </div>
-</section>
-
-<section class="py-8 bg-[#11193e] text-white relative overflow-hidden">
-
-    <!-- Glow -->
-    <div class="absolute -top-10 left-1/2 -translate-x-1/2 w-96 h-96 bg-[#417AE3]/10 blur-3xl rounded-full"></div>
-
-    <div class="max-w-7xl mx-auto px-6 relative z-10">
-
-        <!-- Heading -->
-        <div class="max-w-3xl mx-auto text-center mb-14">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 font-heading">
-                From Data Constraints <br>
-                <span class="text-secondary">to Data Readiness</span>
-            </h2>
-
-            <p class="text-white text-base md:text-lg lg:text-xl leading-relaxed">
-                SyntheticGEN™ integrates seamlessly into clinical data workflows—supporting simulation, validation, and
-                system readiness across the lifecycle.
-            </p>
-        </div>
-
-        <!-- Cards -->
-        <div class="grid md:grid-cols-2 gap-8 mb-5">
-
-            <!-- USE CASES -->
-            <div class="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-7
-        hover:bg-white/10 transition-all duration-300 shadow-lg">
-
-                <h3
-                    class="text-lg md:text-xl font-semibold mb-5 text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition">
-                    Use Cases
-                </h3>
-
-                <ul class="space-y-5 text-white text-base md:text-lg lg:text-lg xl:text-xl">
-
-                    <li class="flex items-start gap-3 min-w-0">
-                        <mat-icon class="text-[#417AE3] mt-1 shrink-0">science</mat-icon>
-                        <span class="break-words">
-                            Clinical trial simulation before study execution
-                        </span>
-                    </li>
-
-                    <li class="flex items-start gap-3 min-w-0">
-                        <mat-icon class="text-[#417AE3] mt-1 shrink-0">settings</mat-icon>
-                        <span class="break-words">
-                            System and pipeline testing (EDC, SDTM, downstream workflows)
-                        </span>
-                    </li>
-
-                    <li class="flex items-start gap-3 min-w-0">
-                        <mat-icon class="text-[#417AE3] mt-1 shrink-0">verified</mat-icon>
-                        <span class="break-words">
-                            Validation framework testing (including KWALIFY™)
-                        </span>
-                    </li>
-
-                    <li class="flex items-start gap-3 min-w-0">
-                        <mat-icon class="text-[#417AE3] mt-1 shrink-0">school</mat-icon>
-                        <span class="break-words">
-                            Training and sandbox environments
-                        </span>
-                    </li>
-
-                </ul>
-
-            </div>
-
-            <!-- VALUE -->
-            <div class="group bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-7
-        hover:bg-white/10 transition-all duration-300 shadow-lg">
-
-                <h3
-                    class="text-lg md:text-xl font-semibold mb-5 text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition">
-                    Value
-                </h3>
-
-                <ul class="space-y-5 text-white text-base md:text-lg lg:text-lg xl:text-xl">
-
-                    <li class="flex items-start gap-3 min-w-0">
-                        <mat-icon class="text-[#417AE3] mt-1 shrink-0">bolt</mat-icon>
-                        <span class="break-words">
-                            Accelerates development and validation cycles
-                        </span>
-                    </li>
-
-                    <li class="flex items-start gap-3 min-w-0">
-                        <mat-icon class="text-[#417AE3] mt-1 shrink-0">insights</mat-icon>
-                        <span class="break-words">
-                            Improves confidence in data and system behavior
-                        </span>
-                    </li>
-
-                    <li class="flex items-start gap-3 min-w-0">
-                        <mat-icon class="text-[#417AE3] mt-1 shrink-0">autorenew</mat-icon>
-                        <span class="break-words">
-                            Enables proactive, not reactive, validation
-                        </span>
-                    </li>
-
-                    <li class="flex items-start gap-3 min-w-0">
-                        <mat-icon class="text-[#417AE3] mt-1 shrink-0">hub</mat-icon>
-                        <span class="break-words">
-                            Scales across studies, domains, and complexity levels
-                        </span>
-                    </li>
-
-                </ul>
-
-            </div>
-
-        </div>
-
-        <!-- Closing -->
-        <div class="max-w-3xl mx-auto text-center mb-5">
-            <p class="text-base md:text-lg lg:text-xl text-white text-center mb-4 font-semibold italic">
-                SyntheticGEN™ transforms synthetic data from a workaround into a strategic validation layer.
-            </p>
-        </div>
-
-        <!-- CTA -->
-        <div class="flex flex-col sm:flex-row justify-center gap-4">
-
-            <!-- Primary -->
-            <button routerLink="/contact-us"
-                class="inline-flex items-center justify-center cursor-pointer gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
-                style="background-color: var(--btn-primary-color); color: #fff;"
-                onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
-                onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
-                Request a Demo →
-            </button>
-
-            <!-- Secondary -->
-            <button routerLink="/contact-us"
-                class="inline-flex items-center justify-center cursor-pointer gap-2 px-6 py-3 text-sm font-semibold rounded-xl transition-all duration-300"
-                style="background-color: var(--btn-primary-color); color: #fff;"
-                onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
-                onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
-                Explore KWALIFY™ →
-            </button>
-
-        </div>
-
-    </div>
+  </div>
 </section>

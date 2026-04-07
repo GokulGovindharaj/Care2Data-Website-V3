@@ -1,316 +1,258 @@
 <!-- Hero Section -->
-<section class="relative min-h-screen py-20 flex items-center bg-[#11193e] overflow-hidden">
-
+<section class="knowledge-services-hero">
     <!-- Right Side Background Image -->
-    <div class="absolute top-10 right-0 h-full w-[60%]">
-        <div class="w-full h-full bg-no-repeat bg-right bg-cover"
-            style="background-image:url('images/knowledge-servics.png')"></div>
-        <div class="absolute inset-0 bg-gradient-to-l from-transparent via-[#11193e]/60 to-[#11193e]"></div>
+    <div class="knowledge-services-hero__background">
+        <div class="knowledge-services-hero__background-image" style="background-image:url('images/knowledge-servics.png')"></div>
+        <div class="knowledge-services-hero__background-overlay"></div>
     </div>
 
     <!-- Content Container -->
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center w-full">
-
+    <div class="knowledge-services-hero__content">
         <!-- Left Content -->
-        <div class="w-full lg:w-1/2 text-left z-10 space-y-2">
-
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-white font-heading">
-                Interlinked Data. <span class="text-secondary">Clinical Intelligence. </span> Submission Confidence.
+        <div class="knowledge-services-hero__text">
+            <h1 class="knowledge-services-hero__title">
+                Interlinked Data. <span class="highlight">Clinical Intelligence.</span> Submission Confidence.
             </h1>
 
-            <p class="text-base md:text-lg lg:text-xl text-white group-hover:text-black leading-relaxed">
+            <p class="knowledge-services-hero__subtitle">
                 Transform fragmented clinical, regulatory, and scientific data into a governed knowledge ecosystem
                 powered by semantic intelligence and reasoning-driven AI validation.
             </p>
 
             <!-- CTA -->
-            <div class="flex flex-col sm:flex-row gap-4 pt-4">
-                <button routerLink="/contact-us"
-                    class="text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 cursor-pointer"
-                    style="background-color: var(--btn-primary-color); color: #fff;"
-                    onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
-                    onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
+            <div class="knowledge-services-hero__cta">
+                <button routerLink="/contact-us" class="knowledge-services-hero__button">
                     Request a Demo →
                 </button>
 
-                <button type="button"
-                    class="text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 cursor-pointer"
-                    style="background-color: var(--btn-primary-color); color: #fff;"
-                    onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
-                    onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
+                <button type="button" class="knowledge-services-hero__button">
                     Explore Services →
                 </button>
             </div>
-
         </div>
-
     </div>
 </section>
 
-<!--  About Us -->
-<section class="py-8 bg-[#102c50]">
-    <div class="max-w-7xl mx-auto px-6">
-
-        <!-- Heading -->
-        <!-- <h2 class="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-center mb-5 text-yellow-400 leading-tight">
-      Ensuring accuracy, traceability,<span style="color: #fff"> and</span> compliance remains a core clinical challenge
-    </h2> -->
-
-        <p
-            class="text-base md:text-lg lg:text-xl text-white group-hover:text-black font-normal leading-relaxed text-center text-justify max-w-5xl mx-auto">
+<!-- About Us -->
+<section class="knowledge-services-about">
+    <div class="knowledge-services-about__container">
+        <p class="knowledge-services-about__description">
             Care2Data engineers interlinked data systems and knowledge graphs that connect entities, relationships,
             and regulatory context—enabling XAI clinical data validation, intelligent discovery, and
             submission-ready insight across the life sciences data lifecycle.
         </p>
-
     </div>
 </section>
 
-<!-- Short Transition Section -->
-<section class="py-8 bg-[#114167] text-white">
-    <div class="max-w-7xl mx-auto px-6">
+<!-- The Rise of Interlinked Data & Clinical Intelligence -->
+<section class="knowledge-services-transition">
+    <div class="knowledge-services-transition__container">
 
-        <!-- Heading -->
-        <h2
-            class="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-center mb-5 text-yellow-400 leading-tight">
-            <span style="color: #fff">The Rise of Interlinked Data &</span> Clinical Intelligence
+        <span class="knowledge-services-transition__eyebrow">Industry Context</span>
+
+        <h2 class="knowledge-services-transition__title">
+            <span class="highlight">The Rise of Interlinked Data &</span> Clinical Intelligence
         </h2>
 
-        <!-- Subheading / Highlight Quotes -->
-        <p class="text-xl md:text-2xl font-semibold text-center mt-5 max-w-4xl mx-auto text-secondary">Data without
-            structure
-            is noise. <span>Validation without reasoning is fragile.</span> <span> Compliance without intelligence is a
-                risk.</span></p>
+        <!-- Three-part mantra row -->
+        <div class="knowledge-services-transition__mantras">
+            <div class="knowledge-services-transition__mantra">
+                <span class="knowledge-services-transition__mantra-num">01</span>
+                <p>Data without structure is noise.</p>
+            </div>
+            <div class="knowledge-services-transition__mantra-divider"></div>
+            <div class="knowledge-services-transition__mantra">
+                <span class="knowledge-services-transition__mantra-num">02</span>
+                <p>Validation without reasoning is fragile.</p>
+            </div>
+            <div class="knowledge-services-transition__mantra-divider"></div>
+            <div class="knowledge-services-transition__mantra">
+                <span class="knowledge-services-transition__mantra-num">03</span>
+                <p>Compliance without intelligence is a risk.</p>
+            </div>
+        </div>
 
-        <!-- Description -->
-        <p
-            class="text-base md:text-lg lg:text-xl text-white group-hover:text-black font-normal leading-relaxed text-justify max-w-5xl mx-auto mt-5">
-            The pharmaceutical and life sciences industry generates enormous volumes of clinical, regulatory, and
-            scientific data across research programs, clinical trials, safety monitoring, and regulatory submissions.
-            Yet much of this data remains fragmented across systems, documents, and domain expertise. <br><br>
+        <!-- Body paragraphs -->
+        <div class="knowledge-services-transition__body">
+            <p>
+                The pharmaceutical and life sciences industry generates enormous volumes of clinical, regulatory, and
+                scientific data across research programs, clinical trials, safety monitoring, and regulatory submissions.
+                Yet much of this data remains fragmented across systems, documents, and domain expertise.
+            </p>
+            <p>
+                Traditional validation approaches rely heavily on static rule checks and isolated datasets, limiting the
+                ability to understand relationships across studies, endpoints, and regulatory expectations.
+            </p>
+        </div>
 
-            Traditional validation approaches rely heavily on static rule checks and isolated datasets, limiting the
-            ability to understand relationships across studies, endpoints, and regulatory expectations. <br><br>
+        <!-- Highlighted statement callout -->
+        <div class="knowledge-services-transition__callout">
+            <p>
+                <strong>Interlinked Data &amp; Clinical Intelligence represents a new operating model.</strong>
+                It connects datasets into knowledge graphs, embeds semantic reasoning, aligns regulatory context,
+                and transforms validation from mechanical rule execution into
+                <strong>defensible, XAI clinical intelligence.</strong>
+            </p>
+        </div>
 
-            <strong class="text-secondary">Interlinked Data & Clinical Intelligence represents a new operating
-                model.</strong> <br> <br> It connects datasets
-            into knowledge graphs, embeds semantic reasoning, aligns regulatory context, and transforms validation from
-            mechanical rule execution into<strong class="text-secondary"> defensible, XAI clinical
-                intelligence.</strong> <br><br>
-
-            Care2Data helps life sciences organizations adopt this model through <strong
-                class="text-secondary">knowledge management frameworks,
-                ontology consulting for pharma, and semantic data modeling services</strong> that convert fragmented
-            data ecosystems
-            into governed knowledge systems.
+        <!-- Closing -->
+        <p class="knowledge-services-transition__closing">
+            Care2Data helps life sciences organizations adopt this model through
+            <strong>knowledge management frameworks, ontology consulting for pharma, and semantic data modeling
+                services</strong> that convert fragmented data ecosystems into governed knowledge systems.
         </p>
 
     </div>
 </section>
 
 <!-- Engineering Intelligence into Clinical Data -->
-<section class="py-8 bg-[#11193e] text-white">
-    <div class="max-w-7xl mx-auto px-6">
-
+<section class="knowledge-services-engineering">
+    <div class="knowledge-services-engineering__container">
         <!-- Heading -->
-        <h2
-            class="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-center mb-5 text-yellow-400 leading-tight">
-            <span style="color: #fff">Engineering Intelligence into</span> Clinical Data
+        <h2 class="knowledge-services-engineering__title">
+            <span class="highlight">Engineering Intelligence into</span> Clinical Data
         </h2>
 
-        <div class="text-center max-w-5xl mx-auto">
-            <p class="text-white mb-5 leading-relaxed text-base md:text-lg lg:text-xl text-justify">
-                Care2Data designs semantic knowledge architectures that structure, connect, validate, and operationalise
+        <div class="knowledge-services-engineering__content">
+            <p class="knowledge-services-engineering__description">
+                Care2Data designs semantic knowledge architectures that structure, connect, validate, and operationalize
                 clinical, scientific, and regulatory data.
-                Our approach integrates knowledge graphs, ontology frameworks, and reasoning-driven AI validation.
-                validation logic to
-                transform complex clinical datasets into interpretable and decision-ready intelligence.
+                Our approach integrates knowledge graphs, ontology frameworks, and reasoning-driven AI validation logic
+                to transform complex clinical datasets into interpretable and decision-ready intelligence.
             </p>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-white">
-
-                <div class="flex items-center gap-4">
-                    <div
-                        class="w-8 h-8 lg:w-10 lg:h-10 flex items-center justify-center rounded-lg flex-shrink-0 mb-2 bg-primary text-white font-bold">
-                        <mat-icon class="text-2xl">connect_without_contact</mat-icon>
+            <div class="knowledge-services-engineering__features">
+                <div class="knowledge-services-engineering__feature">
+                    <div class="knowledge-services-engineering__feature-icon">
+                        <mat-icon>connect_without_contact</mat-icon>
                     </div>
-                    <span class="text-left text-base md:text-lg lg:text-xl">Understand relationships across studies,
+                    <span class="knowledge-services-engineering__feature-text">Understand relationships across studies,
                         datasets, and endpoints</span>
                 </div>
 
-                <div class="flex items-center gap-4">
-                    <div
-                        class="w-8 h-8 lg:w-10 lg:h-10 flex items-center justify-center rounded-lg flex-shrink-0 mb-2 bg-primary text-white font-bold">
-                        <mat-icon class="text-2xl">verified</mat-icon>
+                <div class="knowledge-services-engineering__feature">
+                    <div class="knowledge-services-engineering__feature-icon">
+                        <mat-icon>verified</mat-icon>
                     </div>
-                    <span class="text-left text-base md:text-lg lg:text-xl">Strengthen clinical data validation and
+                    <span class="knowledge-services-engineering__feature-text">Strengthen clinical data validation and
                         submission readiness</span>
                 </div>
 
-                <div class="flex items-center gap-4">
-                    <div
-                        class="w-8 h-8 lg:w-10 lg:h-10 flex items-center justify-center rounded-lg flex-shrink-0 mb-2 bg-primary text-white font-bold">
-                        <mat-icon class="text-2xl">group</mat-icon>
+                <div class="knowledge-services-engineering__feature">
+                    <div class="knowledge-services-engineering__feature-icon">
+                        <mat-icon>group</mat-icon>
                     </div>
-                    <span class="text-left text-base md:text-lg lg:text-xl">Improve cross-functional collaboration
+                    <span class="knowledge-services-engineering__feature-text">Improve cross-functional collaboration
                         between research, clinical, and
                         regulatory teams</span>
                 </div>
 
-                <div class="flex items-center gap-4">
-                    <div
-                        class="w-8 h-8 lg:w-10 lg:h-10 flex items-center justify-center rounded-lg flex-shrink-0 mb-2 bg-primary text-white font-bold">
-                        <mat-icon class="text-2xl">device_hub</mat-icon>
+                <div class="knowledge-services-engineering__feature">
+                    <div class="knowledge-services-engineering__feature-icon">
+                        <mat-icon>device_hub</mat-icon>
                     </div>
-                    <span class="text-left text-base md:text-lg lg:text-xl">Establish sustainable knowledge
+                    <span class="knowledge-services-engineering__feature-text">Establish sustainable knowledge
                         infrastructure for long-term
                         innovation</span>
                 </div>
-
             </div>
 
-            <p class="text-xl md:text-2xl font-semibold text-center text-white mt-5">
+            <p class="knowledge-services-engineering__conclusion">
                 The result is not simply better data management—it is a knowledge-driven operating model for clinical
                 intelligence.
             </p>
         </div>
-
     </div>
 </section>
 
 <!-- How It Works -->
-<section class="py-8 bg-[#102c50]">
-    <div class="max-w-7xl mx-auto px-6">
+<section class="knowledge-services-how-it-works">
+    <div class="knowledge-services-how-it-works__container">
         <!-- Heading -->
-        <h2
-            class="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-center mb-5 text-yellow-400 leading-tight">
-            <span style="color: #fff">The Interlinked</span> Knowledge Architecture
+        <h2 class="knowledge-services-how-it-works__title">
+            <span class="highlight">The Interlinked</span> Knowledge Architecture
         </h2>
 
-        <div class="text-center mb-4 max-w-5xl mx-auto">
-            <!-- Description -->
-            <p class="text-white mb-5 leading-relaxed text-base md:text-lg lg:text-xl">
-                Care2Data delivers Interlinked Data & Clinical Intelligence through a <strong
-                    class="text-secondary">five-layer knowledge architecture</strong>
-                designed to structure, operationalise, and govern complex clinical data ecosystems.
-            </p>
+        <div class="knowledge-services-how-it-works__description">
+            Care2Data delivers Interlinked Data & Clinical Intelligence through a <strong>five-layer knowledge architecture</strong>
+            designed to structure, operationalize, and govern complex clinical data ecosystems.
         </div>
 
         <!-- Grid -->
-        <div class="flex flex-wrap justify-center gap-6">
+        <div class="knowledge-services-how-it-works__grid">
 
             <!-- Card 1 -->
-            <div
-                class="w-full md:w-[48%] lg:w-[30%] bg-white/5 rounded-2xl p-4 md:p-6 border border-white/10 shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 ease-out group flex flex-col gap-4">
-
-                <div class="flex items-center gap-4">
-                    <div class="flex items-center justify-center rounded-full p-3 bg-primary" style="height:48px;">
-                        <mat-icon class="text-xl text-white">schema</mat-icon>
+            <div class="knowledge-services-how-it-works__card">
+                <div class="knowledge-services-how-it-works__card-header">
+                    <div class="knowledge-services-how-it-works__card-icon">
+                        <mat-icon>schema</mat-icon>
                     </div>
-                    <div class="font-bold text-lg text-white group-hover:text-black">Step 1</div>
+                    <div class="knowledge-services-how-it-works__step-number">Step 1</div>
                 </div>
 
-                <div>
-                    <h3
-                        class="text-lg mg:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-2">
-                        Knowledge Modeling
-                    </h3>
-                    <p class="text-base md:text-lg lg:text-xl text-white group-hover:text-black leading-relaxed">
-                        Define structured semantic representations of clinical entities, regulatory dependencies,
-                        workflows,
-                        and scientific relationships
-                    </p>
+                <div class="knowledge-services-how-it-works__card-content">
+                    <h3>Knowledge Modeling</h3>
+                    <p>Define structured semantic representations of clinical entities, regulatory dependencies, workflows, and scientific relationships</p>
                 </div>
             </div>
 
             <!-- Card 2 -->
-            <div
-                class="w-full md:w-[48%] lg:w-[30%] bg-white/5 rounded-2xl p-4 md:p-6 border border-white/10 shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 ease-out group flex flex-col gap-4">
-
-                <div class="flex items-center gap-4">
-                    <div class="flex items-center justify-center rounded-full p-3 bg-primary" style="height:48px;">
-                        <mat-icon class="text-xl text-white">hub</mat-icon>
+            <div class="knowledge-services-how-it-works__card">
+                <div class="knowledge-services-how-it-works__card-header">
+                    <div class="knowledge-services-how-it-works__card-icon">
+                        <mat-icon>hub</mat-icon>
                     </div>
-                    <div class="font-bold text-lg text-white group-hover:text-black">Step 2</div>
+                    <div class="knowledge-services-how-it-works__step-number">Step 2</div>
                 </div>
 
-                <div>
-                    <h3
-                        class="text-lg mg:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-2">
-                        Repository Creation
-                    </h3>
-                    <p class="text-base md:text-lg lg:text-xl text-white group-hover:text-black leading-relaxed">
-                        Operationalise knowledge models within scalable knowledge graph infrastructure that serves as a
-                        unified semantic source of truth
-                    </p>
+                <div class="knowledge-services-how-it-works__card-content">
+                    <h3>Repository Creation</h3>
+                    <p>Operationalise knowledge models within scalable knowledge graph infrastructure that serves as a unified semantic source of truth</p>
                 </div>
             </div>
 
             <!-- Card 3 -->
-            <div
-                class="w-full md:w-[48%] lg:w-[30%] bg-white/5 rounded-2xl p-4 md:p-6 border border-white/10 shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 ease-out group flex flex-col gap-4">
-
-                <div class="flex items-center gap-4">
-                    <div class="flex items-center justify-center rounded-full p-3 bg-primary" style="height:48px;">
-                        <mat-icon class="text-xl text-white">psychology</mat-icon>
+            <div class="knowledge-services-how-it-works__card">
+                <div class="knowledge-services-how-it-works__card-header">
+                    <div class="knowledge-services-how-it-works__card-icon">
+                        <mat-icon>psychology</mat-icon>
                     </div>
-                    <div class="font-bold text-lg text-white group-hover:text-black">Step 3</div>
+                    <div class="knowledge-services-how-it-works__step-number">Step 3</div>
                 </div>
 
-                <div>
-                    <h3
-                        class="text-lg mg:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-2">
-                        Discovery & Reasoning
-                    </h3>
-                    <p class="text-base md:text-lg lg:text-xl text-white group-hover:text-black leading-relaxed">
-                        Enable contextual discovery, relationship analysis, anomaly detection, and knowledge-driven
-                        clinical
-                        data validation
-                    </p>
+                <div class="knowledge-services-how-it-works__card-content">
+                    <h3>Discovery & Reasoning</h3>
+                    <p>Enable contextual discovery, relationship analysis, anomaly detection, and knowledge-driven clinical data validation</p>
                 </div>
             </div>
 
             <!-- Card 4-->
-            <div
-                class="w-full md:w-[48%] lg:w-[30%] bg-white/5 rounded-2xl p-4 md:p-6 border border-white/10 shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 ease-out group flex flex-col gap-4">
-
-                <div class="flex items-center gap-4">
-                    <div class="flex items-center justify-center rounded-full p-3 bg-primary" style="height:48px;">
-                        <mat-icon class="text-xl text-white">gavel</mat-icon>
+            <div class="knowledge-services-how-it-works__card">
+                <div class="knowledge-services-how-it-works__card-header">
+                    <div class="knowledge-services-how-it-works__card-icon">
+                        <mat-icon>gavel</mat-icon>
                     </div>
-                    <div class="font-bold text-lg text-white group-hover:text-black">Step 4</div>
+                    <div class="knowledge-services-how-it-works__step-number">Step 4</div>
                 </div>
 
-                <div>
-                    <h3
-                        class="text-lg mg:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-2">
-                        Governance & Lifecycle Management
-                    </h3>
-                    <p class="text-base md:text-lg lg:text-xl text-white group-hover:text-black leading-relaxed">
-                        We ensure continuous model governance and regulatory alignment
-                    </p>
+                <div class="knowledge-services-how-it-works__card-content">
+                    <h3>Governance & Lifecycle Management</h3>
+                    <p>We ensure continuous model governance and regulatory alignment</p>
                 </div>
             </div>
 
             <!-- Card 5 -->
-            <div
-                class="w-full md:w-[48%] lg:w-[30%] bg-white/5 rounded-2xl p-4 md:p-6 border border-white/10 shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 ease-out group flex flex-col gap-4">
-
-                <div class="flex items-center gap-4">
-                    <div class="flex items-center justify-center rounded-full p-3 bg-primary" style="height:48px;">
-                        <mat-icon class="text-xl text-white">school</mat-icon>
+            <div class="knowledge-services-how-it-works__card">
+                <div class="knowledge-services-how-it-works__card-header">
+                    <div class="knowledge-services-how-it-works__card-icon">
+                        <mat-icon>school</mat-icon>
                     </div>
-                    <div class="font-bold text-lg text-white group-hover:text-black">Step 5</div>
+                    <div class="knowledge-services-how-it-works__step-number">Step 5</div>
                 </div>
 
-                <div>
-                    <h3
-                        class="text-lg mg:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-2">
-                        Training & Capability Transfer
-                    </h3>
-                    <p class="text-base md:text-lg lg:text-xl text-white group-hover:text-black leading-relaxed">
-                        Ensure teams develop long-term expertise to manage and extend knowledge systems
-                    </p>
+                <div class="knowledge-services-how-it-works__card-content">
+                    <h3>Training & Capability Transfer</h3>
+                    <p>Ensure teams develop long-term expertise to manage and extend knowledge systems</p>
                 </div>
             </div>
 
@@ -398,83 +340,68 @@
             <!-- Content Container (Carousel Step) -->
             <div class="p-5 sm:p-6 md:p-10 bg-white/5 rounded-xl shadow-lg">
 
-                <div *ngIf="currentIndex === 0">
+                <div *ngIf="currentIndex === 0" class="ks-step">
 
-                    <!-- Section Header -->
-                    <div class="text-center mb-5">
-                        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 text-white font-semibold">
-                            Intelligence Begins with Structure
-                        </h2>
-                        <p class="text-base md:text-lg lg:text-xl text-primary font-semibold max-w-2xl mx-auto">
+                    <!-- Header -->
+                    <div class="ks-step__header">
+                        <span class="ks-step__eyebrow">Knowledge Modelling</span>
+                        <h2 class="ks-step__title">Intelligence Begins with Structure</h2>
+                        <p class="ks-step__subtitle">
                             Care2Data engineers semantic knowledge models to transform fragmented clinical data into
                             interlinked, reasoning-enabled knowledge systems.
                         </p>
                     </div>
 
-                    <!-- Cards Grid -->
-                    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- 3-col bento grid -->
+                    <div class="ks-step__grid">
 
-                        <!-- Card: The Problem -->
-                        <div
-                            class="bg-white/5 rounded-2xl p-4 md:p-6 border border-white/10 shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 ease-out group">
-                            <div class="flex items-center mb-4">
-                                <span class="inline-block bg-primary text-white p-3 rounded-full" style="height: 48px;">
-                                    <mat-icon class="text-white">report_problem</mat-icon>
-                                </span>
-                                <h3
-                                    class="text-lg md:text-xl ml-3 text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold">
-                                    The Problem</h3>
+                        <!-- Card 01: The Problem -->
+                        <div class="ks-step__card">
+                            <div class="ks-step__card-top">
+                                <div class="ks-step__icon">
+                                    <mat-icon>report_problem</mat-icon>
+                                </div>
+                                <span class="ks-step__num">01</span>
                             </div>
-                            <p class="text-base md:text-lg lg:text-xl text-white group-hover:text-black mb-2">
-                                Clinical, regulatory, and operational knowledge is often distributed across:
-                            </p>
-                            <ul
-                                class="text-base md:text-lg lg:text-xl list-disc list-inside text-white group-hover:text-black space-y-1">
+                            <h3>The Problem</h3>
+                            <p>Clinical, regulatory, and operational knowledge is often distributed across:</p>
+                            <ul>
                                 <li>Trial protocols</li>
                                 <li>Statistical analysis plans</li>
                                 <li>Regulatory guidance documents</li>
                                 <li>Safety reports</li>
                                 <li>Domain expertise held by subject matter experts</li>
                             </ul>
-                            <p class="text-base md:text-lg lg:text-xl text-white group-hover:text-black mt-2">
-                                Without structured representation, these relationships remain implicit and difficult to
-                                analyze systematically.
-                            </p>
+                            <p>Without structured representation, these relationships remain implicit and difficult to
+                                analyze systematically.</p>
                         </div>
 
-                        <!-- Card: Our Solution -->
-                        <div
-                            class="bg-white/5 rounded-2xl p-4 md:p-6 border border-white/10 shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 ease-out group">
-                            <div class="flex items-center mb-4">
-                                <span class="inline-block bg-primary text-white p-3 rounded-full" style="height: 48px;">
-                                    <mat-icon class="text-white">build</mat-icon>
-                                </span>
-                                <h3
-                                    class="text-lg md:text-xl ml-3 text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold">
-                                    Our Solution</h3>
+                        <!-- Card 02: Our Solution -->
+                        <div class="ks-step__card">
+                            <div class="ks-step__card-top">
+                                <div class="ks-step__icon">
+                                    <mat-icon>build</mat-icon>
+                                </div>
+                                <span class="ks-step__num">02</span>
                             </div>
-                            <p class="text-base md:text-lg lg:text-xl text-white group-hover:text-black">
-                                Care2Data engineers semantic knowledge models using RDF and linked data principles to
+                            <h3>Our Solution</h3>
+                            <p>Care2Data engineers semantic knowledge models using RDF and linked data principles to
                                 represent entities, attributes, relationships, and regulatory dependencies. This
                                 structured approach enables organizations to interpret data contextually rather than as
-                                isolated records.
-                            </p>
+                                isolated records.</p>
                         </div>
 
-                        <!-- Card: Our Approach -->
-                        <div
-                            class="bg-white/5 rounded-2xl p-4 md:p-6 border border-white/10 shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 ease-out group">
-                            <div class="flex items-center mb-4">
-                                <span class="inline-block bg-primary text-white p-3 rounded-full" style="height: 48px;">
-                                    <mat-icon class="text-white">auto_fix_high</mat-icon>
-                                </span>
-                                <h3
-                                    class="text-lg md:text-xl ml-3 text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold">
-                                    Our Approach</h3>
+                        <!-- Card 03: Our Approach -->
+                        <div class="ks-step__card">
+                            <div class="ks-step__card-top">
+                                <div class="ks-step__icon">
+                                    <mat-icon>auto_fix_high</mat-icon>
+                                </div>
+                                <span class="ks-step__num">03</span>
                             </div>
-                            <ul
-                                class="text-base md:text-lg lg:text-xl list-disc list-inside text-white group-hover:text-black space-y-2">
-                                <li><strong>Assessment & Understanding:</strong> Evaluate datasets, workflows, and
+                            <h3>Our Approach</h3>
+                            <ul>
+                                <li><strong>Assessment &amp; Understanding:</strong> Evaluate datasets, workflows, and
                                     regulatory requirements across clinical programs.</li>
                                 <li><strong>Model Engineering:</strong> Design semantic models capturing entities,
                                     hierarchies, dependencies, and contextual relationships.</li>
@@ -484,38 +411,28 @@
                         </div>
 
                     </div>
-                    <!-- Impact Section -->
-                    <div class="mt-5 text-center">
-                        <h3 class="text-2xl md:text-3xl font-bold mb-4 text-primary">Impact</h3>
-                        <p class="text-base md:text-lg lg:text-xl text-white group-hover:text-black max-w-3xl mx-auto">
-                            Clinical trial data transitions from fragmented information into interlinked,
+
+                    <!-- Impact band -->
+                    <div class="ks-step__impact">
+                        <p class="ks-step__impact-label">Impact</p>
+                        <p>Clinical trial data transitions from fragmented information into interlinked,
                             reasoning-enabled knowledge systems capable of supporting advanced analytics and clinical
-                            data validation.
-                        </p>
+                            data validation.</p>
                     </div>
 
-
-                    <!-- Card: Use Case -->
-                    <div
-                        class="mt-5 bg-white/5 rounded-2xl p-4 md:p-6 border border-white/10 shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 ease-out group md:col-span-2 lg:col-span-3">
-                        <div class="flex items-center mb-4">
-                            <span class="inline-block bg-primary text-white p-3 rounded-full" style="height: 48px;">
-                                <mat-icon class="text-white">science</mat-icon>
-                            </span>
-                            <h3
-                                class="text-lg md:text-xl ml-3 text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold">
-                                Use Case — Clinical Trial
-                                Lifecycle
-
-                                Modelling</h3>
+                    <!-- Use Case — featured full-width card -->
+                    <div class="ks-step__card ks-step__card--featured">
+                        <div class="ks-step__card-top">
+                            <div class="ks-step__icon">
+                                <mat-icon>science</mat-icon>
+                            </div>
+                            <span class="ks-step__num">Use Case</span>
                         </div>
-                        <div class="grid gap-6 md:grid-cols-2">
+                        <h3>Clinical Trial Lifecycle Modelling</h3>
+                        <div class="ks-step__case-grid">
                             <div>
-                                <p class="text-base md:text-lg lg:text-xl text-white group-hover:text-black mb-2">
-                                    Care2Data structures clinical knowledge across:
-                                </p>
-                                <ul
-                                    class="text-base md:text-lg lg:text-xl list-disc list-inside text-white group-hover:text-black space-y-1 mb-4">
+                                <p>Care2Data structures clinical knowledge across:</p>
+                                <ul>
                                     <li>Protocols</li>
                                     <li>QMS documentation</li>
                                     <li>Statistical plans</li>
@@ -524,11 +441,8 @@
                                 </ul>
                             </div>
                             <div>
-                                <p class="text-base md:text-lg lg:text-xl text-white group-hover:text-black mb-2">This
-                                    enables knowledge graphs
-                                    that:</p>
-                                <ul
-                                    class="text-base md:text-lg lg:text-xl list-disc list-inside text-white group-hover:text-black space-y-1">
+                                <p>This enables knowledge graphs that:</p>
+                                <ul>
                                     <li>Capture relationships across endpoints, populations, and safety signals</li>
                                     <li>Connect structured and unstructured datasets</li>
                                     <li>Support semantic reasoning and validation workflows</li>
@@ -546,7 +460,7 @@
                             A Governed, Interlinked Source of Truth
                         </h2>
                         <p class="text-base md:text-lg lg:text-xl text-primary font-semibold max-w-2xl mx-auto">
-                            Models deliver value only when operationalised within scalable infrastructure.
+                            Models deliver value only when operationalized within scalable infrastructure.
                         </p>
                         <p class="text-base md:text-lg lg:text-xl text-primary font-semibold max-w-2xl mx-auto mt-2">
                             Care2Data deploys knowledge graph repositories and semantic data layers that serve as the
@@ -1235,30 +1149,9 @@
         <!-- CTA Buttons -->
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-3xl mx-auto ">
 
-            <button routerLink="/contact-us"
-                class="text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 cursor-pointer"
-                style="background-color: var(--btn-primary-color); color: #fff;"
-                onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
-                onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
-                Request a Demo →
-            </button>
-
-            <button routerLink="/contact-us"
-                class="text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 cursor-pointer"
-                style="background-color: var(--btn-primary-color); color: #fff;"
-                onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
-                onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
-                Talk to an Expert →
-            </button>
-
-            <!-- Download Brochure -->
-            <a href="/assets/brochure.pdf" download
-                class="text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 cursor-pointer"
-                style="background-color: var(--btn-primary-color); color: #fff;"
-                onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
-                onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
-                Download Brochure →
-            </a>
+            <a routerLink="/contact-us" class="btn btn-primary">Request a Demo →</a>
+            <a routerLink="/contact-us" class="btn btn-outline">Talk to an Expert →</a>
+            <a href="/assets/brochure.pdf" download class="btn btn-secondary">Download Brochure →</a>
 
         </div>
 
