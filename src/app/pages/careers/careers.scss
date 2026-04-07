@@ -1,0 +1,210 @@
+// ─── Design tokens ────────────────────────────────────────────
+$gold:        #f5c36e;
+$gold-hover:  #d19a3e;
+$gold-dim:    rgba(245, 195, 110, 0.18);
+$gold-border: rgba(245, 195, 110, 0.22);
+$card-bg:     rgba(255, 255, 255, 0.04);
+$card-hover:  rgba(255, 255, 255, 0.09);
+$card-border: rgba(255, 255, 255, 0.12);
+$white-78:    rgba(248, 250, 252, 0.78);
+$white-82:    rgba(248, 250, 252, 0.82);
+$white-84:    rgba(248, 250, 252, 0.84);
+$white-88:    rgba(248, 250, 252, 0.88);
+$inner-width: 1200px;
+
+// ─── Page wrapper ──────────────────────────────────────────────
+.careers-page {
+  background: linear-gradient(135deg, #090f21 0%, #08112a 100%);
+  color: #f8fafc;
+  min-height: 100vh;
+}
+
+// ─── Hero ──────────────────────────────────────────────────────
+.careers-hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at top left, rgba(245, 195, 110, 0.14), transparent 24%),
+    linear-gradient(180deg, #090f21 0%, #0e1f44 42%, #08112a 100%);
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 20% 20%, rgba(245, 195, 110, 0.1), transparent 20%),
+      radial-gradient(circle at 90% 20%, rgba(57, 171, 255, 0.1), transparent 18%);
+    pointer-events: none;
+  }
+}
+
+.careers-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(2, 7, 22, 0.28), rgba(2, 7, 22, 0.72));
+}
+
+.careers-hero__content {
+  position: relative;
+  z-index: 1;
+  max-width: $inner-width;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.careers-hero__text h1 {
+  font-size: clamp(2.75rem, 4vw, 4.75rem);
+  line-height: 1.02;
+  margin: 1rem 0 1.5rem;
+}
+
+.careers-hero__text h1 span {
+  color: $gold;
+}
+
+.careers-hero__text p {
+  color: $white-88;
+  font-size: 1.05rem;
+  line-height: 1.85;
+  max-width: 600px;
+}
+
+.careers-hero__badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: $gold-dim;
+  border: 1px solid $gold-border;
+  border-radius: 999px;
+  color: $gold;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+}
+
+.careers-hero__actions {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+// ─── Content sections ──────────────────────────────────────────
+.careers-section {
+  padding: 5rem 1.5rem;
+  background: rgba(6, 12, 33, 0.7);
+}
+
+.careers-section__header h2 {
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.08;
+  margin-bottom: 1rem;
+}
+
+.careers-section__header h2 span {
+  color: $gold;
+}
+
+.careers-section__header p {
+  color: $white-88;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin-bottom: 2rem;
+}
+
+.careers-section__header .divider {
+  width: 5rem;
+  height: 0.25rem;
+  background: $gold;
+  border-radius: 0.125rem;
+  margin-bottom: 2rem;
+}
+
+// ─── Cards ─────────────────────────────────────────────────────
+.careers-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.careers-card {
+  background: $card-bg;
+  border: 1px solid $card-border;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  transition: transform 0.3s ease, background 0.3s ease;
+
+  &:hover {
+    background: $card-hover;
+    transform: translateY(-4px);
+  }
+}
+
+.careers-card__icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  background: $gold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #111827;
+  }
+}
+
+.careers-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #f8fafc;
+}
+
+.careers-card p {
+  color: $white-82;
+  line-height: 1.7;
+}
+
+// ─── Responsive ────────────────────────────────────────────────
+@media (max-width: 1024px) {
+  .careers-hero__content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .careers-hero__text h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .careers-hero {
+    min-height: auto;
+    padding: 5rem 0 3rem;
+  }
+
+  .careers-hero__content {
+    padding: 0 1rem;
+  }
+
+  .careers-hero__text h1 {
+    font-size: 2.5rem;
+  }
+
+  .careers-section {
+    padding: 3rem 1rem;
+  }
+}

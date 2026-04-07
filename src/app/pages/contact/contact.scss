@@ -1,0 +1,123 @@
+// ─── Design tokens ────────────────────────────────────────────
+$gold:        #f5c36e;
+$gold-hover:  #d19a3e;
+$card-bg:     rgba(255, 255, 255, 0.06);
+$card-border: rgba(255, 255, 255, 0.14);
+$white-82:    rgba(248, 250, 252, 0.82);
+$white-88:    rgba(248, 250, 252, 0.88);
+
+// ─── Page wrapper ──────────────────────────────────────────────
+.contact-page {
+  background: linear-gradient(180deg, #090f21 0%, #0e1f44 42%, #08112a 100%);
+  color: #f8fafc;
+  min-height: 100vh;
+  padding: 5rem 1.5rem 2rem;
+}
+
+// ─── Title block ───────────────────────────────────────────────
+.contact-title {
+  text-align: center;
+  margin-bottom: 2rem;
+
+  h2 {
+    font-size: clamp(2rem, 3vw, 3rem);
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+
+    span { color: $gold; }
+  }
+
+  p {
+    color: $white-88;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+// ─── Form container ────────────────────────────────────────────
+.contact-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: $card-bg;
+  border: 1px solid $card-border;
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(20px);
+}
+
+// ─── Form layout ───────────────────────────────────────────────
+.contact-form {
+  display: grid;
+  gap: 1.5rem;
+}
+
+// ─── Material form field overrides ────────────────────────────
+.mat-form-field {
+  width: 100%;
+}
+
+.mat-form-field-outline {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: rgba($gold, 0.7);
+}
+
+.mat-form-field-label {
+  color: $white-82;
+}
+
+.mat-input-element {
+  color: #f8fafc;
+}
+
+.mat-form-field-required-marker {
+  color: $gold;
+}
+
+// ─── Submit button ─────────────────────────────────────────────
+.btn-submit {
+  background: $gold;
+  color: #111827;
+  border: none;
+  padding: 0.95rem 1.5rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.22s ease;
+  width: 100%;
+  margin-top: 1rem;
+
+  &:hover {
+    background: $gold-hover;
+    transform: translateY(-1px);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+  }
+}
+
+// ─── Validation messages ───────────────────────────────────────
+.error-message {
+  color: #ef4444;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+// ─── Responsive ────────────────────────────────────────────────
+@media (max-width: 640px) {
+  .contact-page {
+    padding: 3rem 1rem 2rem;
+  }
+
+  .contact-form-container {
+    padding: 1.5rem;
+  }
+}

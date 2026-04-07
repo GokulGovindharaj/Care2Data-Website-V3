@@ -1,0 +1,822 @@
+// ─── Design tokens ────────────────────────────────────────────
+$gold:        #f5c36e;
+$gold-hover:  #d19a3e;
+$gold-dim:    rgba(245, 195, 110, 0.18);
+$gold-border: rgba(245, 195, 110, 0.22);
+$blue:        #417ae3;
+$teal:        #2dd4bf;
+$card-bg:     rgba(255, 255, 255, 0.04);
+$card-hover:  rgba(255, 255, 255, 0.09);
+$card-border: rgba(255, 255, 255, 0.12);
+$white-78:    rgba(248, 250, 252, 0.78);
+$white-82:    rgba(248, 250, 252, 0.82);
+$white-84:    rgba(248, 250, 252, 0.84);
+$white-88:    rgba(248, 250, 252, 0.88);
+$inner-width: 1200px;
+
+// ─── Shared helpers ────────────────────────────────────────────
+.sg-eyebrow {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: $gold;
+  margin-bottom: 0.75rem;
+
+  &--blue { color: $blue; }
+}
+
+.sg-section-header {
+  text-align: center;
+  max-width: 52rem;
+  margin: 0 auto 2.5rem;
+
+  h2 {
+    font-size: clamp(1.75rem, 4vw, 3rem);
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: clamp(1rem, 1.5vw, 1.15rem);
+    color: $white-82;
+    line-height: 1.8;
+  }
+
+  &--light h2 { color: #ffffff; }
+}
+
+
+
+// ─── Badge ─────────────────────────────────────────────────────
+.sg-badge {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: $gold;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin-bottom: 1rem;
+}
+
+// ─── Page wrapper ──────────────────────────────────────────────
+.synthetic-gen-page {
+  background: linear-gradient(135deg, #090f21 0%, #08112a 100%);
+  min-height: 100vh;
+  color: #ffffff;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// HERO
+// ═══════════════════════════════════════════════════════════════
+.sg-hero {
+  position: relative;
+  padding: 6rem 0 5rem;
+  background:
+    radial-gradient(circle at top left, rgba(245, 195, 110, 0.14), transparent 24%),
+    linear-gradient(180deg, #090f21 0%, #0e1f44 42%, #08112a 100%);
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 20% 20%, rgba(245, 195, 110, 0.1), transparent 20%),
+      radial-gradient(circle at 90% 20%, rgba(57, 171, 255, 0.1), transparent 18%);
+    pointer-events: none;
+  }
+
+  &__noise {
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    opacity: 0.4;
+  }
+
+  &__inner {
+    position: relative;
+    max-width: $inner-width;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+
+    @media (min-width: 1024px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  // ── Left copy ──
+  &__copy {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: clamp(2.25rem, 5vw, 3.75rem);
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.1;
+    margin-bottom: 1.25rem;
+
+    em {
+      font-style: normal;
+      color: $gold;
+    }
+  }
+
+  &__sub {
+    font-size: clamp(1rem, 1.5vw, 1.15rem);
+    color: $white-88;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    max-width: 36rem;
+  }
+
+  &__support {
+    font-size: clamp(0.9rem, 1.5vw, 1.05rem);
+    color: $white-82;
+    line-height: 1.8;
+    margin-bottom: 1.75rem;
+    max-width: 36rem;
+  }
+
+  &__cta {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    @media (min-width: 640px) { flex-direction: row; }
+  }
+
+  // ── Right visual ──
+  &__visual {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__glow {
+    position: absolute;
+    bottom: -3rem;
+    right: -2rem;
+    width: 18rem;
+    height: 18rem;
+    background: rgba(65, 122, 227, 0.18);
+    filter: blur(64px);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  // ── Scroll indicator ──
+  &__scroll {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    span {
+      display: block;
+      width: 1.25rem;
+      height: 2rem;
+      border: 2px solid rgba(255, 255, 255, 0.25);
+      border-radius: 999px;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0.3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0.3rem;
+        height: 0.5rem;
+        background: $gold;
+        border-radius: 999px;
+        animation: sg-scroll 1.8s ease-in-out infinite;
+      }
+    }
+  }
+}
+
+@keyframes sg-scroll {
+  0%   { opacity: 1; transform: translateX(-50%) translateY(0); }
+  80%  { opacity: 0; transform: translateX(-50%) translateY(0.7rem); }
+  100% { opacity: 0; transform: translateX(-50%) translateY(0.7rem); }
+}
+
+// ─── Panel visual (data grid) ──────────────────────────────────
+.sg-panel {
+  width: 100%;
+  max-width: 22rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.5rem;
+  padding: 1.75rem;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+
+  &__label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: $blue;
+    margin-bottom: 1.25rem;
+  }
+
+  &__rows {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  &__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  &__stat {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1rem;
+
+    strong {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: $gold;
+    }
+
+    span {
+      font-size: 0.8rem;
+      color: $white-82;
+    }
+  }
+}
+
+// ─── Row (bar chart row) ───────────────────────────────────────
+.sg-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  &__dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    flex-shrink: 0;
+
+    &--gold { background: $gold; }
+    &--blue { background: $blue; }
+    &--teal { background: $teal; }
+  }
+
+  &__bar {
+    height: 0.4rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.15);
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 999px;
+      animation: sg-bar 1.2s ease-out forwards;
+    }
+
+    &--80::after { background: $gold;  width: 80%; }
+    &--65::after { background: $blue;  width: 65%; }
+    &--90::after { background: $teal;  width: 90%; }
+    &--55::after { background: $gold;  width: 55%; }
+    &--75::after { background: $blue;  width: 75%; }
+  }
+
+  &__tag {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: $white-82;
+    min-width: 2.5rem;
+    text-align: right;
+  }
+}
+
+@keyframes sg-bar {
+  from { width: 0; }
+}
+
+// ─── Chips ─────────────────────────────────────────────────────
+.sg-chip {
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.65rem;
+  font-weight: 700;
+
+  &--green {
+    background: rgba(34, 197, 94, 0.15);
+    color: #4ade80;
+    border: 1px solid rgba(34, 197, 94, 0.25);
+  }
+
+  &--blue {
+    background: rgba(65, 122, 227, 0.15);
+    color: #93c5fd;
+    border: 1px solid rgba(65, 122, 227, 0.25);
+  }
+
+  &--gold {
+    background: rgba(245, 195, 110, 0.15);
+    color: $gold;
+    border: 1px solid rgba(245, 195, 110, 0.25);
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════
+// PROBLEM
+// ═══════════════════════════════════════════════════════════════
+.sg-problem {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #08112a 0%, #102c50 100%);
+  color: #ffffff;
+
+  &__inner {
+    max-width: $inner-width;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: start;
+
+    @media (min-width: 1024px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__left {
+    .sg-eyebrow { display: block; }
+
+    h2 {
+      font-size: clamp(1.75rem, 4vw, 2.75rem);
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: clamp(1rem, 1.5vw, 1.1rem);
+      color: $white-82;
+      line-height: 1.8;
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  &__lead {
+    color: $gold !important;
+    font-weight: 600 !important;
+  }
+
+  &__conclusion {
+    font-style: italic;
+    color: $white-82;
+  }
+
+  &__right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    @media (min-width: 1024px) { justify-content: flex-end; }
+  }
+}
+
+// ─── Constraint list ───────────────────────────────────────────
+.sg-constraint-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+    color: $white-88;
+    line-height: 1.7;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    background: rgba(65, 122, 227, 0.15);
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+
+    mat-icon {
+      font-size: 1.1rem;
+      color: $blue;
+    }
+  }
+}
+
+// ─── Shift card ────────────────────────────────────────────────
+.sg-shift {
+  width: 100%;
+  max-width: 26rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.25);
+
+  &__tag {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: $blue;
+    margin-bottom: 0.75rem;
+  }
+
+  &__line {
+    width: 2.5rem;
+    height: 0.125rem;
+    background: $blue;
+    margin-bottom: 1.25rem;
+  }
+
+  &__quote {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-weight: 600;
+    line-height: 1.7;
+    color: #ffffff;
+    margin: 0 0 1.75rem;
+    border: none;
+    padding: 0;
+  }
+
+  &__glow {
+    position: absolute;
+    bottom: -3rem;
+    right: -2rem;
+    width: 10rem;
+    height: 10rem;
+    background: rgba(65, 122, 227, 0.2);
+    filter: blur(40px);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════
+// CAPABILITIES
+// ═══════════════════════════════════════════════════════════════
+.sg-capabilities {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #102c50 0%, #114167 100%);
+  color: #ffffff;
+
+  &__inner {
+    max-width: $inner-width;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  &__note {
+    text-align: center;
+    max-width: 52rem;
+    margin: 2rem auto 0;
+    font-size: clamp(1rem, 1.5vw, 1.1rem);
+    color: $white-82;
+    line-height: 1.8;
+  }
+
+  &__cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+}
+
+// ─── Bento grid ────────────────────────────────────────────────
+.sg-bento {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__card {
+    background: $card-bg;
+    border: 1px solid $card-border;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    transition: background 0.3s ease, transform 0.22s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      background: $card-hover;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    }
+
+    &--wide {
+      @media (min-width: 768px) {
+        grid-column: span 1;
+      }
+    }
+
+    .sg-bento__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.75rem;
+      height: 2.75rem;
+      border-radius: 0.75rem;
+      background: $gold;
+      margin-bottom: 1rem;
+
+      mat-icon { color: #111827; font-size: 1.25rem; }
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: $gold;
+      margin-bottom: 0.65rem;
+      line-height: 1.3;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: $white-82;
+      line-height: 1.75;
+    }
+
+    &:hover h3 { color: #ffffff; }
+
+    .sg-bento__tag {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.2rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      background: rgba(245, 195, 110, 0.12);
+      color: $gold;
+      border: 1px solid rgba(245, 195, 110, 0.2);
+    }
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════
+// READINESS  (use cases + value)
+// ═══════════════════════════════════════════════════════════════
+.sg-readiness {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #08112a 0%, #102c50 100%);
+  color: #ffffff;
+
+  &__inner {
+    max-width: $inner-width;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+
+    @media (min-width: 1024px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+// ─── Timeline (Use Cases) ──────────────────────────────────────
+.sg-timeline {
+  &__heading {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: $gold;
+    margin-bottom: 1.5rem;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  &__item {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+
+    &:not(:last-child) {
+      padding-bottom: 1.5rem;
+
+      .sg-timeline__dot::after {
+        content: '';
+        position: absolute;
+        top: 2.75rem;
+        left: 1rem;
+        width: 1px;
+        height: calc(100% - 1rem);
+        background: rgba(255, 255, 255, 0.12);
+      }
+    }
+  }
+
+  &__dot {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    background: rgba(65, 122, 227, 0.15);
+    border: 1px solid rgba(65, 122, 227, 0.25);
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+
+    mat-icon {
+      font-size: 1.1rem;
+      color: $blue;
+      margin-top: 0.5rem;
+    }
+  }
+
+  &__body {
+    padding-bottom: 0.25rem;
+
+    strong {
+      display: block;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 0.4rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: $white-82;
+      line-height: 1.75;
+    }
+  }
+}
+
+// ─── Value ──────────────────────────────────────────────────────
+.sg-value {
+  &__heading {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: $gold;
+    margin-bottom: 1.5rem;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  &__item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+
+    strong {
+      display: block;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 0.35rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: $white-82;
+      line-height: 1.75;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 0.5rem;
+    background: $gold;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+
+    mat-icon { font-size: 1.1rem; color: #111827; }
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════
+// CLOSING CTA
+// ═══════════════════════════════════════════════════════════════
+.sg-cta {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #090f21 0%, #08112a 100%);
+  color: #ffffff;
+  text-align: center;
+
+  &__inner {
+    max-width: $inner-width;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    position: relative;
+  }
+
+  &__glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30rem;
+    height: 20rem;
+    background: radial-gradient(ellipse, rgba(65, 122, 227, 0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  &__content {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: clamp(1.75rem, 4vw, 2.75rem);
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    @media (min-width: 640px) {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+}
+
+// ─── Responsive ────────────────────────────────────────────────
+@media (max-width: 767px) {
+  .sg-hero    { padding: 4rem 0 3.5rem; }
+  .sg-problem,
+  .sg-capabilities,
+  .sg-readiness,
+  .sg-cta     { padding: 3.5rem 0; }
+
+  .sg-panel   { max-width: 100%; }
+  .sg-shift   { max-width: 100%; }
+}

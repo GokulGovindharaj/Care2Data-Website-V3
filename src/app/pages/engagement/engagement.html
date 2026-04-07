@@ -1,14 +1,13 @@
 <!-- Hero Section -->
-<section class="min-h-screen py-20 flex items-center bg-[#11193e] overflow-hidden">
-    <div class="max-w-7xl mx-auto px-6 text-left md:text-center">
-
+<section class="engagement-hero">
+    <div class="engagement-hero__container">
         <!-- Headline -->
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-white font-heading">
-            Engineering Clinical <span class="text-secondary"> Data Intelligence </span>
+        <h1 class="engagement-hero__title">
+            Engineering Clinical <span class="highlight">Data Intelligence</span>
         </h1>
 
         <!-- Subheadline -->
-        <p class="mt-5 text-white group-hover:text-black text-base md:text-lg max-w-4xl mx-auto">
+        <p class="engagement-hero__subtitle">
             Clinical trial data challenges are not only technical — they are structural.
             Care2Data works with pharmaceutical and life sciences teams to embed semantic intelligence, validation
             logic, and governance frameworks directly into clinical data operations without disrupting existing systems.
@@ -17,108 +16,97 @@
         </p>
 
         <!-- Pillars -->
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-5 text-left">
-
-            <div
-                class="bg-white/5 rounded-2xl p-8 border border-white/10 shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 ease-out group">
-                <h3
-                    class="text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-4">
-                    Governance</h3>
-                <p class="text-white group-hover:text-black text-base md:text-lg">
-                    Establish ownership, traceability and lifecycle control across clinical data assets
-                </p>
+        <div class="engagement-hero__pillars">
+            <div class="engagement-hero__pillar">
+                <h3>Governance</h3>
+                <p>Establish ownership, traceability and lifecycle control across clinical data assets</p>
             </div>
 
-            <div
-                class="bg-white/5 rounded-2xl p-8 border border-white/10 shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 ease-out group">
-                <h3
-                    class="text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-4">
-                    Intelligence</h3>
-                <p class="text-white group-hover:text-black text-base md:text-lg">
-                    Apply semantic modelling and reasoning to uncover relationships and insights
-                </p>
+            <div class="engagement-hero__pillar">
+                <h3>Intelligence</h3>
+                <p>Apply semantic modelling and reasoning to uncover relationships and insights</p>
             </div>
 
-            <div
-                class="bg-white/5 rounded-2xl p-8 border border-white/10 shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 ease-out group">
-                <h3
-                    class="text-lg md:text-xl text-[var(--secondary-color)] group-hover:text-[var(--primary-color)] transition font-semibold mb-4">
-                    Defensibility</h3>
-                <p class="text-white group-hover:text-black text-base md:text-lg">
-                    Ensure submissions and decisions are supported by explainable and trusted data
-                </p>
+            <div class="engagement-hero__pillar">
+                <h3>Defensibility</h3>
+                <p>Ensure submissions and decisions are supported by explainable and trusted data</p>
             </div>
-
         </div>
 
         <!-- CTA -->
-        <div class="flex flex-col sm:flex-row justify-center gap-4 mt-5">
-
-            <button routerLink="/contact-us"
-                class="inline-flex items-center justify-center gap-2 text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 uppercase cursor-pointer rounded-md"
-                style="background-color: var(--btn-primary-color); color: white;"
-                onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
-                onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
+        <div class="engagement-hero__cta">
+            <button routerLink="/contact-us" class="engagement-hero__button">
                 Architect Your Engagement →
             </button>
 
-            <button routerLink="/contact-us"
-                class="inline-flex items-center justify-center gap-2 text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 uppercase cursor-pointer rounded-md"
-                style="background-color: var(--btn-primary-color); color: white;"
-                onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
-                onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
+            <button routerLink="/contact-us" class="engagement-hero__button">
                 Speak to a Clinical Data Strategist →
             </button>
-
         </div>
-
     </div>
 </section>
 
-<section class="bg-[#102c50] py-12 md:py-16">
-    <div class="max-w-7xl mx-auto px-6">
-        <!-- Heading -->
-        <h2
-            class="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-center mb-5 text-yellow-400 leading-tight">
-            <span style="color: #fff">Clinical Data Intelligence Is Not</span> IT Consulting
+<section class="engagement-intelligence">
+    <div class="engagement-intelligence__container">
+
+        <span class="engagement-intelligence__eyebrow">Our Differentiation</span>
+
+        <h2 class="engagement-intelligence__title">
+            <span class="highlight">Clinical Data Intelligence Is Not</span> IT Consulting
         </h2>
-        <div class="max-w-3xl mx-auto mb-5 space-y-6">
 
-            <div class="space-y-3 text-white group-hover:text-black text-base md:text-lg leading-relaxed text-center">
-                <p>Clinical data transformation is not solved through configuration alone.</p>
-                <p>It is not simply scripting.</p>
-                <p>It is not double programming at scale.</p>
-                <p>Traditional consulting engagements focus primarily on tools and implementation.</p>
+        <!-- "Not this" contrast strip -->
+        <div class="engagement-intelligence__not-strip">
+            <div class="engagement-intelligence__not-item">
+                <span class="engagement-intelligence__not-icon">✕</span>
+                <p>Configuration alone</p>
+            </div>
+            <div class="engagement-intelligence__not-divider"></div>
+            <div class="engagement-intelligence__not-item">
+                <span class="engagement-intelligence__not-icon">✕</span>
+                <p>Simply scripting</p>
+            </div>
+            <div class="engagement-intelligence__not-divider"></div>
+            <div class="engagement-intelligence__not-item">
+                <span class="engagement-intelligence__not-icon">✕</span>
+                <p>Double programming at scale</p>
+            </div>
+            <div class="engagement-intelligence__not-divider"></div>
+            <div class="engagement-intelligence__not-item">
+                <span class="engagement-intelligence__not-icon">✕</span>
+                <p>Tools and implementation only</p>
+            </div>
+        </div>
+
+        <!-- Lead text -->
+        <p class="engagement-intelligence__lead">
+            Care2Data focuses on the structural questions that determine submission success:
+        </p>
+
+        <!-- Numbered questions -->
+        <div class="engagement-intelligence__questions">
+
+            <div class="engagement-intelligence__question">
+                <span class="engagement-intelligence__q-num">01</span>
+                <p>How clinical data behaves under regulatory scrutiny?</p>
             </div>
 
-            <p class="text-base md:text-lg text-secondary text-justify mb-4 font-semibold">
-                Care2Data focuses on the structural questions that determine submission success:
-            </p>
-            <ol class="space-y-6 md:space-y-8 text-white text-left list-decimal pl-6 marker:text-yellow-400">
-
-                <li class="text-base md:text-lg leading-relaxed">
-                    How clinical data behaves under regulatory scrutiny?
-                </li>
-
-                <li class="text-base md:text-lg leading-relaxed">
-                    How validation logic aligns with regulatory intent?
-                </li>
-
-                <li class="text-base md:text-lg leading-relaxed">
-                    How knowledge becomes institutional rather than tribal?
-                </li>
-
-            </ol>
-
-            <div class="mt-5 text-center">
-                <p class="text-base md:text-lg text-secondary text-center mb-4 font-semibold">
-                    Care2Data defines a new engagement model:
-                </p>
-                <p class="text-xl md:text-2xl font-semibold text-center text-white mt-5">
-                    Knowledge-Driven Clinical Data Intelligence.
-                </p>
+            <div class="engagement-intelligence__question">
+                <span class="engagement-intelligence__q-num">02</span>
+                <p>How validation logic aligns with regulatory intent?</p>
             </div>
 
+            <div class="engagement-intelligence__question">
+                <span class="engagement-intelligence__q-num">03</span>
+                <p>How knowledge becomes institutional rather than tribal?</p>
+            </div>
+
+        </div>
+
+        <!-- Conclusion callout -->
+        <div class="engagement-intelligence__conclusion-wrap">
+            <p class="engagement-intelligence__conclusion-label">Care2Data defines a new engagement model:</p>
+            <p class="engagement-intelligence__conclusion">Knowledge-Driven Clinical Data Intelligence.</p>
         </div>
 
     </div>
@@ -288,8 +276,8 @@
                                 and transformation pipelines.
                             </p>
 
-                            <p class="text-white group-hover:text-black text-base md:text-lg mb-3">
-                                This enables organisations to clearly define:
+                            <p class="text-white group-hover:text-black text-base md:text-lg lg:text-xl mb-3">
+                                This enables organizations to clearly define:
                             </p>
 
                             <ul class="list-disc pl-6 space-y-2 text-white group-hover:text-black text-base md:text-lg">
@@ -374,7 +362,7 @@
                             </p>
 
                             <p class="text-xl md:text-2xl font-semibold mt-5">
-                                This allows organisations to address systemic risks before they impact submission
+                                This allows organizations to address systemic risks before they impact submission
                                 timelines or regulatory review.
                             </p>
                         </div>
@@ -602,7 +590,7 @@
 
                             <ul class="list-disc pl-6 space-y-2 text-white group-hover:text-black text-base md:text-lg">
                                 <li>Understand clinical data flow end-to-end</li>
-                                <li>Interpret validation logic and rule behaviour</li>
+                                <li>Interpret validation logic and rule behavior</li>
                                 <li>Manage rule evolution safely</li>
                                 <li>Respond confidently during regulatory inspections</li>
                             </ul>
@@ -622,11 +610,7 @@
 
                 <!-- CTA -->
                 <div *ngIf="sections[currentIndex].cta" class="flex justify-center items-center mt-5">
-                    <button
-                        class="inline-flex items-center justify-center gap-2 text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 uppercase cursor-pointer rounded-md"
-                        style="background-color: var(--btn-primary-color); color: white;"
-                        onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
-                        onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
+                    <button class="btn btn-primary">
                         {{sections[currentIndex].cta}} →
                     </button>
                 </div>
@@ -668,13 +652,7 @@
         </p>
 
         <!-- CTA Button -->
-        <button routerLink="/contact-us"
-            class="inline-flex items-center justify-center gap-2 text-xs rounded-xl md:text-sm px-6 py-3 cursor-pointer font-semibold transition duration-700 uppercase cursor-pointer rounded-md"
-            style="background-color: var(--btn-primary-color); color: white;"
-            onmouseover="this.style.backgroundColor='var(--btn-secondary-color)'; this.style.color='#000';"
-            onmouseout="this.style.backgroundColor='var(--btn-primary-color)'; this.style.color='white';">
-            Speak to a Strategist →
-        </button>
+        <a routerLink="/contact-us" class="btn btn-primary">Speak to a Strategist →</a>
 
     </div>
 </section>
