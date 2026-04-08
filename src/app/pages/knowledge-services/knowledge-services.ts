@@ -64,6 +64,7 @@ export class KnowledgeServices {
 
   groupedCards: any[][] = [];
   currentIndex = 0;
+  steps = [0, 1, 2, 3, 4, 5, 6];
 
   constructor(private titleService: Title, private metaService: Meta) { }
 
@@ -165,6 +166,14 @@ export class KnowledgeServices {
   goTo(i: number) {
     this.active = i;
     this.resetTimer();
+  }
+
+  prev() {
+    if (this.currentIndex > 0) this.currentIndex--;
+  }
+
+  next() {
+    if (this.currentIndex < this.steps.length - 1) this.currentIndex++;
   }
 
   onCardClick(i: number) {
