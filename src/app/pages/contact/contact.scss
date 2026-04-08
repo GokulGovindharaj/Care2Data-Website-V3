@@ -1,10 +1,5 @@
-// ─── Design tokens ────────────────────────────────────────────
-$gold:        #f5c36e;
-$gold-hover:  #d19a3e;
-$card-bg:     rgba(255, 255, 255, 0.06);
-$card-border: rgba(255, 255, 255, 0.14);
-$white-82:    rgba(248, 250, 252, 0.82);
-$white-88:    rgba(248, 250, 252, 0.88);
+// ─── Import shared design system ──────────────────────────────
+@import '../../_shared-design.scss';
 
 // ─── Page wrapper ──────────────────────────────────────────────
 .contact-page {
